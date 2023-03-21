@@ -1,10 +1,10 @@
 from django.urls import path
-from . import views
+from .views import muscle_group
 
 urlpatterns = [
-    path('home', views.muscle_group_list, name='home'), ## todo create a real home page
-    path('', views.muscle_group_list, name='muscle_group_list'),
-    path('create/', views.muscle_group_create, name='muscle_group_create'),
-    path('update/<int:pk>/', views.muscle_group_update, name='muscle_group_update'),
-    path('delete/<int:pk>/', views.muscle_group_delete, name='muscle_group_delete'),
+    path('home', muscle_group.list, name='home'), ## todo create a real home page
+    path('', muscle_group.list, name='muscle_group_list'),
+    path('create/', muscle_group.create, name='muscle_group_create'),
+    path('update/<int:pk>/', muscle_group.update, name='muscle_group_update'),
+    path('delete/<int:pk>/', muscle_group.delete, name='muscle_group_delete'),
 ]
