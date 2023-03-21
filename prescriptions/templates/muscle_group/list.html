@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Muscle Groups</h1>
+  <a href="{% url 'muscle_group_create' %}">Create Muscle Group</a>
+  <ul>
+    {% for muscle_group in muscle_groups %}
+      <li><a href="{% url 'muscle_group_update' muscle_group.pk %}">{{ muscle_group.name }}</a></li>
+      <form action="{% url 'muscle_group_delete' muscle_group.pk %}" method="post">
+        {% csrf_token %}
+        <input type="submit" value="Delete">
+      </form>
+    {% endfor %}
+  </ul>
+{% endblock %}
