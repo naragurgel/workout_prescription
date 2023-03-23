@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import muscle_group, equipment
+from .views import muscle_group, equipment, workout
 
 urlpatterns = [
     path('home', muscle_group.list, name='home'), ## todo create a real home page
@@ -11,4 +11,8 @@ urlpatterns = [
     path('equipment/create/', equipment.create, name='equipment_create'),
     path('equipment/update/<int:pk>/', equipment.update, name='equipment_update'),
     path('equipment/delete/<int:pk>/', equipment.delete, name='equipment_delete'),
+    path('workout', workout.list, name='workout_list'),
+    path('workout/create/', workout.create, name='workout_create'),
+    path('workout/update/<int:pk>/', workout.update, name='workout_update'),
+    path('workout/delete/<int:pk>/', workout.delete, name='workout_delete'),
 ]

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Workout</h1>
+  <a href="{% url 'workout_create' %}">Workout</a>
+  <ul>
+    {% for workout in workouts %}
+      <li><a href="{% url 'workout_update' workout.pk %}">{{ workout.name }}</a></li>
+      <form action="{% url 'workout_delete' workout.pk %}" method="post">
+        {% csrf_token %}
+        <input type="submit" value="Delete">
+      </form>
+    {% endfor %}
+  </ul>
+{% endblock %}
