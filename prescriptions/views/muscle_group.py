@@ -5,7 +5,7 @@ from ..forms import MuscleGroupForm
 
 def list(request):
     muscle_groups = MuscleGroup.objects.all()
-    return render(request, 'muscle_group/list.html', {'muscle_groups': muscle_groups})
+    return render(request, 'muscle_group/list.html', {'muscle_groups': muscle_groups})  # noqa
 
 
 def create(request):
@@ -13,7 +13,7 @@ def create(request):
     if form.is_valid():
         form.save()
         return redirect('muscle_group_list')
-    return render(request, 'muscle_group/form.html', {'form': form})
+    return render(request, 'form.html', {'form': form, 'title': 'Create muscle group'})  # noqa
 
 
 def update(request, pk):
@@ -22,7 +22,7 @@ def update(request, pk):
     if form.is_valid():
         form.save()
         return redirect('muscle_group_list')
-    return render(request, 'muscle_group/form.html', {'form': form})
+    return render(request, 'form.html', {'form': form, 'title': 'Update Muscle Group'})  # noqa
 
 
 def delete(request, pk):
@@ -30,4 +30,4 @@ def delete(request, pk):
     if request.method == 'POST':
         muscle_group.delete()
         return redirect('muscle_group_list')
-    return render(request, 'muscle_group/confirm_delete.html', {'muscle_group': muscle_group})
+    return render(request, 'muscle_group/confirm_delete.html', {'muscle_group': 'muscle_group'})  # noqa

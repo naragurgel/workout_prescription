@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from ..models import Equipment
 from ..forms import EquipmentForm
-
+from django.views.generic import CreateView
 
 def list(request):
     equipments = Equipment.objects.all()
@@ -13,7 +13,7 @@ def create(request):
     if form.is_valid():
         form.save()
         return redirect('equipment_list')
-    return render(request, 'equipment/form.html', {'form': form})
+    return render(request, 'form.html', {'form': form, 'title': 'Create Equipment'})  # noqa
 
 
 def update(request, pk):
@@ -22,7 +22,7 @@ def update(request, pk):
     if form.is_valid():
         form.save()
         return redirect('equipment_list')
-    return render(request, 'equipment/form.html', {'form': form})
+    return render(request, 'form.html', {'form': form, 'title': 'Update Equipment'})  # noqa
 
 
 def delete(request, pk):
@@ -30,4 +30,4 @@ def delete(request, pk):
     if request.method == 'POST':
         equipment.delete()
         return redirect('equipment_list')
-    return render(request, 'equipment/confirm_delete.html', {'equipment': equipment})
+    return render(request, 'equipment/confirm_delete.html', {'equipment': equipment})  # noqa
