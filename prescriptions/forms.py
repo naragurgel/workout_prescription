@@ -1,5 +1,5 @@
 from django import forms
-from .models import MuscleGroup, Equipment, Workout
+from .models import MuscleGroup, Equipment, Workout, WorkoutSheet
 
 
 class MuscleGroupForm(forms.ModelForm):
@@ -18,3 +18,9 @@ class WorkoutForm(forms.ModelForm):
     class Meta:
         model = Workout
         fields = ['name', 'description', 'difficulty', 'duration', 'muscle_groups', 'equipment']  # noqa
+
+
+class WorkoutSheetForm(forms.ModelForm):
+    class Meta:
+        model = WorkoutSheet
+        fields = ['name', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']
