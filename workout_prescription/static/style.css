@@ -1,0 +1,9 @@
+.container-fluid {
+    background-image: url(https://res.cloudinary.com/dgmiz0yih/image/upload/v1680812518/pexels-erik-zepeda-10448088_kz0vy5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(6, 6, 6);
+    padding: 10%;
+
+}
