@@ -23,46 +23,32 @@
 <body class="d-flex flex-column h-100 main-bg">
 
     <!-- Navigation -->
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <div class="col-md-3 mb-2 mb-md-0">
+        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+          <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+      </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'homepage' %}"><span class="brand">w<span class="red-o">o</span>rk<span
-                        class="thin">|out</span></span></span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{% url 'homepage' %}">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{% url 'muscle_group_list' %}">Muscle Groups</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{% url 'equipment_list' %}">Equipments</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{% url 'workout_list' %}">Workout</a>
-                    </li>
-                    {% if user.is_authenticated %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
-                    </li>
-                    {% else %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_login' %}">Login</a>
-                    </li>
-                    {% endif %}
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="{% url 'homepage' %}" class="nav-link px-2 link-secondary">Home</a></li>
+        <li><a href="{% url 'muscle_group_list' %}" class="nav-link px-2">Muscle Groups</a></li>
+        <li><a href="{% url 'equipment_list' %}" class="nav-link px-2">Equipments</a></li>
+        <li><a href="{% url 'workout_list' %}" class="nav-link px-2">Workout</a></li>
+      </ul>
+      <ul>
+       {% if user.is_authenticated %}
+       <li class="nav-item">
+           <a class="nav-link" href="{% url 'account_login' %}" class="btn btn-outline-primary me-2">Login</a>
+       </li>
+       {% else %}
+       <li class="nav-item">
+           <a class="nav-link" href="{% url 'account_signup' %}" class="btn btn-primary">Register</a>
+       </li>
+       {% endif %}
+       </ul>
+    </header>
 
-                </ul>
-                <span class="navbar-text text-muted">
-                    adventures of a software developer
-                </span>
             </div>
         </div>
     </nav>
