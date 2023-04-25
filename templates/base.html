@@ -37,20 +37,7 @@
         <li><a href="{% url 'workout_list' %}" class="nav-link px-2">Workout</a></li>
       </ul>
       <ul>
-       {% if user.is_authenticated %}
-       <li class="nav-item">
-           <a class="nav-link" href="{% url 'account_login' %}" class="btn btn-outline-primary me-2">Login</a>
-       </li>
-       {% else %}
-       <li class="nav-item">
-           <a class="nav-link" href="{% url 'account_signup' %}" class="btn btn-primary">Register</a>
-       </li>
-       {% endif %}
-       </ul>
     </header>
-
-            </div>
-        </div>
     </nav>
 
     <main class="flex-shrink-0 main-bg">
@@ -58,7 +45,89 @@
         <!-- Content Goes here -->
         {% endblock content %}
     </main>
-
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+    <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#bootstrap"></use>
+        </svg>
+        <div>
+            <h3 class="fw-bold mb-0 fs-4">Convenience</h3>
+            <p>With an online workout prescription, you can access your personalized workout plan from anywhere with an
+                internet connection, at any time that suits your schedule.</p>
+        </div>
+    </div>
+    <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#cpu-fill"></use>
+        </svg>
+        <div>
+            <h3 class="fw-bold mb-0 fs-4">Personalized approach</h3>
+            <p>An online workout prescription takes into account your specific fitness level, goals, and any physical
+                limitations or injuries you may have, creating a personalized plan that is tailored to your needs.</p>
+        </div>
+    </div>
+    <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#calendar3"></use>
+        </svg>
+        <div>
+            <h3 class="fw-bold mb-0 fs-4">Efficient and effective</h3>
+            <p>By creating a customized workout plan, an online prescription can help you optimize your time spent
+                exercising and ensure that you are targeting the right areas of your body to meet your fitness goals.
+            </p>
+        </div>
+    </div>
+    <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#home"></use>
+        </svg>
+        <div>
+            <h3 class="fw-bold mb-0 fs-4">Motivation</h3>
+            <p>A personalized workout plan can help you stay motivated and committed to your fitness routine, as you see
+                progress towards your goals and achieve a sense of accomplishment.</p>
+        </div>
+    </div>
+    <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#speedometer2"></use>
+        </svg>
+        <div>
+            <h3 class="fw-bold mb-0 fs-4">Expert guidance</h3>
+            <p>With a prescription from a qualified fitness professional, you can be confident that your workout plan is
+                safe and effective, and that you are not putting yourself at risk of injury or overexertion.</p>
+        </div>
+    </div>
+    <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#toggles2"></use>
+        </svg>
+        <div>
+            <h3 class="fw-bold mb-0 fs-4">Flexibility</h3>
+            <p>With an online workout prescription, you can adjust your plan as needed based on your progress, changes
+                in your schedule or lifestyle, or any new fitness goals you may have.</p>
+        </div>
+    </div>
+    <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#geo-fill"></use>
+        </svg>
+        <div>
+            <h3 class="fw-bold mb-0 fs-4">Cost-effective</h3>
+            <p>An online workout prescription can be a more affordable option than in-person personal training sessions,
+                while still providing you with the guidance and expertise you need to achieve your fitness goals.</p>
+        </div>
+    </div>
+    <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#tools"></use>
+        </svg>
+        <div>
+            <h3 class="fw-bold mb-0 fs-4">Overall</h3>
+            <p>An online workout prescription can be an excellent tool to help you achieve your fitness goals, with
+                personalized guidance and support that is tailored to your unique needs and preferences.</p>
+        </div>
+    </div>
+</div>
     <!-- Footer -->
    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
        <p class="col-md-4 mb-0 text-body-secondary">© 2023 Company, Inc</p>

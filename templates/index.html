@@ -2,26 +2,21 @@
 
 {% block content %}
 
-<style>
-    .container-fluid h1 {
-        text-align: left;
-    }
-</style>
-
 <div class="container-fluid" >
-    <h1>Welcome to Workout Prescriptions</h1>
 </div>
 
-<p class="lead text-center">Here you can get personalized workouts made especially for you by our coachs</p>
-<p class="lead text-center">text
-</p>
-<p class="lead text-center">Check your today's workouts
+<h1 class="title">Welcome to Workout Prescriptions</h1>
+<p class="lead text-center">Enjoy us to became your best version!</p>
+<p class="lead text-center">We offer a variety of fitness programs to help you achieve your health and fitness goals.
+    Whether you're looking to lose weight, build muscle, or simply improve your overall health. Our experienced trainers
+    are here to support you every step of the way with personalized training programs tailored to your individual needs
+    and goals.
 </p>
 <div>
     {% if request.user.is_authenticated %}
     <a href="{% url 'workout_sheet_create' %}" class="btn btn-outline-primary">Workouts</a>
     {% else %}
-    <a href="{% url 'account_signup' %}" class="btn btn-outline-primary">Sign up</a>
+    <a href="{% url 'account_signup' %}" class="btn btn-outline-primary">Sing up</a>
     {% endif %}
 </div>
 

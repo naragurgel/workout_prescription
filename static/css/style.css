@@ -3,7 +3,23 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: rgb(6, 6, 6);
+    color: rgb(255, 255, 255);
     padding: 10%;
+}
 
+.main-bg {
+    background-color: black;
+}
+
+.lead {
+    color:rgb(255, 255, 255)
+} 
+
+.title {
+    text-align: center;
+    color: greenyellow;
+}
+
+.row {
+    color: white;
 }
