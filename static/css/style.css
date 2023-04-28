@@ -57,3 +57,7 @@ h3 {
 .ms-3 {
     color: greenyellow;
 }
+
+.d-flex{
+    padding-bottom: 0.5rem;
+}
