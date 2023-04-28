@@ -12,14 +12,89 @@
     are here to support you every step of the way with personalized training programs tailored to your individual needs
     and goals.
 </p>
-<div>
-    {% if request.user.is_authenticated %}
-    <a href="{% url 'workout_sheet_create' %}" class="btn btn-outline-primary">Workouts</a>
-    {% else %}
-    <a href="{% url 'account_signup' %}" class="btn btn-outline-primary">Sing up</a>
-    {% endif %}
-</div>
 
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+    <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#bootstrap"></use>
+        </svg>
+        <div>
+            <h3 class="fw-bold mb-0 fs-4"><i class="fa-solid fa-dumbbell"></i> Convenience</h3>
+            <p>You can access your personalized workout plan from anywhere with an
+                internet connection, at any time that suits your schedule.</p>
+        </div>
+    </div>
+    <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#cpu-fill"></use>
+        </svg>
+        <div>
+            <h3 class="fw-bold mb-0 fs-4"><i class="fa-solid fa-dumbbell"></i> Personalized approach</h3>
+            <p>It takes into account your specific fitness level, goals, and any physical
+                limitations or injuries you may have, creating a personalized plan that is tailored to your needs.</p>
+        </div>
+    </div>
+    <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#calendar3"></use>
+        </svg>
+        <div>
+            <h3 class="fw-bold mb-0 fs-4"><i class="fa-solid fa-dumbbell"></i> Efficient and effective</h3>
+            <p>It will help you optimize your time spent
+                exercising and ensure that you are targeting the right areas of your body to meet your fitness goals.
+            </p>
+        </div>
+    </div>
+    <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#home"></use>
+        </svg>
+        <div>
+            <h3 class="fw-bold mb-0 fs-4"><i class="fa-solid fa-dumbbell"></i> Motivation</h3>
+            <p>It will help you stay motivated and committed to your fitness routine, as you see
+                progress towards your goals and achieve a sense of accomplishment.</p>
+        </div>
+    </div>
+    <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#speedometer2"></use>
+        </svg>
+        <div>
+            <h3 class="fw-bold mb-0 fs-4"><i class="fa-solid fa-dumbbell"></i> Expert guidance</h3>
+            <p>You can be confident that your workout plan is
+                safe and effective, and that you are not putting yourself at risk of injury or overexertion.</p>
+        </div>
+    </div>
+    <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#toggles2"></use>
+        </svg>
+        <div>
+            <h3 class="fw-bold mb-0 fs-4"><i class="fa-solid fa-dumbbell"></i> Flexibility</h3>
+            <p>You can adjust your plan as needed based on your progress, changes
+                in your schedule or lifestyle, or any new fitness goals you may have.</p>
+        </div>
+    </div>
+    <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#geo-fill"></use>
+        </svg>
+        <div>
+            <h3 class="fw-bold mb-0 fs-4"><i class="fa-solid fa-dumbbell"></i> Cost-effective</h3>
+            <p>It's more affordable option than in-person personal training sessions,
+                while still providing you with the guidance and expertise you need to achieve your fitness goals.</p>
+        </div>
+    </div>
+    <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#tools"></use>
+        </svg>
+        <div>
+            <h3 class="fw-bold mb-0 fs-4"><i class="fa-solid fa-dumbbell"></i> Overall</h3>
+            <p>It's excellent tool to help you achieve your fitness goals, with
+                personalized guidance and support that is tailored to your unique needs and preferences.</p>
+        </div>
+    </div>
 </div>
 
 {%endblock%}
