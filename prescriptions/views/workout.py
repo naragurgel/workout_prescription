@@ -18,7 +18,7 @@ def create(request):
 
 def update(request, pk):
     workout = get_object_or_404(Workout, pk=pk)
-    form = WorkoutForm(request.POST or None, instance=workout_group)
+    form = WorkoutForm(request.POST or None, instance=workout)
     if form.is_valid():
         form.save()
         return redirect('workout_list')

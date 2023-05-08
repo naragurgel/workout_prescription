@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.translation import gettext_lazy as _
 
 
 class Workout(models.Model):
@@ -9,18 +10,24 @@ class Workout(models.Model):
         return self.name
 
 
+class WorkoutSheet(models.Model):
+    name = models.CharField(max_length=100)
+
+
 class WorkoutPrescription(models.Model):
+    class DayOfWeek(models.TextChoices):
+        MONDAY = 'MO', _('Monday')
+        TUESDAY = 'TU', _('Tuesday')
+        WEDNESDAY = 'WE', _('Wednesday')
+        THURDAY = 'TH', _('Thurday')
+        FRIDAY = 'FR', _('Friday')
+        SATURDAY = 'SA', _('Saturday')
+        SUNDAY = 'SU', _('Sunday')
+    day_of_week = models.CharField(
+        max_length=2,
+        choices=DayOfWeek.choices,
+    )
     set = models.IntegerField()
     rep = models.IntegerField()
     workout = models.ForeignKey(Workout, models.CASCADE)
-
-
-class WorkoutSheet(models.Model):
-    name = models.CharField(max_length=100)
-    mon = models.ManyToManyField(Workout, blank=True, related_name='mon')
-    tue = models.ManyToManyField(Workout, blank=True, related_name='tue')
-    wed = models.ManyToManyField(Workout, blank=True, related_name='wed')
-    thu = models.ManyToManyField(Workout, blank=True, related_name='thu')
-    fri = models.ManyToManyField(Workout, blank=True, related_name='fri')
-    sat = models.ManyToManyField(Workout, blank=True, related_name='sat')
-    sun = models.ManyToManyField(Workout, blank=True, related_name='sun')
+    workout_sheet = models.ForeignKey(WorkoutSheet, models.CASCADE)

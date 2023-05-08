@@ -5,7 +5,7 @@
   <a href="{% url 'workout_sheet_create' %}">Workout</a>
   <ul>
     {% for workout_sheet in workout_sheets %}
-      <li><a href="{% url 'workout_sheet_update' workout_sheet.pk %}">{{ workout_sheet.name }}</a></li>
+      <li><a href="{% url 'workout_sheet_details' workout_sheet.pk %}">{{ workout_sheet.name }}</a></li>
       <form action="{% url 'workout_sheet_delete' workout_sheet.pk %}" method="post">
         {% csrf_token %}
         <input type="submit" value="Delete">

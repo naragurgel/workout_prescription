@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="d-flex aligns-items-center justify-content-center">
+
+  <div class="card" style="width: 18rem;">
+    <div class="card-header">
+      <h5 class="card-title">{{ workout_sheet.name }}</h5>
+    </div>
+    <div class="card-body">
+      <a href="{% url 'workout_prescription_create' workout_sheet_id=workout_sheet.pk day_of_week='MO' %}">Monday</a>
+      {% for prescription in workout_sheet.workoutprescription_set.all %}
+      {{prescription.workout.name}}
+      {{prescription.set}}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
