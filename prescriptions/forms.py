@@ -1,23 +1,11 @@
 from django import forms
-from .models import MuscleGroup, Equipment, Workout, WorkoutSheet
-
-
-class MuscleGroupForm(forms.ModelForm):
-    class Meta:
-        model = MuscleGroup
-        fields = ['name']
-
-
-class EquipmentForm(forms.ModelForm):
-    class Meta:
-        model = Equipment
-        fields = ['name']
+from .models import Workout, WorkoutSheet
 
 
 class WorkoutForm(forms.ModelForm):
     class Meta:
         model = Workout
-        fields = ['name', 'description', 'difficulty', 'duration', 'muscle_groups', 'equipment']  # noqa
+        fields = ['name', 'description']  
 
 
 class WorkoutSheetForm(forms.ModelForm):
