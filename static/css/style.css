@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto+Condensed:wght@300&display=swap');
+
 .container-fluid {
     background-image: url(https://res.cloudinary.com/dgmiz0yih/image/upload/v1680812518/pexels-erik-zepeda-10448088_kz0vy5.jpg);
     background-size: cover;
@@ -10,18 +12,22 @@
 html {
     padding: 10px;
 }
+
 .main-bg {
     background-color: black;
 }
 
 .lead {
-    color:rgb(255, 255, 255)
+    color:rgb(255, 255, 255);
+    font-family: Roboto-Condensed, sans-serif;
 } 
 
 .title {
     text-align: center;
     color: greenyellow;
     margin-top: 2rem !important;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
 }
 
 .row {
@@ -46,12 +52,14 @@ html {
 h3 {
     color: greenyellow;
     margin-bottom: 0.5rem;
+    font-family: Montserrat, sans-serif;
 }
 
 .nav-link {
     color: rgba(240, 248, 255, 0.796);
     font-weight: bold;
     font-size: 1.25rem ;
+    font-family: Montserrat, sans-serif;
 }
 
 .ms-3 {
@@ -64,4 +72,8 @@ h3 {
 
 .card {
     background-color: rgb(8, 8, 8);
+}
+
+.p {
+    font-family: Montserrat, sans-serif;
 }

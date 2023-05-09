@@ -31,3 +31,7 @@ class WorkoutPrescription(models.Model):
     rep = models.IntegerField()
     workout = models.ForeignKey(Workout, models.CASCADE)
     workout_sheet = models.ForeignKey(WorkoutSheet, models.CASCADE)
+
+    def __str__(self):
+        return f'{self.workout.name} {self.set} {self.rep}'
+        

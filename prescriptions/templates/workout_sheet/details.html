@@ -9,11 +9,13 @@
       <h5 class="card-title">{{ workout_sheet.name }}</h5>
     </div>
     <div class="card-body">
-      <a href="{% url 'workout_prescription_create' workout_sheet_id=workout_sheet.pk day_of_week='MO' %}">Monday</a>
-      {% for prescription in workout_sheet.workoutprescription_set.all %}
-      {{prescription.workout.name}}
-      {{prescription.set}}
-      {% endfor %}
+      {% include "workout_sheet/week_day.html" with day_of_week="MO" prescriptions=mo %}
+      {% include "workout_sheet/week_day.html" with day_of_week="TU" prescriptions=tu %}
+      {% include "workout_sheet/week_day.html" with day_of_week="WE" prescriptions=we %}
+      {% include "workout_sheet/week_day.html" with day_of_week="TH" prescriptions=th %}
+      {% include "workout_sheet/week_day.html" with day_of_week="FR" prescriptions=fr %}
+      {% include "workout_sheet/week_day.html" with day_of_week="SA" prescriptions=sa %}
+      {% include "workout_sheet/week_day.html" with day_of_week="SU" prescriptions=su %}
     </div>
   </div>
 </div>
