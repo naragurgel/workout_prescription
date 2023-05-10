@@ -1,6 +1,6 @@
 # OVERVIEW
 
-An utterly fantastic project starter template for Django 2.0.
+
 
 # GUIDE's Table of Contents
 - [Workout_Prescription](#workout_prescription)
@@ -71,15 +71,13 @@ An utterly fantastic project starter template for Django 2.0.
 
 # Workout_Prescription
 
-*replace the **PROJECT NAME** header with your project's name*
-
 - A website that offers a variety of fitness programs to help you achieve your health and fitness goals. Whether you're looking to lose weight, build muscle, or simply improve your overall health. The trainers create personalized training programs tailored to your individual needs and goals.
 - The user can access a personalized workout plan from anywhere with an internet connection, at any time that suits the schedule.
 - Include a picture of site that shows it in responsive states and links to deployed code: https://ui.dev/amiresponsive
 
 ## Live Site 
 
-- Include a link to deployed project (typically a Heroku Page)
+- https://workout-prescription.herokuapp.com/
 
 ## Repository
 
@@ -100,11 +98,11 @@ Generate after readme is complete by copying and pasting your readme from this p
 
 ## Target Audience
 
-The Workout prescriptions page is designed for both men and women of various age groups who are interested in maintaining a healthy and active lifestyle. These users are typically health-conscious, fitness enthusiasts, and may have specific interests such as weight loss, muscle building, or overall well-being.
+- The Workout prescriptions page is designed for both men and women of various age groups who are interested in maintaining a healthy and active lifestyle. These users are typically health-conscious, fitness enthusiasts, and may have specific interests such as weight loss, muscle building, or overall well-being.
 
 ## Design Choices
 
- The website will prioritize intuitive navigation and clear communication of workout instructions. The simplicity of the design ensures a user-friendly interface, allowing users to easily navigate and engage with their workout plans without distractions.
+ - The website will prioritize intuitive navigation and clear communication of workout instructions. The simplicity of the design ensures a user-friendly interface, allowing users to easily navigate and engage with their workout plans without distractions.
 
 ### Colors
 
@@ -113,7 +111,9 @@ The Workout prescriptions page is designed for both men and women of various age
 
 ### Typography
 
--  typography, ample white space, and intuitive layout contribute to a seamless user experience, fostering clarity and ease of use throughout the website.
+-  typography has intuitive layout contribute to a clarity and ease of use throughout the website.
+Montserrat-  Its clear letterforms and excellent readability make it suitable for important information and instructions related to workout plans. 
+Roboto Condensed-  It is a condensed sans-serif font that offers a balance between professionalism and legibility. 
 - include screenshots of fonts used and links to the appropriate website ex) https://fonts.google.com/specimen/Raleway
 
 ### Images
@@ -141,7 +141,6 @@ The reason for the cover photo to be dumbbells is mainly because dumbbells are a
 > - accordions/drawers
 > - pagination
 > - date pickers
-> - maps
 > - images
 > - tooltips
 > - icons
@@ -149,7 +148,7 @@ The reason for the cover photo to be dumbbells is mainly because dumbbells are a
 > - file pickers
 > - video players
 > - audio players
-z
+
 ### Animations and Transitions
 🚀 **merit & beyond**
 
@@ -157,9 +156,8 @@ z
 - special hover state effects
 
 ### Frameworks
-🚨**Required** 
 
-- Bootstrap (Typically I look at the design elements I want and make sure the framework supports them)
+- Bootstrap: Firtly I opted to utilize Bootstrap for my website due to the desigh elements that they support, they also give a design that adapts to various devices. The ready-made templates and components provided invaluable time-saving advantages.
 
 ### Custom Styles
 🚨**Required**
@@ -217,7 +215,7 @@ You can always draw one out by hand or in google sheets.
 ## Database Choice
 🚨**Required** 
 
-Just state you used postgres as the database because the data is relational and heroku serves this up reactively easily with no cost. (this might be changing as Sales Force takes over in November 2022)
+Postgres:  
 
 ## Data Models
 🚨**Required** 
@@ -263,20 +261,12 @@ I used [draw.io](https://app.diagrams.net/) and hooked it up to my google drive 
 🚨**Required** 
 
 ## Project Goals
-🚨**Required** 
 
-This project was built to do something. Show blogs, engage users, track bookings, share recipes, provide admins nice ways to add/update/delete records. Privately store information.  Write out the purpose of this site.
+The purpose of the workout prescription website is to provide a comprehensive platform for individuals to access personalized and effective workout plans tailored to their specific fitness goals, preferences, and medical conditions.
 
-Project Goals sum up what you expect different users to do on your site.
-- some just come and read things related to your topic.
-- some users are administrating the site (adding, updating & deleting models)
-- some users are registered, so they manage information of their choice, interact with others, do a certain tasks
-
-**what to keep in this section**
-Document your project goals by one of the following methods:
-- List the project goals by type of users
-- Flat list 
-- Quick paragraph
+- some just come and read the benefits related to the workout prescriptions online.
+- the personal trainers are administrating the site (adding, updating & deleting models)
+- some users are registered, so they receive a online prescription
 
 ## Initial User Stories
 🚨**Required**
@@ -317,7 +307,7 @@ Now you have to talk about the scope to reduce things more, you don't necessaril
 ## Agile Tool
 🚨**Required** 
 
-You are required to use an agile tool to track user stories through the development process. You could use a spreadsheet, JIRA, or another tool, and CI taught you how to use GitHub Issues to write your user stories.
+You are required to use an agile tool to track user stories through the development process. You could use a spreadsheet, JIRA, or another tool, and CI taught you how to use GitHub Issues to write your user stories.The website aims to empower users by offering a convenient and accessible resource that guides them in achieving their desired fitness outcomes, whether it's weight loss, muscle gain, improved cardiovascular health, or overall well-being. 
 
 - State what tool you used (GitHub, Jira, Rally, Trello, a spreadsheet)
 - Include a link to the tool's product/progress board
