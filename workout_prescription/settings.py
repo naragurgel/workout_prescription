@@ -15,7 +15,7 @@ DEBUG = False
 if os.path.isfile('env.py'):
     import env
     DEBUG = True
-import django_heroku
+# import django_heroku
 from pathlib import Path
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
