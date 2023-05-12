@@ -138,9 +138,9 @@ DATABASES['default'].update(dj_database_url.config(conn_max_age=500, ssl_require
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Allow all host headers
-ALLOWED_HOSTS = ['workout-prescription.herokuapp.com', "localhost", '8000-naragurgel-workoutpresc-mvz0jxffi3x.ws-eu96b.gitpod.io']
+ALLOWED_HOSTS = ['workout-prescriptions.herokuapp.com', "localhost", '8000-naragurgel-workoutpresc-mvz0jxffi3x.ws-eu96b.gitpod.io']
  
-CSRF_TRUSTED_ORIGINS = ['workout-prescription.herokuapp.com', '8000-naragurgel-workoutpresc-mvz0jxffi3x.ws-eu96b.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['workout-prescriptions.herokuapp.com', '8000-naragurgel-workoutpresc-mvz0jxffi3x.ws-eu96b.gitpod.io']
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
