@@ -33,7 +33,9 @@
 
     <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
         <li><a href="{% url 'homepage' %}" class="nav-link px-2 text-secondary">Home</a></li>
+        {% if user.is_staff %}
         <li><a href="{% url 'workout_list' %}" class="nav-link px-2 text-white">Workout</a></li>
+        {% endif %}
         <li><a href="{% url 'workout_sheet_list' %}" class="nav-link px-2 text-white">Workout Sheet</a></li>
     </ul>
     <div class="text-end">
