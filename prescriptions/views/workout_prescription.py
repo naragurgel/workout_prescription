@@ -22,9 +22,9 @@ def update(request, pk):
     return render(request, 'form.html', {'form': form, 'title': 'Update Workout Sheet'})  # noqa
 
 
-def delete(request, pk):
+def delete(request, pk, workout_sheet_id):
     workout_prescription = get_object_or_404(WorkoutPrescription, pk=pk)
     if request.method == 'POST':
         workout_prescription.delete()
-        return redirect('workout_prescription_list')
+        return redirect('workout_sheet_details', pk=workout_sheet_id)
     return render(request, 'workout_prescription/confirm_delete.html', {'workout_prescription': workout_prescription})   # noqa

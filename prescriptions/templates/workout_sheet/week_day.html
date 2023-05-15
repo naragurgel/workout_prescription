@@ -24,7 +24,7 @@
         <td scope="col">{{prescription.rep}}</td>
         <td scope="col"> 
           <a class="btn btn-primary"
-            href="{% url 'workout_prescription_delete' prescription.pk %}">
+            href="{% url 'workout_prescription_delete' prescription.pk workout_sheet.pk %}">
             Delete
           </a>
         </td>
