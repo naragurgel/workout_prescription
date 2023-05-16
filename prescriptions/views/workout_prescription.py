@@ -1,8 +1,10 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from ..models import WorkoutPrescription, WorkoutSheet
 from ..forms import WorkoutPrescriptionForm
+# from django.contrib.admin.views.decorators import staff_member_required
 
 
+# @staff_member_required()
 def create(request, workout_sheet_id, day_of_week):
     workout_sheet = get_object_or_404(WorkoutSheet, pk=workout_sheet_id)
     workout_prescription = WorkoutPrescription(day_of_week=day_of_week, workout_sheet=workout_sheet)  # noqa
