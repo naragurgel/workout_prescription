@@ -12,7 +12,7 @@ urlpatterns = [
     path('workout_sheet/details/<int:pk>/', workout_sheet.details, name='workout_sheet_details'),
     path('workout_sheet/delete/<int:pk>/', workout_sheet.delete, name='workout_sheet_delete'),
     path('workout_prescription/create/<int:workout_sheet_id>/<str:day_of_week>/', workout_prescription.create, name='workout_prescription_create'),
-    path('workout_prescription/update/<int:pk>/', workout_prescription.update, name='workout_prescription_update'),
+    path('workout_prescription/update/<int:pk>/<int:workout_sheet_id>/', workout_prescription.update, name='workout_prescription_update'),
     path('workout_prescription/delete/<int:pk>/<int:workout_sheet_id>/', workout_prescription.delete, name='workout_prescription_delete'),
 
 ]
