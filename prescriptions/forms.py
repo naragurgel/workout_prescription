@@ -8,14 +8,13 @@ class ExerciseForm(forms.ModelForm):
         fields = ['name']  
 
 
-class WorkoutSheetForm(forms.ModelForm):
-    class Meta:
-        model = Workout
-        fields = ['name']
-
-
 class WorkoutItemForm(forms.ModelForm):
     class Meta:
         model = WorkoutItem
         fields = ['sets', 'reps', 'exercise']
 
+
+class WorkoutForm(forms.ModelForm):
+    class Meta:
+        model = Workout
+        fields = ['owner', 'name', 'instructions', 'exercises']

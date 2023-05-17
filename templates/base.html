@@ -36,7 +36,10 @@
         {% if user.is_staff %}
         <li><a href="{% url 'exercise_list' %}" class="nav-link px-2 text-white">Exercises</a></li>
         {% endif %}
-        <li><a href="{% url 'workout_sheet_list' %}" class="nav-link px-2 text-white">Workout Sheet</a></li>
+        {% if user.is_staff %}
+        <li><a href="{% url 'workout_item_list' %}" class="nav-link px-2 text-white">Workout Item</a></li>
+        {% endif %}
+        <li><a href="{% url 'workout_list' %}" class="nav-link px-2 text-white">Workout</a></li>
     </ul>
     <div class="text-end">
     {% if user.is_authenticated %}
