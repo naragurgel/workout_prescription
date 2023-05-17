@@ -1,5 +1,5 @@
 from django.db import models
-from django.utils.translation import gettext_lazy as _
+from django.contrib.auth.models import User
 
 
 class Exercise(models.Model):
@@ -21,5 +21,17 @@ class WorkoutItem(models.Model):
         return f"{self.exercise}: sets - {self.sets} reps - {self.sets}"
 
 
-class WorkoutSheet(models.Model):
-    name = models.CharField(max_length=100)
+class Workout(models.Model):
+    owner = models.ForeignKey(
+        User,
+        related_name="user_id",
+        on_delete=models.CASCADE,
+    )
+    name = models.CharField(max_length=250, unique=True)
+    instructions = models.TextField(max_length=1000, null=True, blank=True)
+    exercises = models.ManyToManyField(
+        WorkoutItem
+    )
+
+    def __str__(self):
+        return f"{self.owner}: {self.name}"

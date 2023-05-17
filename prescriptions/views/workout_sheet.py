@@ -1,11 +1,11 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from ..models import WorkoutSheet
+from ..models import Workout
 from ..forms import WorkoutSheetForm
 from django.contrib.admin.views.decorators import staff_member_required
 
 
 def list(request):
-    workout_sheets = WorkoutSheet.objects.all()
+    workout_sheets = Workout.objects.all()
     return render(request, 'workout_sheet/list.html', {'workout_sheets': workout_sheets})  # noqa
 
 
@@ -20,7 +20,7 @@ def create(request):
 
 @staff_member_required()
 def update(request, pk):
-    workout_sheet = get_object_or_404(WorkoutSheet, pk=pk)
+    workout_sheet = get_object_or_404(Workout, pk=pk)
     form = WorkoutSheetForm(request.POST or None, instance=workout_sheet)
     if form.is_valid():
         form.save()
@@ -30,7 +30,7 @@ def update(request, pk):
 
 @staff_member_required()
 def delete(request, pk):
-    workout_sheet = get_object_or_404(WorkoutSheet, pk=pk)
+    workout_sheet = get_object_or_404(Workout, pk=pk)
     if request.method == 'POST':
         workout_sheet.delete()
         return redirect('workout_sheet_list')
