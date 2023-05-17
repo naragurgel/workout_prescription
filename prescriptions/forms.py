@@ -1,11 +1,11 @@
 from django import forms
-from .models import Workout, WorkoutSheet, WorkoutPrescription
+from .models import Exercise, WorkoutSheet, WorkoutPrescription
 
 
-class WorkoutForm(forms.ModelForm):
+class ExerciseForm(forms.ModelForm):
     class Meta:
-        model = Workout
-        fields = ['name', 'description']  
+        model = Exercise
+        fields = ['name']  
 
 
 class WorkoutSheetForm(forms.ModelForm):

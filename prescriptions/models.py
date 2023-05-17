@@ -2,9 +2,8 @@ from django.db import models
 from django.utils.translation import gettext_lazy as _
 
 
-class Workout(models.Model):
-    name = models.CharField(max_length=100)
-    description = models.TextField()
+class Exercise(models.Model):
+    name = models.CharField(max_length=200, unique=True)
 
     def __str__(self):
         return self.name
@@ -29,7 +28,7 @@ class WorkoutPrescription(models.Model):
     )
     set = models.IntegerField()
     rep = models.IntegerField()
-    workout = models.ForeignKey(Workout, models.CASCADE)
+    workout = models.ForeignKey(Exercise, models.CASCADE)
     workout_sheet = models.ForeignKey(WorkoutSheet, models.CASCADE)
 
     def __str__(self):

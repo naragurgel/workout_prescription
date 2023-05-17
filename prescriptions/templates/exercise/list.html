@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card order-light mb-3 text-center">
+  <div class="card-body">
+    <h3 class="card-title">Exercise</h3>
+    <a href="{% url 'workout_create' %}" class="card-link">Exercise</a>
+    <ul>
+        {% for exercise in workouts %}
+       <li><a href="{% url 'workout_update' exercise.pk %}">{{ exercise.name }}</a></li>
+      <form action="{% url 'workout_delete' exercise.pk %}" method="post">
+        {% csrf_token %}
+        <input type="submit" value="Delete">
+      </form>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endblock %}

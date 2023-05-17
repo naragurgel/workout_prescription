@@ -1,11 +1,11 @@
 from django.urls import path
-from .views import workout, workout_sheet, workout_prescription
+from .views import exercise, workout_sheet, workout_prescription
 
 urlpatterns = [
-    path('workout', workout.list, name='workout_list'),
-    path('workout/create/', workout.create, name='workout_create'),
-    path('workout/update/<int:pk>/', workout.update, name='workout_update'),
-    path('workout/delete/<int:pk>/', workout.delete, name='workout_delete'),
+    path('exercise', exercise.list, name='exercise_list'),
+    path('exercise/create/', exercise.create, name='exercise_create'),
+    path('exercise/update/<int:pk>/', exercise.update, name='exercise_update'),
+    path('exercise/delete/<int:pk>/', exercise.delete, name='exercise_delete'),
     path('workout_sheet', workout_sheet.list, name='workout_sheet_list'),
     path('workout_sheet/create/', workout_sheet.create, name='workout_sheet_create'),
     path('workout_sheet/update/<int:pk>/', workout_sheet.update, name='workout_sheet_update'),
