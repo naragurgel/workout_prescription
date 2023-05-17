@@ -1,5 +1,5 @@
 from django import forms
-from .models import Exercise, WorkoutSheet, WorkoutPrescription
+from .models import Exercise, WorkoutSheet, WorkoutItem
 
 
 class ExerciseForm(forms.ModelForm):
@@ -14,11 +14,7 @@ class WorkoutSheetForm(forms.ModelForm):
         fields = ['name']
 
 
-class WorkoutPrescriptionForm(forms.ModelForm):
+class WorkoutItemForm(forms.ModelForm):
     class Meta:
-        model = WorkoutPrescription
-        fields = ['set', 'rep', 'workout', 'workout_sheet', 'day_of_week']
-        widgets = {
-            'day_of_week': forms.HiddenInput(),
-            'workout_sheet': forms.HiddenInput()
-        }
+        model = WorkoutItem
+        fields = ['sets', 'reps', 'exercise']

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card order-light mb-3 text-center">
+  <div class="card-body">
+    <h3 class="card-title">Workout Item</h3>
+    <a href="{% url 'workout_item_create' %}" class="card-link">Workout Item</a>
+    <ul>
+        {% for workout_item in workout_items %}
+       <li><a href="{% url 'workout_item_update' workout_item.pk %}">{{ workout_item.name }}</a></li>
+      <form action="{% url 'workout_item_delete' workout_item.pk %}" method="post">
+        {% csrf_token %}
+        <input type="submit" value="Delete">
+      </form>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endblock %}

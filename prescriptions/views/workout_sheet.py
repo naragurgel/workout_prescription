@@ -37,23 +37,23 @@ def delete(request, pk):
     return render(request, 'workout_sheet/confirm_delete.html', {'workout_sheet': workout_sheet})   # noqa
 
 
-def details(request, pk):
-    workout_sheet = get_object_or_404(WorkoutSheet, pk=pk)
-    mo = workout_sheet.workoutprescription_set.filter(day_of_week='MO')
-    tu = workout_sheet.workoutprescription_set.filter(day_of_week='TU')
-    we = workout_sheet.workoutprescription_set.filter(day_of_week='WE')
-    th = workout_sheet.workoutprescription_set.filter(day_of_week='TH')
-    fr = workout_sheet.workoutprescription_set.filter(day_of_week='FR')
-    sa = workout_sheet.workoutprescription_set.filter(day_of_week='SA')
-    su = workout_sheet.workoutprescription_set.filter(day_of_week='SU')
-    return render(request, 'workout_sheet/details.html', {
-        'workout_sheet': workout_sheet,
-        'mo': mo,
-        'tu': tu,
-        'we': we,
-        'th': th,
-        'fr': fr,
-        'sa': sa,
-        'su': su
-        })   # noqa
+# def details(request, pk):
+#     workout_sheet = get_object_or_404(WorkoutSheet, pk=pk)
+#     mo = workout_sheet.workoutprescription_set.filter(day_of_week='MO')
+#     tu = workout_sheet.workoutprescription_set.filter(day_of_week='TU')
+#     we = workout_sheet.workoutprescription_set.filter(day_of_week='WE')
+#     th = workout_sheet.workoutprescription_set.filter(day_of_week='TH')
+#     fr = workout_sheet.workoutprescription_set.filter(day_of_week='FR')
+#     sa = workout_sheet.workoutprescription_set.filter(day_of_week='SA')
+#     su = workout_sheet.workoutprescription_set.filter(day_of_week='SU')
+#     return render(request, 'workout_sheet/details.html', {
+#         'workout_sheet': workout_sheet,
+#         'mo': mo,
+#         'tu': tu,
+#         'we': we,
+#         'th': th,
+#         'fr': fr,
+#         'sa': sa,
+#         'su': su
+#         })   # noqa
 
