@@ -152,7 +152,7 @@ The reason for the cover photo to be dumbbells is mainly because dumbbells are a
 
 # Information Architecture
 
-For the Workout Prescription website, I have created a admin model to CREAT, UPDATE and DELETE the exercices and details in each workout prescription. The structured is:
+For the Workout Prescription website, I have created a admin model to CREATE, UPDATE and DELETE the exercices and details in each workout prescription. The structured is:
 
 - 
 ## Entity Relationship Diagram
@@ -165,20 +165,28 @@ Wade Williams wrote a great [blog]( https://wadewilliams.com/technology-software
 You can always draw one out by hand or in google sheets. 
 
 ## Database Choice
-🚨**Required** 
 
-Postgres:  
+Postgres because of the hosting capabilities of Heroku enables effortless deployment and expandability, and PostgreSQL stands out as one of the endorsed and suggested databases on the Heroku platform.
 
 ## Data Models
-🚨**Required** 
 
-Show the accessors you know your data. If you end up using some data models from an example project, call that out and don't be as detailed about writing those up unless you added to them.
+Fields:
 
-Each data model that you created yourself and customized should have its Fields, Field Type and any validation documented. You should also cross-reference any code in your repository that relate to CREATE, READ, UPDATE, DELETE operations for these models.
+- owner (ForeignKey to User model): Represents the owner/user associated with the workout.
+- name (CharField): Represents the name of the workout. It has a maximum length of 250 characters and must be unique.
+- instructions (TextField): Represents the instructions for the workout. It has a maximum length of 1000 characters and can be null or blank.
+- exercises (ManyToManyField to WorkoutItem model): Represents the exercises associated with the workout.
+Validations:
 
-You can try to use markdown, or just take a screenshot from a Google spreadsheet.
+- owner: A required field, as it represents the owner/user associated with the workout.
+- name: A required field that must be unique and has a maximum length of 250 characters.
 
-Below is an example of a write-up for an Activities Data Model
+Related Code:
+
+In the repository, you can find the code related to the CREATE, READ, UPDATE, and DELETE operations for this model in the following files:
+- models.py: Contains the definition of the Workout Data Model and its fields.
+- views.py: Includes the logic for handling the CRUD operations associated with this model.
+
 > **Activities Model**
 > Activities is a table to hold a unique icon image and name values that users have associated with events and places. It helps with sorting events and prevents the need from carrying around two data objects in the larger Events and Places data structures. The purpose of an Activities object is to provide an imagery association to a category.
 >
