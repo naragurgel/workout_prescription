@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect, get_object_or_404
 from ..models import Workout
 from ..forms import WorkoutForm
 from django.contrib.admin.views.decorators import staff_member_required
+from django.views import generic
+from django.contrib.auth.decorators import login_required
 
 
 def list(request):
@@ -35,3 +37,13 @@ def delete(request, pk):
         workout.delete()
         return redirect('workout_list')
     return render(request, 'workout/confirm_delete.html', {'workout': workout})   # noqa
+
+
+@login_required()
+class WorkoutDetail(generic.DetailView):
+    """
+    View that displays the details of each cat.
+    This includes additional information not on the cat cards.
+    """
+    model = Workout
+    template_name = 'workout/detail.html'
