@@ -139,7 +139,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Allow all host headers
 ALLOWED_HOSTS = ['workout-prescriptions.herokuapp.com', "localhost", '8000-naragurgel-workoutpresc-mvz0jxffi3x.ws-eu97.gitpod.io']  # noqa
- 
+
 CSRF_TRUSTED_ORIGINS = ['workout-prescriptions.herokuapp.com', '8000-naragurgel-workoutpresc-mvz0jxffi3x.ws-eu97.gitpod.io']  # noqa
 
 # Static files (CSS, JavaScript, Images)

@@ -54,41 +54,43 @@
     </header>
     </nav>
 
-    <main class="flex-shrink-0 main-bg">
-        {% block content %}
-        <!-- MESSAGES -->
-        <div class="flex-shrink-0">
-            {% block messages_content %}
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-8 col-sm-12 mx-auto text-center">
-                        {% for message in messages %}
-                        <div class="alert {{ message.tags }} alert-success fade show success-msg" id="msg" role="alert">
-                            <strong>{{message}}</strong>
-                        </div>
-                        {% endfor %}
-                    </div>
+<!-- MESSAGES -->
+<div class="flex-shrink-0">
+    {% block messages_content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-12 mx-auto text-center">
+                {% for message in messages %}
+                <div class="alert {{ message.tags }} alert-success fade show success-msg" id="msg" role="alert">
+                    <strong>{{ message }}</strong>
                 </div>
+                {% endfor %}
             </div>
-            {% endblock %}
         </div>
+    </div>
+    {% endblock %}
+</div>
 
-        <!-- Content Goes here -->
-        <script>
-            // make time duration of the alert message
 
-            let timeoutDuration = 3000;
+<main class="flex-shrink-0 main-bg">
+    <!-- MAIN CONTENT -->
+    {% block content %}
+    {% endblock content %}
 
-            let messageAlerts = document.querySelectorAll('.alert');
-            messageAlerts.forEach(function (alert) {
-                setTimeout(function () {
-                    alert.remove();
-                }, timeoutDuration)
-            })
-        </script>
+    <!-- Messages Script -->
+    <script>
+        // make time duration of the alert message
 
-        {% endblock content %}
-    </main>
+        let timeoutDuration = 3000;
+
+        let messageAlerts = document.querySelectorAll('.alert');
+        messageAlerts.forEach(function (alert) {
+            setTimeout(function () {
+                alert.remove();
+            }, timeoutDuration)
+        })
+    </script>
+</main>
 
     <!-- Footer -->
 <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
