@@ -22,10 +22,6 @@
       {% elif user.is_staff %}
       <h1>Manage System Workouts</h1>
 
-      <div class="text-start">
-        <a class="btn btn-light" href="{% url 'workout_create' %}">Create New Workout</a>
-      </div>
-
       <hr>
       {% for workout in workouts %}
       {% if forloop.first %}
@@ -49,7 +45,6 @@
                 {% csrf_token %}
                 <input type="submit" value="Delete">
               </form>
-              <a href="{% url 'workout_update' workout.pk %}" class="btn btn-light">Update</a>
             </div>
           </td>
         </tr>
