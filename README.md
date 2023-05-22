@@ -81,7 +81,7 @@
 
 ## Repository
 
-- Include a Link to the GitHub repository
+- https://github.com/naragurgel/workout_prescription
 
 ## Author
 
@@ -121,11 +121,6 @@ Roboto Condensed-  It is a condensed sans-serif font that offers a balance betwe
 The reason for the cover photo to be dumbbells is mainly because dumbbells are a iconic symbol of strength training and fitness, which is the website's focus. The photo of dumbbells creates an immediate visual association with exercise, motivating and inspiring users to engage in their prescribed workouts and pursue a healthier lifestyle.
 
 ### Design Elements
-🚀 **merit & beyond**
-
-- list out the type of elements you want to use on your site, this will help you when choosing a framework and goes hand
-  in hand when doing the wireframes. If you did something out of the ordinary, or think something was particularly
-  clever, add a sentence and a screenshot or reference the file the code or css is in.
 
 > - desktop navigation
 > - mobile navigation
@@ -134,35 +129,19 @@ The reason for the cover photo to be dumbbells is mainly because dumbbells are a
 > - buttons
 > - text input
 > - textarea inputs
-> - dropdowns
 > - modals/layers
-> - check boxes
-> - switches
-> - accordions/drawers
 > - pagination
-> - date pickers
 > - images
 > - tooltips
 > - icons
-> - tabbed content
-> - file pickers
-> - video players
-> - audio players
-
-### Animations and Transitions
-🚀 **merit & beyond**
-
-- discuss any special animations or transitions you've programmed
-- special hover state effects
 
 ### Frameworks
 
 - Bootstrap: Firtly I opted to utilize Bootstrap for my website due to the desigh elements that they support, they also give a design that adapts to various devices. The ready-made templates and components provided invaluable time-saving advantages.
 
 ### Custom Styles
-🚨**Required**
 
-- call out any overrides you did for bootstrap styles or the framework you used, even if they are fonts and colors, perhaps lead assessors to the file of interest in your repo
+- I made some changes to the fonts, font sizes and colors of the fonts and background. It's all in the folder prescriptions/static/css/wp_styles.css
 
 ### Custom Javascript
 🚨**Required** 
