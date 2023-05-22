@@ -1,19 +1,22 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="card order-light mb-3 text-center">
-  <div class="card-body">
-    <h3 class="card-title">Exercise</h3>
-    <a href="{% url 'exercise_create' %}" class="card-link">Exercise</a>
-    <ul>
+<table class="table order-light mb-3 text-center">
+    <thead>
+      <tr>
+        <th scope="col">Exercise Name</th>
+      </tr>
+       </thead>
+       <tbody>
         {% for exercise in exercises %}
-       <li><a href="{% url 'exercise_update' exercise.pk %}">{{ exercise.name }}</a></li>
+        <tr>
+          <td>
       <form action="{% url 'exercise_delete' exercise.pk %}" method="post">
         {% csrf_token %}
         <input type="submit" value="Delete">
-      </form>
-      {% endfor %}
-    </ul>
-  </div>
-</div>
-{% endblock %}
+      </td>
+      </tr>
+        {% endfor %}
+      </tbody>
+</table>
+{% endblock %} 
