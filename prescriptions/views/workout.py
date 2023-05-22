@@ -16,24 +16,23 @@ def list(request):
     return render(request, 'workout/list.html', {'workouts': workouts})  # noqa
 
 
+# @staff_member_required()
+# def create(request):
+#     form = WorkoutForm(request.POST or None)
+#     if form.is_valid():
+#         form.save()
+#         return redirect('workout_list')
+#     return render(request, 'form.html', {'form': form, 'title': 'Create Workout'})  # noqa
 
-@staff_member_required()
-def create(request):
-    form = WorkoutForm(request.POST or None)
-    if form.is_valid():
-        form.save()
-        return redirect('workout_list')
-    return render(request, 'form.html', {'form': form, 'title': 'Create Workout'})  # noqa
 
-
-@staff_member_required()
-def update(request, pk):
-    workout = get_object_or_404(Workout, pk=pk)
-    form = WorkoutForm(request.POST or None, instance=workout)
-    if form.is_valid():
-        form.save()
-        return redirect('workout_list')
-    return render(request, 'form.html', {'form': form, 'title': 'Update Workout'})  # noqa
+# @staff_member_required()
+# def update(request, pk):
+#     workout = get_object_or_404(Workout, pk=pk)
+#     form = WorkoutForm(request.POST or None, instance=workout)
+#     if form.is_valid():
+#         form.save()
+#         return redirect('workout_list')
+#     return render(request, 'form.html', {'form': form, 'title': 'Update Workout'})  # noqa
 
 
 @staff_member_required()
