@@ -7,8 +7,14 @@ from django.contrib.auth.decorators import login_required
 
 
 def list(request):
-    workouts = Workout.objects.all()
+    if not request.user.is_authenticated:
+        workouts = []
+    elif request.user.is_staff:
+        workouts = Workout.objects.all()
+    else:
+        workouts = Workout.objects.filter(owner=request.user)
     return render(request, 'workout/list.html', {'workouts': workouts})  # noqa
+
 
 
 @staff_member_required()

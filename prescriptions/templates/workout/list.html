@@ -1,19 +1,87 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h1>Workout</h1>
-  {% if user.is_staff %}
-  <a href="{% url 'workout_create' %}">Create</a>
-   {% endif %}
-  <ul>
-    {% for workout in workouts %}
-      <li><a href="{% url 'workout_update' workout.pk %}">{{ workout.name }}</a></li>
-       {% if user.is_staff %}
-       <form action="{% url 'workout_delete' workout.pk %}" method="post">
-        {% csrf_token %}
-        <input type="submit" value="Delete">
-      </form>
-       {% endif %}
-    {% endfor %}
-  </ul>
+<div class="row">
+  <div class="container">
+    <div class="col-12">
+      {% if not user.is_authenticated %}
+      <h1> Mange Workouts</h1>
+
+      You must be logged in to access this site.
+
+      <div class="d-flex flex-row text-start p-3">
+        <div class="p-3">
+          <a class="btn btn-light" href="{% url 'account_login' %}">Login</a>
+        </div>
+        <div class="p-3">
+
+          <a class="btn btn-light" href="{% url 'account_signup' %}">Register</a>
+        </div>
+      </div>
+
+      {% elif user.is_staff %}
+      <h1>Manage System Workouts</h1>
+
+      <div class="text-start">
+        <a class="btn btn-light" href="{% url 'workout_create' %}">Create New Workout</a>
+      </div>
+
+      <hr>
+      {% for workout in workouts %}
+      {% if forloop.first %}
+      <table class="table">
+        <tr>
+          <th>Workout Name</th>
+          <th>Client</th>
+          <th>Actions</th>
+        </tr>
+        {% endif %}
+        <tr>
+          <td>
+            <a href="{% url 'workout_detail' workout.pk %}">{{ workout.name }} </a>
+          </td>
+          <td>
+            {{ workout.owner }}
+          </td>
+          <td>
+            <div class="">
+              <form class="d-inline-block p-3" action="{% url 'workout_delete' workout.pk %}" method="post">
+                {% csrf_token %}
+                <input type="submit" value="Delete">
+              </form>
+              <a href="{% url 'workout_update' workout.pk %}" class="btn btn-light">Update</a>
+            </div>
+          </td>
+        </tr>
+        {% if forloop.last %}
+      </table>
+      {% endif %}
+      {% endfor %}
+
+      {% else %}
+      <h1>Your Workouts:</h1>
+      <hr>
+      {% for workout in workouts %}
+      {% if forloop.first %}
+      <table class="table">
+        {% endif %}
+        <tr>
+          <td>
+            <a href="{% url 'workout_detail' workout.pk %}">{{ workout.name }} - See Details</a>
+          </td>
+
+        </tr>
+        {% if forloop.last %}
+      </table>
+      {% endif %}
+      {% empty %}
+      <p>You don't have any workouts at this time. Please contact your trainer to make sure they
+        assign a workout to your user name.</p>
+      {% endfor %}
+      {% endif %}
+
+
+    </div>
+  </div>
+</div>
 {% endblock %}
