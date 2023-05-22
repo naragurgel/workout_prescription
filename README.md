@@ -144,9 +144,8 @@ The reason for the cover photo to be dumbbells is mainly because dumbbells are a
 - I made some changes to the fonts, font sizes and colors of the fonts and background. It's all in the folder prescriptions/static/css/wp_styles.css
 
 ### Custom Javascript
-🚨**Required** 
 
-- call attention to any custom javascript you created to help your User Experience you can organize this by functions or files
+- I made time duration of the alert message using JavaScript. It's in the folder prescriptions/templates/base.html
 
 ## Wireframes
 🚨**Required** 

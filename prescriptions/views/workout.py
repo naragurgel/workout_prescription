@@ -4,6 +4,7 @@ from ..forms import WorkoutForm
 from django.contrib.admin.views.decorators import staff_member_required
 from django.views import generic
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 
 
 def list(request):
@@ -16,23 +17,25 @@ def list(request):
     return render(request, 'workout/list.html', {'workouts': workouts})  # noqa
 
 
-# @staff_member_required()
-# def create(request):
-#     form = WorkoutForm(request.POST or None)
-#     if form.is_valid():
-#         form.save()
-#         return redirect('workout_list')
-#     return render(request, 'form.html', {'form': form, 'title': 'Create Workout'})  # noqa
+@staff_member_required()
+def create(request):
+    form = WorkoutForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+        messages.success(request, "Workout created successful!")
+        return redirect('workout_list')
+    return render(request, 'form.html', {'form': form, 'title': 'Create Workout'})  # noqa
 
 
-# @staff_member_required()
-# def update(request, pk):
-#     workout = get_object_or_404(Workout, pk=pk)
-#     form = WorkoutForm(request.POST or None, instance=workout)
-#     if form.is_valid():
-#         form.save()
-#         return redirect('workout_list')
-#     return render(request, 'form.html', {'form': form, 'title': 'Update Workout'})  # noqa
+@staff_member_required()
+def update(request, pk):
+    workout = get_object_or_404(Workout, pk=pk)
+    form = WorkoutForm(request.POST or None, instance=workout)
+    if form.is_valid():
+        form.save()
+        messages.success(request, "Workout updated successful!")
+        return redirect('workout_list')
+    return render(request, 'form.html', {'form': form, 'title': 'Update Workout'})  # noqa
 
 
 @staff_member_required()
@@ -40,6 +43,7 @@ def delete(request, pk):
     workout = get_object_or_404(Workout, pk=pk)
     if request.method == 'POST':
         workout.delete()
+        messages.success(request, "Workout delete successful!")
         return redirect('workout_list')
     return render(request, 'workout/confirm_delete.html', {'workout': workout})   # noqa
 
