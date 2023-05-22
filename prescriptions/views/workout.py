@@ -49,10 +49,6 @@ def delete(request, pk):
 
 
 @login_required()
-class WorkoutDetail(generic.DetailView):
-    """
-    View that displays the details of each cat.
-    This includes additional information not on the cat cards.
-    """
-    model = Workout
-    template_name = 'workout/detail.html'
+def detail(request, pk):
+    workout = get_object_or_404(Workout, pk=pk)
+    return render(request, 'workout/detail.html', {'workout': workout})   # noqa

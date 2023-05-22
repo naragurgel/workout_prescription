@@ -148,39 +148,13 @@ The reason for the cover photo to be dumbbells is mainly because dumbbells are a
 - I made time duration of the alert message using JavaScript. It's in the folder prescriptions/templates/base.html
 
 ## Wireframes
-🚨**Required** 
 
-This section where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. 
-
-- you need **mobile** & **desktop** views
-- Capture Your Custom model's
-  - CREATE/ADD
-  - READ (LIST/DETAIL)
-  - UPDATE/EDIT
-  - DELETE
-  - & triggers for such things
-- call out differences for authentication levels:
-  - not logged in
-  - general user logged in
-  - super user logged in
-- HOW is the NAVIGATION different for admin users vs Logged-in users & unauthenticated users
-
-🚀 **merit & beyond**
-- tablet views
-- Custom 404
-- Profile Page
-- Login
-- Register
-- Forgot Password
-
-You can hand draw these, but CI posts a yearly license in the general channel for Balsamiq which is pretty easy to use.
-Here is the [2022 announcement](https://code-institute-room.slack.com/archives/C0L316Z96/p1640099614368000)
 
 # Information Architecture
-🚨**Required** 
 
-As part of the requirements for this project you need to have at least **1 original data model**. It's this section that discusses your data and how each piece relates to another and draws out the CRUD functionality you built.
+For the Workout Prescription website, I have created a admin model to CREAT, UPDATE and DELETE the exercices and details in each workout prescription. The structured is:
 
+- 
 ## Entity Relationship Diagram
 🚨**Required** 
 

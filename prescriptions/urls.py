@@ -9,6 +9,7 @@ urlpatterns = [
     path('workout', workout.list, name='workout_list'),
     path('workout/create/', workout.create, name='workout_create'),
     path('workout/update/<int:pk>/', workout.update, name='workout_update'),
+    path('workout/detail/<int:pk>/', workout.detail, name='workout_detail'),
     path('workout/delete/<int:pk>/', workout.delete, name='workout_delete'),
     path('workout_item/', workout_item.list, name='workout_item_list'),
     path('workout_item/create/', workout_item.create, name='workout_item_create'),  # noqa
