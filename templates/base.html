@@ -31,16 +31,25 @@
         </svg>
     </a>
 
-    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="{% url 'homepage' %}" class="nav-link px-2 text-secondary">Home</a></li>
-        {% if user.is_staff %}
-        <li><a href="{% url 'exercise_list' %}" class="nav-link px-2 text-white">Exercises</a></li>
-        {% endif %}
-        {% if user.is_staff %}
-        <li><a href="{% url 'workout_item_list' %}" class="nav-link px-2 text-white">Workout Item</a></li>
-        {% endif %}
-        <li><a href="{% url 'workout_list' %}" class="nav-link px-2 text-white">Workout</a></li>
-    </ul>
+     <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+         <li><a href="{% url 'homepage' %}" class="nav-link px-2 text-secondary">Home</a></li>
+         {% if user.is_staff %}
+
+         <li><a href="{% url 'exercise_list' %}" class="nav-link px-2 text-white">Exercises List </a></li>
+         <li><a href="{% url 'exercise_create' %}" class="nav-link px-2 text-white"> Add Exercise </a></li>
+
+         <li><a href="{% url 'workout_item_list' %}" class="nav-link px-2 text-white">Workout Items List </a></li>
+         <li><a href="{% url 'workout_item_create' %}" class="nav-link px-2 text-white">Add Item</a></li>
+
+         <li><a href="{% url 'workout_list' %}" class="nav-link px-2 text-white">Workout List </a></li>
+         <li><a href="{% url 'workout_create' %}" class="nav-link px-2 text-white">Add Workout</a></li>
+
+
+         {% else %}
+         <li><a href="{% url 'workout_list' %}" class="nav-link px-2 text-white">Workout</a></li>
+         {% endif %}
+
+     </ul>
     <div class="text-end">
     {% if user.is_authenticated %}
     <a type="button" class="btn btn-outline-light me-2" href="{% url 'account_logout' %}">Logout</a>
