@@ -35,3 +35,6 @@ def update(request, pk):
 @staff_member_required()
 def delete(request, pk):
     workout_item = get_object_or_404(WorkoutItem, pk=pk)
+    return redirect('workout_item_list')
+    return render(request, 'form.html', {'form': form, 'title': 'Delete Workout Item'})  # noqa
+    

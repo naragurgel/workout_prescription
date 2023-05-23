@@ -255,12 +255,10 @@ will also be implemented such as nav-bar, footer, obvious website purpose etc.
 > You should discuss the outcome of what you will be dropping based on the outcome. Making a scatter plot of the scores and coloring the dot 
 
 ## Scope
-🚀 **merit & beyond**
 
-Now you have to talk about the scope to reduce things more, you don't necessarily need all the bells and whistles, they could be beyond your skill set. Think basic stuff. Write a paragraph to sum up how you morphed the project goals into a prioritized list of user stories that would be delivered as an MVP (minimal viable product).
+In order to define a prioritized list of user stories for an minimal viable product based on the project goals, some scope reduction was performed to focus on the essential features within the available skill set. The main objective was to deliver a basic but functional version of the workout website. The prioritized user stories include functionalities such as viewing a list of exercises and workouts, creating new workouts, and searching for workouts by name. Additionally, the ability to create exercises and search for exercises by name were included. These core features were deemed essential to provide users with a basic experience of browsing on the workouts, while allowing the admin to manage exercises list. 
 
 ## Agile Tool
-🚨**Required** 
 
 You are required to use an agile tool to track user stories through the development process. You could use a spreadsheet, JIRA, or another tool, and CI taught you how to use GitHub Issues to write your user stories.The website aims to empower users by offering a convenient and accessible resource that guides them in achieving their desired fitness outcomes, whether it's weight loss, muscle gain, improved cardiovascular health, or overall well-being. 
 
