@@ -187,25 +187,16 @@ In the repository, you can find the code related to the CREATE, READ, UPDATE, an
 - models.py: Contains the definition of the Workout Data Model and its fields.
 - views.py: Includes the logic for handling the CRUD operations associated with this model.
 
-> **Activities Model**
-> Activities is a table to hold a unique icon image and name values that users have associated with events and places. It helps with sorting events and prevents the need from carrying around two data objects in the larger Events and Places data structures. The purpose of an Activities object is to provide an imagery association to a category.
->
-> | DB Key    | Data Type    |          Purpose            | Form Validation                            | DB processing        |
-> |--------	|:---------:	|:-------------------------:	|----------------------------------------	|------------------	|
-> | _id        | ObjectId    | unique identifier            | None                                    | n/a                |
-> | name    | String        | Name of Activity            | Required<br>Min 1 char<br>Max 50 chars    | trim<br>to lower    |
-> | icon    | String        | system path to image file    | Required                                |                  	|
->
-> Activity entries are used by events, places and filtering.
->
-> - [x] Create - An activity is potentially created when a user successfully creates a place, creates an event, updates an event, or updates a place.
-> - [x] Read - The Activities table is read when a user is adding an event, updating an event, adding a place or updating a place, to determine if a new value should be created or not. The activities table is queried for using the name and icon pair, if it is found, the ObjectId is passed to the event and places. If no match is found, a new Activity is created and that ObjectID is passed to the place or event.
-> - [ ] Update
-> - [ ] Delete
-    >
-    >  This table has no deletion or updates associated with it. It's strictly create and read. Eventually, maintenance scripts should be written to delete unused/deprecated entries.
->
-> The reading/writing of the activities table is housed in the [what2do2day/activities/views.py](what2do2day/activities/views.py) file.
+ **Activities Model**
+
+CRUD Operations:
+Create: Create a exercise or a workout list to each user.
+
+Read: The workout sheet is visibl on the workout list page and the user can have acess to his own workout by acessing the website.
+
+Update: The workout can be updated when the staff menber wants to change anything on the prescription.
+
+Delete: The workout or exercice can be deleted if a staff menber wants to change the workout prescriptions.
 
 ## CRUD Diagrams
 🚀 **merit & beyond**
@@ -218,29 +209,33 @@ I used [draw.io](https://app.diagrams.net/) and hooked it up to my google drive 
 > ![image](https://user-images.githubusercontent.com/23039742/154406188-c9beb57a-2fd1-4f26-a8ed-bee320e46e3d.png)
 
 # Agile Process
-🚨**Required** 
 
 ## Project Goals
 
 The purpose of the workout prescription website is to provide a comprehensive platform for individuals to access personalized and effective workout plans tailored to their specific fitness goals, preferences, and medical conditions.
 
+For users:
+
 - some just come and read the benefits related to the workout prescriptions online.
-- the personal trainers are administrating the site (adding, updating & deleting models)
 - some users are registered, so they receive a online prescription
 
+For administrators:
+
+- the personal trainers are administrating the site (adding, updating & deleting models)
+
 ## Initial User Stories
-🚨**Required**
 
-To start the agile process this section kicks off with a bullet list/brainstorming dump about features you'd like to have. EVERYTHING write them out in bullet form:
-
-- As a 'user type' I 'to perform an action' so that I can 'achieve a goal'
-
-You can put this into a googlesheet and link to it.
-
-**User Story Examples**
-
-- [radiology booking](https://github.com/DeannaCarina/ELHTRadiology#user-stories)
-- [places/events searching site](https://github.com/maliahavlicek/what2do2day#user-stories)
+- As a website visitor, I want to be able to create a user profile so that I can access personalized workout prescriptions.
+- As a user, I want the website to offer a variety of workout options, including cardio, strength training, and flexibility exercises, so that I can have a well-rounded fitness routine.
+- As a user with specific health conditions, I want the website to offer workout recommendations tailored to my needs, so that I can exercise without compromising my health.
+- As a user, I want the website to provide a variety of workout routines and exercises, so that I can keep my workouts interesting.
+- As a coach, I want to have the option to customize all workout plan by adding or removing specific exercises, so that I can tailor it to my preferences and user's needs.
+- As an trainer, I want to be able to create and manage the available workouts in the system.
+- As a trainer, I want to be able to assign workout prescriptions to my clients so that I can help them reach their fitness goals.
+- As a user, I want to check sets, reps, rest time for each exercise in my workout prescription.
+- As a user, I want to visit the website to receive personalized exercise plans and guidance, so that I can achieve my fitness goals effectively
+- As a user, I want to log in to my account so that I can securely access my workout prescription personalized information.
+- As a user, I want to have a user-friendly interface that guides me through the website to register and to acess my workout.
 
 ## Feasibility vs Importance
 🚀 **merit & beyond**
