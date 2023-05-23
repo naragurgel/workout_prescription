@@ -260,25 +260,9 @@ In order to define a prioritized list of user stories for an minimal viable prod
 
 ## Agile Tool
 
-You are required to use an agile tool to track user stories through the development process. You could use a spreadsheet, JIRA, or another tool, and CI taught you how to use GitHub Issues to write your user stories.The website aims to empower users by offering a convenient and accessible resource that guides them in achieving their desired fitness outcomes, whether it's weight loss, muscle gain, improved cardiovascular health, or overall well-being. 
-
-- State what tool you used (GitHub, Jira, Rally, Trello, a spreadsheet)
-- Include a link to the tool's product/progress board
-- Include a screenshot of the tool's product/progress board
-
-Lessons on how to use gitHub for a product board can be found in the LMS system under:  
-- Principles of Agile Development > 
-  - Common Agile Practices > 
-    - Product Backlog
-
 ### User Story Example
-🚨**Required** 
 
 - include a screenshot of a user story with all it's details
-
-If you made a template, call that out and provide:
-- link to template
-- screenshot of template
 
 ### Epic Stories
 🚀 **merit & beyond**
@@ -311,34 +295,54 @@ Acceptance Criteria
 
 
 # Features
-🚨**Required** 
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so and how they tie into  your user stories.
+## Home Page (Visitor)
+
+## Workout Page (Visitor)
+
+## Sign in (Staff member)
+
+## Login (Staff member)
+## Exercise List (Staff member)
+
+## Add Exercise (Staff member)
+
+## Workout Item List (Staff member)
+
+## Add Item (Staff member)
+
+## Workout List (Staff member)
+
+## Workout (Registered)
 
 ## Implemented Features
 🚨**Required** 
 
-It's easiest to break this section down into the header, footer, and each page/layer/signification section of your website. Call out any differences for mobile vs desktop presentations, include a screenshot of the implemented feature.
+### Header
 
-Don't forget your custom 404 error page
+### Footer
 
-Don't forget the 3 phases of navigation:
-- unauthenticated
-- general authenticated user
-- superuser authenticated
+### Benefits Section
 
-And don't forget Defensive programming bits
-- validation of form inputs
-- not allowing users to create, read, update and delete information they shouldn't
+### 404 error page
 
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
+### 403 error page
+
+### 500 error page
+
+## unauthenticated
+
+###  general authenticated user
+### superuser authenticated
+
+### validation of form inputs
+
+### not allowing users to create, read, update and delete information they shouldn't
 
 ## Future Features
-🚀 **merit & beyond**
 
-Use this section to discuss plans for additional features to be implemented in the future
-
-If you end up not developing some features you hoped to implement, you can include those in this section too.
+- Some options ready for workout sheet prescriptions 
+- Videos for the user watch, theaching how to do the exercise corretly
 
 ## Testing
 🚨**Required** 

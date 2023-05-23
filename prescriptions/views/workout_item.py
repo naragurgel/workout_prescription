@@ -34,7 +34,9 @@ def update(request, pk):
 
 @staff_member_required()
 def delete(request, pk):
-    workout_item = get_object_or_404(WorkoutItem, pk=pk)
-    return redirect('workout_item_list')
-    return render(request, 'form.html', {'form': form, 'title': 'Delete Workout Item'})  # noqa
-    
+    workout_item = get_object_or_404(Workout, pk=pk)
+    if request.method == 'POST':
+        workout_item.delete()
+        messages.success(request, "Workout delete successful!")
+        return redirect('workout_item_list')
+    return render(request, 'workout_item/confirm_delete.html', {'workout_item': workout_item})   # noqa
