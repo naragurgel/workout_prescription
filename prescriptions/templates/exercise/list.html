@@ -4,13 +4,14 @@
 <table class="table order-light mb-3 text-center">
     <thead>
       <tr>
-        <th scope="col">Exercise Name</th>
+        <th class='tabletitle' scope="col">Exercise Name</th>
       </tr>
        </thead>
        <tbody>
         {% for exercise in exercises %}
         <tr>
           <td>
+            {{ exercise.name }}
       <form action="{% url 'exercise_delete' exercise.pk %}" method="post">
         {% csrf_token %}
         <input type="submit" value="Delete">

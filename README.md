@@ -236,7 +236,7 @@ For administrators:
 - As a user, I want to visit the website to receive personalized exercise plans and guidance, so that I can achieve my fitness goals effectively
 - As a user, I want to log in to my account so that I can securely access my workout prescription personalized information.
 - As a user, I want to have a user-friendly interface that guides me through the website to register and to acess my workout.
-
+- As a trainer, I want to delete a workout, so I can remove it from my list of saved workouts if it's no longer relevant.
 ## Feasibility vs Importance
 🚀 **merit & beyond**
 
