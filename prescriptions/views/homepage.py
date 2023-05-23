@@ -24,3 +24,5 @@ def handler403(request, *args, **argv):
     Displays 403.html path
     """
     return render(request, '403.html')
+
+    
