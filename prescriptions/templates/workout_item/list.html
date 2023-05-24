@@ -12,6 +12,8 @@
     <tr>
       <td>
         {{ workout_item }}
+        </td>
+        <td>
         <form action="{% url 'workout_item_delete' workout_item.pk %}" method="post">
           {% csrf_token %}
           <input type="submit" value="Delete">

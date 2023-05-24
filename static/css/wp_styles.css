@@ -104,3 +104,17 @@ a {
 h1 {
     text-align:center;
 }
+
+.fafa {
+    font-size: 1.5rem;
+    color: aliceblue;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr{
+    color: aliceblue;
+}

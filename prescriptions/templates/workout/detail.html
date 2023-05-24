@@ -9,16 +9,16 @@
 {% block content %}
 
 <div class="row p-4">
-    <div class="col-sm col-lg-6">
+    <div class="col-sm">
         <h3><i class="fa-solid fa-dumbbell"></i> {{ workout.name }}</h3>
 
         {% if  workout.instructions %}
-        <h4>INSTRUCTIONS:</h4>
+        <h4>instructions:</h4>
         <p>{{ workout.instructions }}</p>
         {% endif %}
 
 
-        <table class="table col-sm col-lg-6">
+        <table class="table col-sm">
             <thead>
                 <th>Exercise</th>
                 <th>Reps</th>
