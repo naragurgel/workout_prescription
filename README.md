@@ -1,74 +1,3 @@
-# OVERVIEW
-
-
-
-# GUIDE's Table of Contents
-- [Workout_Prescription](#workout_prescription)
-  - [Live Site](#live-site)
-  - [Repository](#repository)
-  - [Author](#author)
-- [Table of Contents](#table-of-contents)
-- [UX](#ux)
-  - [Target Audience](#target-audience)
-  - [Design Choices](#design-choices)
-    - [Colors](#colors)
-    - [Typography](#typography)
-    - [Images](#images)
-    - [Design Elements](#design-elements)
-    - [Animations and Transitions](#animations-and-transitions)
-    - [Frameworks](#frameworks)
-    - [Custom Styles](#custom-styles)
-    - [Custom Javascript](#custom-javascript)
-  - [Wireframes](#wireframes)
-- [Information Architecture](#information-architecture)
-  - [Entity Relationship Diagram](#entity-relationship-diagram)
-  - [Database Choice](#database-choice)
-  - [Data Models](#data-models)
-  - [CRUD Diagrams](#crud-diagrams)
-- [Agile Process](#agile-process)
-  - [Project Goals](#project-goals)
-  - [Initial User Stories](#initial-user-stories)
-  - [Feasibility vs Importance](#feasibility-vs-importance)
-  - [Scope](#scope)
-  - [Agile Tool](#agile-tool)
-    - [User Story Example](#user-story-example)
-    - [Epic Stories](#epic-stories)
-- [Features](#features)
-  - [Implemented Features](#implemented-features)
-  - [Future Features](#future-features)
-  - [Testing](#testing)
-  - [Manual Testing](#manual-testing)
-  - [Compatibility and Responsive Testing](#compatibility-and-responsive-testing)
-  - [Accessibility Testing](#accessibility-testing)
-    - [Accessibility Audits](#accessibility-audits)
-    - [Keyboard Navigation](#keyboard-navigation)
-    - [Chrome Vox Reader](#chrome-vox-reader)
-  - [Core Web Vitals](#core-web-vitals)
-  - [Validation Testing](#validation-testing)
-    - [CSS Validation](#css-validation)
-    - [HTML Validation](#html-validation)
-    - [JavaScript Validation](#javascript-validation)
-    - [Python Validation](#python-validation)
-    - [JSON Validation](#json-validation)
-  - [Automated Testing](#automated-testing)
-  - [Defects](#defects)
-  - [Defects of Note](#defects-of-note)
-  - [Outstanding Defects](#outstanding-defects)
-- [Technologies Used](#technologies-used)
-  - [Languages](#languages)
-  - [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
-- [Deployment](#deployment)
-  - [Prerequisites](#prerequisites)
-  - [Fork and Clone the Repository](#fork-and-clone-the-repository ) 
-  - [Local Deployment](#local-deployment)
-  - [production Deployment](#production-deployment)
-- [Credits](#credits)
-  - [Content](#content)
-  - [Media](#media)
-  - [Acknowledgments](#acknowledgments)
-  
-====================================== The Sections you Fill in are below ==============================
-
 # Workout_Prescription
 
 - A website that offers a variety of fitness programs to help you achieve your health and fitness goals. Whether you're looking to lose weight, build muscle, or simply improve your overall health. The trainers create personalized training programs tailored to your individual needs and goals.
@@ -114,7 +43,10 @@ Generate after readme is complete by copying and pasting your readme from this p
 -  typography has intuitive layout contribute to a clarity and ease of use throughout the website.
 Montserrat-  Its clear letterforms and excellent readability make it suitable for important information and instructions related to workout plans. 
 Roboto Condensed-  It is a condensed sans-serif font that offers a balance between professionalism and legibility. 
-- include screenshots of fonts used and links to the appropriate website ex) https://fonts.google.com/specimen/Raleway
+- https://fonts.google.com/
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/77e4bf28-36bb-4745-b160-f34d25200877)
+
 
 ### Images
 
@@ -149,6 +81,29 @@ The reason for the cover photo to be dumbbells is mainly because dumbbells are a
 
 ## Wireframes
 
+- Desktop view unauthenticated user
+- 
+![Desktop Unau](https://github.com/naragurgel/workout_prescription/assets/112726044/4e2a7e32-75cf-4fe8-8f2e-24a4bf6c1d30)
+
+- Destop view authenticated user 
+
+![Desk aut](https://github.com/naragurgel/workout_prescription/assets/112726044/c054c9ed-72be-48ff-a39d-5a1e9c8d6c53)
+
+- Destop staff member logged 
+
+![staff desk](https://github.com/naragurgel/workout_prescription/assets/112726044/f57eda13-b96c-4b8b-8133-5e6e3e375f9f)
+
+- Mobile view unauthenticated user
+
+![mobile un](https://github.com/naragurgel/workout_prescription/assets/112726044/bc254ae9-18d8-4c5a-aef0-f1e7c63b18ed)
+
+- Mobile view authenticated user 
+- 
+![mobile aut](https://github.com/naragurgel/workout_prescription/assets/112726044/109931b9-da95-45f4-9264-4e20de373d17)
+
+- Staff member logged 
+- 
+![mobile staff](https://github.com/naragurgel/workout_prescription/assets/112726044/df2100c7-b763-4d95-afca-f80c2343c913)
 
 # Information Architecture
 
@@ -157,12 +112,14 @@ The models.py file defines three Django models: Exercise, WorkoutItem, and Worko
 - Exercise model:
 
 name: CharField with a maximum length of 200 characters. It represents the name of the exercise.
-WorkoutItem model:
+
+- WorkoutItem model:
 
 exercise: ForeignKey to the Exercise model, with on_delete=models.CASCADE specified. It represents the exercise associated with the workout item.
 reps: PositiveIntegerField, representing the number of repetitions for the workout item.
 sets: PositiveIntegerField, representing the number of sets for the workout item.
-Workout model:
+
+- Workout model:
 
 owner: ForeignKey to the built-in User model from django.contrib.auth.models, with related_name="user_id" and on_delete=models.CASCADE specified. It represents the owner of the workout.
 name: CharField with a maximum length of 250 characters. It represents the name of the workout.
@@ -184,13 +141,14 @@ search_fields: It specifies that the name and owner fields should be searchable 
 ordering: It specifies that the list of workouts should be ordered by the owner field.
 
 ## Entity Relationship Diagram
-🚨**Required** 
 
- [draw.io](https://app.diagrams.net/) is a free tool that can help you draw up an ERD concerning your custom model.
+- User:
 
-Wade Williams wrote a great [blog]( https://wadewilliams.com/technology-software/generating-erd-for-django-applications/) on how to add a django extension to auto create an ERD. 
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/190690d0-4ce3-4f85-a13c-46e74989b0f6)
 
-You can always draw one out by hand or in google sheets. 
+- Admin:
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/cd528559-4122-4c39-a9cf-6a6e8b476eba)
 
 ## Database Choice
 
@@ -198,9 +156,7 @@ Postgres because of the hosting capabilities of Heroku enables effortless deploy
 
 ## Data Models
 
-Fields:
-
-Exercise Model:
+- Exercise Model
 
 Fields:
 
@@ -214,7 +170,8 @@ Create: Admin can create a new exercise by providing a unique name.
 Read: Admin can view the list of exercises.
 Update: Admin can update the name of an existing exercise.
 Delete: Admin can delete an exercise.
-Workout Model:
+
+- Workout Model:
 
 Fields:
 
@@ -224,13 +181,15 @@ Validation:
 
 owner is required and linked to a valid admin user.
 name is required and should be unique.
+
 CRUD Operations:
 
 Create: Admin can create a new workout by providing an owner and a unique name.
 Read: Admin can view the list of workouts.
 Update: Admin can update the owner or name of an existing workout.
 Delete: Admin can delete a workout.
-Workout Item Model:
+
+- Workout Item Model:
 
 Fields:
 
@@ -262,14 +221,8 @@ Update: The workout can be updated when the staff menber wants to change anythin
 Delete: The workout or exercice can be deleted if a staff menber wants to change the workout prescriptions.
 
 ## CRUD Diagrams
-🚀 **merit & beyond**
 
-You can also have CRUD diagrams to show the accessors visually how the model is
-used in your site.
-
-I used [draw.io](https://app.diagrams.net/) and hooked it up to my google drive to create the screenshot below
-
-> ![image](https://user-images.githubusercontent.com/23039742/154406188-c9beb57a-2fd1-4f26-a8ed-bee320e46e3d.png)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/523311dd-d57d-440a-ae0e-5cfc6769ec45)
 
 # Agile Process
 
@@ -300,6 +253,7 @@ For administrators:
 - As a user, I want to log in to my account so that I can securely access my workout prescription personalized information.
 - As a user, I want to have a user-friendly interface that guides me through the website to register and to acess my workout.
 - As a trainer, I want to delete a workout, so I can remove it from my list of saved workouts if it's no longer relevant.
+
 ## Feasibility vs Importance
 🚀 **merit & beyond**
 
@@ -325,7 +279,7 @@ In order to define a prioritized list of user stories for an minimal viable prod
 
 ### User Story Example
 
-- include a screenshot of a user story with all it's details
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/da2ddba7-1bbe-400a-abea-aedc7a856e8a)
 
 ### Epic Stories
 🚀 **merit & beyond**
@@ -361,31 +315,67 @@ Acceptance Criteria
 
 ## Home Page (Visitor)
 
+![Screenshare - 2023-05-24 4_44_14 PM](https://github.com/naragurgel/workout_prescription/assets/112726044/7e46eb8e-48e3-4fcc-ba50-d6583e4c25ea)
+
 ## Workout Page (Visitor)
 
-## Sign in (Staff member)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/647a80c3-8bff-45ff-b2a4-9103cdac5e8c)
 
-## Login (Staff member)
+## Logged (Staff member)
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/acb2ca41-5515-41e1-b7f6-93e75ab81855)
+
 ## Exercise List (Staff member)
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/04179018-999c-47b8-ab3b-e11f6b23f035)
 
 ## Add Exercise (Staff member)
 
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/68b57d85-2beb-4275-8e0b-bb55aab092d9)
+
 ## Workout Item List (Staff member)
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/fe84f85b-e4ce-4309-b1aa-8fc17090c807)
 
 ## Add Item (Staff member)
 
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/6203f17b-4d99-4a39-b181-6700b0db3acf)
+
 ## Workout List (Staff member)
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/198514d8-db3e-4991-8a3e-e5b58fc3a7ad)
 
 ## Workout (Registered)
 
+## Sign in
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/d8a643f9-e9e6-4cc1-89b5-f8d4ba755798)
+
+## Sign out
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/dde9697a-93c0-453a-8d53-9b83fb127166)
+
+## Sign up
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/7fce0c50-eb3c-407a-98a0-f1766150c868)
+
+## Workout
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/cffd6c7e-1776-4dfa-9286-511230918d87)
+
 ## Implemented Features
-🚨**Required** 
 
 ### Header
 
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/7dbd466c-cbd3-4607-8677-615a7f1219f7)
+
 ### Footer
 
-### Benefits Section
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/62f47a75-b921-46f2-8b7c-3e69ad14655d)
+
+### Main
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/fb7ff41a-86ba-4f2f-9e8c-430cdd20fce3)
 
 ### 404 error page
 
@@ -395,10 +385,17 @@ Acceptance Criteria
 
 ## unauthenticated
 
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/82b7e0a0-7087-4e06-8dcf-27180adb56f9)
+
 ###  general authenticated user
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/73aa2d43-5dd3-4f6e-95c9-00e585e8cb10)
+
 ### superuser authenticated
 
 ### validation of form inputs
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/480aec74-e9d7-4ccb-a404-97e92a8ed389)
 
 ### not allowing users to create, read, update and delete information they shouldn't
 
