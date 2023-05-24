@@ -34,7 +34,7 @@ def update(request, pk):
 
 @staff_member_required()
 def delete(request, pk):
-    workout_item = get_object_or_404(Workout, pk=pk)
+    workout_item = get_object_or_404(WorkoutItem, pk=pk)
     if request.method == 'POST':
         workout_item.delete()
         messages.success(request, "Workout delete successful!")

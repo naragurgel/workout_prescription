@@ -1,5 +1,7 @@
 from django.urls import path
-from .views import exercise, workout, workout_item
+from .views import exercise, workout, workout_item, homepage
+handler404 = homepage.error404
+
 
 urlpatterns = [
     path('exercise', exercise.list, name='exercise_list'),

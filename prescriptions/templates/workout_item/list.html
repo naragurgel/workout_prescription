@@ -11,7 +11,7 @@
     {% for workout_item in workout_items %}
     <tr>
       <td>
-        {{ workout_item.name }}
+        {{ workout_item }}
         <form action="{% url 'workout_item_delete' workout_item.pk %}" method="post">
           {% csrf_token %}
           <input type="submit" value="Delete">
