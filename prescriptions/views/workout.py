@@ -26,6 +26,16 @@ def delete(request, pk):
         return redirect('workout_list')
     return render(request, 'workout/confirm_delete.html', {'workout': workout})   # noqa
 
+@staff_member_required()
+def update(request, pk):
+    workout = get_object_or_404(Workout, pk=pk)
+    form = WorkoutForm(request.POST or None, instance=workout)  # noqa
+    if form.is_valid():
+        form.save()
+        messages.success(request, "Workout updated successful!")
+        return redirect('workout_list')
+    return render(request, 'form.html', {'form': form, 'title': 'Update Workout'})  # noqa
+
 
 @login_required()
 def detail(request, pk):

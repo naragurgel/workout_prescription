@@ -13,7 +13,7 @@
         <h3><i class="fa-solid fa-dumbbell"></i> {{ workout.name }}</h3>
 
         {% if  workout.instructions %}
-        <h4>instructions:</h4>
+        <h4>Instructions:</h4>
         <p>{{ workout.instructions }}</p>
         {% endif %}
 
@@ -28,9 +28,11 @@
 
 
                 {% for exercise in workout.exercises.all %}
+                <tr>
                 <td>{{ exercise.exercise }}</td>
                 <td>{{ exercise.reps }}</td>
                 <td>{{ exercise.sets }}</td>
+                </tr>
                 {% endfor %}
             </tbody>
 

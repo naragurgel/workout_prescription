@@ -14,10 +14,15 @@
             {{ exercise.name }}
           </td>
           <td>
-      <form action="{% url 'exercise_delete' exercise.pk %}" method="post">
-        {% csrf_token %}
-        <input type="submit" value="Delete">
+          <a href="{% url 'exercise_delete' exercise.pk %}">
+          Delete
+          </a>
       </td>
+       <td>
+         <a href="{% url 'exercise_update' exercise.pk %}">
+           Update
+         </a>
+       </td>
       </tr>
         {% endfor %}
       </tbody>
