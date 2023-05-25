@@ -416,7 +416,8 @@ If this section grows too long, you may want to split it off into a separate fil
 
 ## Manual Testing
 
-**Manual Testing For Contact Form**
+**Manual Testing**
+
 1. Exercises List:
   1. Delete any item from the list
   2. Update any item from the list
@@ -436,29 +437,15 @@ If this section grows too long, you may want to split it off into a separate fil
 
 Or you can use markdown check boxes and write them up per feature:
 
-**Manual Testing For Contact Form**
+**Manual Testing**
 - [x] try to submit 
-- [x] Try to submit the empty form and verify that an error message about the required fields appears
-- [x] Try to submit the form with an invalid email address and verify that a relevant error message appears
+- [x] Try to submit the empty form and verify that an error message about the required fields appears.
+- [x] Try to submit the form with an invalid user and verify that a relevant error message appears.
 - [x] Try to submit the form with all inputs valid and verify that a success message appears.
 - [x] no console errors
-- [x] submit goes to code institute data dump page in new tab
-- [x] looks good on mobile (one column)
-- [x] looks good on tablet (two columns)
-- [x] looks good on desktop (two columns but not SUPER HUGE)
-
-Or you can use a spreadsheet
-    
-Here is a [Manual Testing Template](https://docs.google.com/spreadsheets/d/1vc1IVL-ydQwWeWMqnk_GRox6HE6qxDLpchGse8Crayo/edit#gid=296578096) that you can use as a starting point to keep track of your testing efforts. Make a copy of it in your own account and update as needed to reflect the browsers you are testing and features.  
-
-It's ok to spot check specific functionality across devices and browsers but each page should be viewed as a whole for each device/browser combo at least once.
-
-A quick way to check if items are exceeding the screen width of a project is to run this javascript in the console for various screen emulations:
-
-```
-var docWidth = document.documentElement.offsetWidth;
-[].forEach.call(document.querySelectorAll('*'),function(el){if(el.offsetWidth > docWidth){console.log(el);}});
-```
+- [x] looks good on mobile 
+- [x] looks good on tablet 
+- [x] looks good on desktop
 
 ## Compatibility and Responsive Testing
 🚨**Required** 
@@ -686,14 +673,11 @@ Sometimes it's as simple, word wrapping issue that makes the site look odd at a 
 This section just summarizers tools and programming languages you used.
 
 ## Languages
-🚀 **merit & beyond**
 
--write bullet points for the languages you used (HTML, CSS, JAVASCRIPT, PYTHON,  DJANGO)
+-HTML, CSS, JAVASCRIPT, PYTHON,  DJANGO
 
 ## Frameworks, Libraries & Programs Used
-🚀 **merit & beyond**
 
-List out the tools you used with a link and a short description (this helps others figure out where to get the bonus points & reminds you what you used for your next project
 - Balsamiq
 - Coolors.co
 - fontawesome
