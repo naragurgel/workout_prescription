@@ -415,16 +415,24 @@ If this section grows too long, you may want to split it off into a separate fil
 
 
 ## Manual Testing
-🚨**Required** 
-
-For any scenarios that have not been automated, test the user stories/features manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios in markdown such as:
 
 **Manual Testing For Contact Form**
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
+1. Exercises List:
+  1. Delete any item from the list
+  2. Update any item from the list
+    
+2. Add Exercise:
+  1. Try to submit a empty data and verify that a relevant error message appears
+
+3. Workout Item List:
+  1. Delete any item from the list
+  2. Update any item from the list
+
+4. Add Item: 
+  1. Try to submit a empty data and verify that a relevant error message appears
+
+5. Workout List:
+  1. Delete any workout prescription from the list
 
 Or you can use markdown check boxes and write them up per feature:
 
