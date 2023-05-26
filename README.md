@@ -436,11 +436,8 @@ There is no option to change the workout prescription for a regular user:
 - Videos for the user watch, theaching how to do the exercise corretly
 
 ## Testing
-🚨**Required** 
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the Features section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+I have carried out the manual testing in order to guarantee the effectiveness and user-friendliness of the Workout Prescriptions website. To access the comprehensive testing results, kindly click on the provided link [here](https://github.com/naragurgel/workout_prescription/issues?q=is%3Aissue+is%3Aopen+label%3ATest_case).
 
 **At this point, you should use gitHub Issues Templates** to track test cases and defects. Here's a [document](https://docs.google.com/document/d/1nDS5tZeMO77Dfq85IZGMSV6C41XaPm9FwcpR3k-UTVc/edit#heading=h.3kdbr3tqbzi) I put together for this process.
 
