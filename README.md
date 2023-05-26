@@ -105,40 +105,74 @@ The reason for the cover photo to be dumbbells is mainly because dumbbells are a
 ![mobile staff](https://github.com/naragurgel/workout_prescription/assets/112726044/df2100c7-b763-4d95-afca-f80c2343c913)
 
 # Information Architecture
+Workout prescription uses Django All Auth for user and roles management and has three custom models used to present workouts to users: 
 
-The models.py file defines three Django models: Exercise, WorkoutItem, and Workout. Here's a breakdown of each model and its fields:
+- Exercise
+- WorkoutItem
+- Workout
 
-- Exercise model:
 
-name: CharField with a maximum length of 200 characters. It represents the name of the exercise.
+## Entity Relationship Diagram
 
-- WorkoutItem model:
+- User:
 
-exercise: ForeignKey to the Exercise model, with on_delete=models.CASCADE specified. It represents the exercise associated with the workout item.
-reps: PositiveIntegerField, representing the number of repetitions for the workout item.
-sets: PositiveIntegerField, representing the number of sets for the workout item.
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/190690d0-4ce3-4f85-a13c-46e74989b0f6)
 
-- Workout model:
+- Admin:
 
-owner: ForeignKey to the built-in User model from django.contrib.auth.models, with related_name="user_id" and on_delete=models.CASCADE specified. It represents the owner of the workout.
-name: CharField with a maximum length of 250 characters. It represents the name of the workout.
-instructions: TextField with a maximum length of 1000 characters, allowing null values and blank values. It represents the instructions for the workout (optional).
-exercises: ManyToManyField to the WorkoutItem model. It represents the exercises included in the workout.
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/cd528559-4122-4c39-a9cf-6a6e8b476eba)
 
-For the Workout Prescription website, I have created a admin to CREATE, UPDATE and DELETE the exercices and details in each workout prescription. The structured is:
+## Database Choice
 
-ExerciseAdmin: This admin configuration is registered for the Exercise model.
+Postgres because of the hosting capabilities of Heroku enables effortless deployment and expandability, and PostgreSQL stands out as one of the endorsed and suggested databases on the Heroku platform.
+
+## Data Models
+
+**Exercise model:**
+
+- **name:** CharField with a maximum length of 200 characters. It represents the name of the exercise.
+
+- [x] **Create**: If a staff user is logged in, they will see a menu option to add an exercise
+- [x] **Read**: If a staff users is logged in, they can see exercises in the system on the Exercise List Page
+- [x] **Update**: If a staff user is logged in, they will an option to update an exercise on the Exercises List Page
+- [x] **Delete**: If a staff user is logged in, they will see an option to delete an exercise on the Exercises List Page.
+
+ExerciseAdmin: This admin configuration is registered for the Exercise model so it can be touched in the Django admin by staff users too.
 
 search_fields: It specifies that the name field should be searchable in the admin interface.
-WorkoutItemAdmin: This admin configuration is registered for the WorkoutItem model.
+
+**WorkoutItem model:**
+
+- **exercise:** ForeignKey to the Exercise model, with on_delete=models.CASCADE specified. It represents the exercise associated with the workout item.
+- **reps:** PositiveIntegerField, representing the number of repetitions for the workout item.
+- **sets:** PositiveIntegerField, representing the number of sets for the workout item.
+
+- [x] **Create**: If a staff user is logged in, they will see a menu option to add an Item
+- [x] **Read**: If a staff users is logged in, they can see Workout Items in the system on the Workout Items List Page
+- [x] **Update**: If a staff user is logged in, they will an option to update an item on the Workout Items List Page
+- [x] **Delete**: If a staff user is logged in, they will see an option to delete an item on the Workout Items List Page.
+
+WorkoutItemAdmin: This admin configuration is registered for the WorkoutItem model, so staff users can interface with the model in the Django admin too.
 
 search_fields: It specifies that the exercise field should be searchable in the admin interface.
-WorkoutAdmin: This admin configuration is registered for the Workout model.
+
+**Workout model:**
+- **owner:** ForeignKey to the built-in User model from django.contrib.auth.models, with related_name="user_id" and on_delete=models.CASCADE specified. It represents the owner of the workout.
+- **name:** CharField with a maximum length of 250 characters. It represents the name of the workout.
+- **instructions:** TextField with a maximum length of 1000 characters, allowing null values and blank values. It represents the instructions for the workout (optional).
+- **exercises:** ManyToManyField to the WorkoutItem model. It represents the exercises included in the workout.
+
+- [ ] **Create**: Creating workouts can only be done in the django admin at this time
+- [x] **Read**: If a user is logged in, they will see workouts associated with their account on the Workout List page. They can also click on it to see a detailed view. Staff users will see a list of all workouts in the system.
+- [ ] **Update**: Updating workouts can only be done in the django admin at this time.
+- [x] **Delete**: Deleting workouts can only be done in the django admin at this time.
+
+
+WorkoutAdmin: This admin configuration is registered for the Workout model so that staff users can do the Create, Update and Delete of workouts through the django admin interface.
 
 list_display: It specifies that the admin interface should display the owner and name fields in the list view.
 search_fields: It specifies that the name and owner fields should be searchable in the admin interface.
 ordering: It specifies that the list of workouts should be ordered by the owner field.
-
 ## Entity Relationship Diagram
 
 - User:
@@ -439,41 +473,124 @@ There is no option to change the workout prescription for a regular user:
 
 I have carried out the manual testing in order to guarantee the effectiveness and user-friendliness of the Workout Prescriptions website. To access the comprehensive testing results, kindly click on the provided link [here](https://github.com/naragurgel/workout_prescription/issues?q=is%3Aissue+is%3Aopen+label%3ATest_case).
 
-**At this point, you should use gitHub Issues Templates** to track test cases and defects. Here's a [document](https://docs.google.com/document/d/1nDS5tZeMO77Dfq85IZGMSV6C41XaPm9FwcpR3k-UTVc/edit#heading=h.3kdbr3tqbzi) I put together for this process.
-
-
 ## Manual Testing
 
 **Manual Testing**
 
-1. Exercises List:
-  1. Delete any item from the list
-  2. Update any item from the list
-    
-2. Add Exercise:
-  1. Try to submit a empty data and verify that a relevant error message appears
+## Unauthenticated User
+  1. Does not see staff options in navigation
+  2. Does not see Logout options in navigation
+  3. Cannot use a bookmark to add exercise
+  4. Can not use a bookmark to update exercise
+  5. Can not use a bookmark to delete exercise
+  6. Can not use a bookmark to add WorkoutItem
+  7. Can not use a bookmark to update WorkoutItem
+  8. Can not use a bookmark to delete WorkoutItem
+  9. Can not use a bookmark to see Workout List
+  10. Can not use a bookmark to see a Workout Detail
+  11. Can not use a bookmark for anything in Django Admin
+  12. When not logged in, clicking on workout gives buttons to login/register
+  13. Using a bookmark to logout page does nothing
+  14. Click login takes user to login page
+  15. Click signup takes user to registration page
 
-3. Workout Item List:
-  1. Delete any item from the list
-  2. Update any item from the list
+## Footer 
+  1. Footer link Twitter opens new tab
+  2. Footer link Instagram opens new tab
+  3. Footer link Facebok opnes new tab
 
-4. Add Item: 
-  1. Try to submit a empty data and verify that a relevant error message appears
+## Sign Up
+  1. All blanks & submit: user sees error to fill out username
+  2. Fill out user name, rest blank & submit: user sees error to fill out password
+  3. Valid form, username in system & submit: user sees error that the username is already registered
+  4. Valid form, email in system & submit: user sees error that the email is already registered
+  5. Valid form, passwords don't match: user sees error that passwords need to match
+  6. Valid form, 'test' for password & submit: user sees error that password is too short
+  7. Valid form, 'testtest' for password & submit: user sees error that password is too common
+  8. Success full registration: user is taken to homepage, sees success message about logging in for about 3 seconds
 
-5. Workout List:
-  1. Delete any workout prescription from the list
+## Login
+  1. All blanks & submit: user sees error to fill out username
+  2. Fill out user name, rest blank & submit: user sees error to fill out password
+  3. Valid form, username not in system & submit: user sees error that the username is not registered
+  4. Valid form, email not system & submit: user sees error that the email is not registered
+  5. Valid form, passwords incorrect: user sees error that passwords is incorrect
+  6. Success authentication: user is taken to homepage, sees success message about logging in for about 3 seconds
 
-Or you can use markdown check boxes and write them up per feature:
+## Regular User Logged In
+  1. Can not use a bookmark to add exercise
+  2. Can not use a bookmark to update exercise
+  3. Can not use a bookmark to delete exercise
+  4. Can not use a bookmark to add WorkoutItem
+  5. Can not use a bookmark to update WorkoutItem
+  6. Can not use a bookmark to delete WorkoutItem
+  7. Can not use a bookmark to see Workout List
+  8. Can not use a bookmark to see a Workout Detail they don't own
+  9. Can not use a bookmark to access django admin
+  10. Does not see Sign Up in navigation
+  11. Does not see Login in navigation
+  12. Workout page shows special message to contact trainer if no workouts
+  13. Workout page shows list of workouts for them if they have 1 or more
+  14. Workout page with workouts links to workout details page
+  15. Workout page doesn't have update and delete options
+  16. Can use a bookmark to see a workout they own
 
-**Manual Testing**
-- [x] try to submit 
-- [x] Try to submit the empty form and verify that an error message about the required fields appears.
-- [x] Try to submit the form with an invalid user and verify that a relevant error message appears.
-- [x] Try to submit the form with all inputs valid and verify that a success message appears.
-- [x] no console errors
-- [x] looks good on mobile 
-- [x] looks good on tablet 
-- [x] looks good on desktop
+## Staff User Logged In
+  1. Can use a bookmark to add exercise
+  2. Can use a bookmark to update exercise
+  3. Can use a bookmark to delete exercise
+  4. Can use a bookmark to add WorkoutItem
+  5. Can use a bookmark to update WorkoutItem
+  6. Can use a bookmark to delete WorkoutItem
+  7. Can use a bookmark to see Workout List
+  8. Can use a bookmark to see a Workout Detail they don't own
+  9. Can use a bookmark to access django admin
+  10. Sees Exercise List nav option
+  11. Sees Add Exercise nav option
+  12. Sees workout items list nav option
+  13. Sees add item nav option
+  14. Sees workout list option
+  15. Sees logout option
+  16. Upon logging in, sees message that they signed in and is on home page
+
+## Sign out
+  1. Clicking signout button on signout page logs user out & shows green message
+  2. Menu options change to logged out state
+
+## Exercise list Page
+User is logged in as staff
+  1. User sees list of exercises with delete and update options
+  2. Click delete, deletes appropriate exercise
+  3. Click update, takes user to appropriate update
+
+## Add Exercise
+User is logged in as staff
+  1. Can use a bookmark to add exercise
+  2. All blanks & submit: user sees error to fill out the input
+  3. Submit a duplicate name: user sees error, the name must be unique 
+
+## Workout Item list
+User is logged in as staff
+  1. User sees list of Workout Item with delete and update options
+  2. User sees how many repetions and sets for each exercise 
+  2. Click delete, deletes appropriate exercise
+  3. Click update, takes user to appropriate update
+
+## Add Exercise
+User is logged in as staff
+  1. Can use a bookmark to add details like sets and reps do the workout items
+  2. User can see a dropdown with the exercises options added
+  3. All blanks & submit: user sees error to fill out the input
+
+## Workout List
+User is logged in as staff
+  1. User can sees the list of workout prescriptions and the owners 
+  2. Can delete any ite from the list
+  3. Can click on it and see the details like, sets, reps and instructions
+
+## 404
+
+## 500
 
 ## Compatibility and Responsive Testing
 🚨**Required** 
