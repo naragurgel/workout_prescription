@@ -36,17 +36,16 @@ Generate after readme is complete by copying and pasting your readme from this p
 ### Colors
 
 - Color scheme predominantly consisting of tons of black, green and white. The use of black provides a sense of professionalism, green refreshing and energetic touch, symbolizing growth and vitality, aligning with the health and wellness focus of the website. White is promoting a visually calming experience. 
-- include a screenshot of your pallet using a tool like coolors.co
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/43bf6ce1-ceed-48e4-a9b7-37d44b2303f7)
 
 ### Typography
 
 -  typography has intuitive layout contribute to a clarity and ease of use throughout the website.
 Montserrat-  Its clear letterforms and excellent readability make it suitable for important information and instructions related to workout plans. 
 Roboto Condensed-  It is a condensed sans-serif font that offers a balance between professionalism and legibility. 
-- https://fonts.google.com/
 
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/77e4bf28-36bb-4745-b160-f34d25200877)
-
 
 ### Images
 
@@ -64,8 +63,8 @@ The reason for the cover photo to be dumbbells is mainly because dumbbells are a
 > - modals/layers
 > - pagination
 > - images
-> - tooltips
 > - icons
+> - tables
 
 ### Frameworks
 
@@ -82,7 +81,7 @@ The reason for the cover photo to be dumbbells is mainly because dumbbells are a
 ## Wireframes
 
 - Desktop view unauthenticated user
-- 
+
 ![Desktop Unau](https://github.com/naragurgel/workout_prescription/assets/112726044/4e2a7e32-75cf-4fe8-8f2e-24a4bf6c1d30)
 
 - Destop view authenticated user 
@@ -98,11 +97,11 @@ The reason for the cover photo to be dumbbells is mainly because dumbbells are a
 ![mobile un](https://github.com/naragurgel/workout_prescription/assets/112726044/bc254ae9-18d8-4c5a-aef0-f1e7c63b18ed)
 
 - Mobile view authenticated user 
-- 
+
 ![mobile aut](https://github.com/naragurgel/workout_prescription/assets/112726044/109931b9-da95-45f4-9264-4e20de373d17)
 
 - Staff member logged 
-- 
+
 ![mobile staff](https://github.com/naragurgel/workout_prescription/assets/112726044/df2100c7-b763-4d95-afca-f80c2343c913)
 
 # Information Architecture
@@ -279,7 +278,7 @@ In order to define a prioritized list of user stories for an minimal viable prod
 
 ### User Story Example
 
-![image](https://github.com/naragurgel/workout_prescription/assets/112726044/da2ddba7-1bbe-400a-abea-aedc7a856e8a)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/b7f40e9a-aaa2-4b04-9595-adeed4aa97fc)
 
 ### Epic Stories
 🚀 **merit & beyond**
@@ -327,7 +326,7 @@ Acceptance Criteria
 
 ## Exercise List (Staff member)
 
-![image](https://github.com/naragurgel/workout_prescription/assets/112726044/04179018-999c-47b8-ab3b-e11f6b23f035)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/e910667b-2942-4046-83c5-5c155f6475a2)
 
 ## Add Exercise (Staff member)
 
@@ -335,7 +334,7 @@ Acceptance Criteria
 
 ## Workout Item List (Staff member)
 
-![image](https://github.com/naragurgel/workout_prescription/assets/112726044/fe84f85b-e4ce-4309-b1aa-8fc17090c807)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/6edd3b39-80bd-43dc-a668-9766c77c6604)
 
 ## Add Item (Staff member)
 
@@ -343,9 +342,13 @@ Acceptance Criteria
 
 ## Workout List (Staff member)
 
-![image](https://github.com/naragurgel/workout_prescription/assets/112726044/198514d8-db3e-4991-8a3e-e5b58fc3a7ad)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/c534c11d-51b1-459d-b8fe-1aaa3070c3a2)
 
-## Workout (Registered)
+## Workout (Registered user)
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/18aec634-f8c7-462d-bd9e-e9a52a379436)
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/92bd717a-c2f4-4fb2-9884-7be4751be75b)
 
 ## Sign in
 
@@ -359,10 +362,6 @@ Acceptance Criteria
 
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/7fce0c50-eb3c-407a-98a0-f1766150c868)
 
-## Workout
-
-![image](https://github.com/naragurgel/workout_prescription/assets/112726044/cffd6c7e-1776-4dfa-9286-511230918d87)
-
 ## Implemented Features
 
 ### Header
@@ -371,7 +370,7 @@ Acceptance Criteria
 
 ### Footer
 
-![image](https://github.com/naragurgel/workout_prescription/assets/112726044/62f47a75-b921-46f2-8b7c-3e69ad14655d)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/9116e6ee-11da-4728-87d1-b9f6bfc238e3)
 
 ### Main
 
@@ -379,9 +378,11 @@ Acceptance Criteria
 
 ### 404 error page
 
-### 403 error page
+![404](https://github.com/naragurgel/workout_prescription/assets/112726044/9fb151df-2ff6-4091-a0a4-71fcfb66a497)
 
 ### 500 error page
+
+![500](https://github.com/naragurgel/workout_prescription/assets/112726044/b5baf41b-0131-4aed-9185-2b6ad9a98e0b)
 
 ## unauthenticated
 
@@ -391,13 +392,43 @@ Acceptance Criteria
 
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/73aa2d43-5dd3-4f6e-95c9-00e585e8cb10)
 
-### superuser authenticated
+### superuser authenticated -  The admin/superuser have full access to CRUD functionality.
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/d4aa1a61-06cf-47bf-aaec-d1f6f3e3ae50)
+
+### not allowing users to create, read, update and delete information they shouldn't
+
+There is no option to change the workout prescription for a regular user:
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/776329a1-b91f-44b0-9bb1-20e2b3f35097)
+
+## Messages Display
+
+### Confirmation messages
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/2631b655-8454-4823-8ccd-4c5cef12a836)
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/c8014723-923b-4cc8-ab4a-8987a965b8f3)
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/96c73504-5414-4a02-9198-3b76c6d86f36)
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/26b8f51a-acec-45f5-b722-566c1cd87451)
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/c1d88822-f45c-4814-80ed-46f6c058a60d)
 
 ### validation of form inputs
 
-![image](https://github.com/naragurgel/workout_prescription/assets/112726044/480aec74-e9d7-4ccb-a404-97e92a8ed389)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/bf4eec54-eb73-4214-8f6e-57aaa3d53563)
 
-### not allowing users to create, read, update and delete information they shouldn't
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/9d8716de-16dc-42b9-8a47-869174f04ef6)
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/0d326d75-f9c0-4443-a779-f31d99971721)
+
+### Sign Out/ Delete confirmations questions 
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/75968d48-290c-475e-acc8-99e2d00f98e3)
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/e66b752f-b730-4c3a-9982-3c0bf8fb0ae4)
 
 ## Future Features
 
