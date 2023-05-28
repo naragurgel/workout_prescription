@@ -2,10 +2,8 @@
 
 ![image (2)](https://github.com/naragurgel/workout_prescription/assets/112726044/f5a219a5-506f-4dc0-a184-bfff7b83799e)
 
-- A website that offers a variety of fitness programs to help you achieve your health and fitness goals. Whether you're looking to lose weight, build muscle, or simply improve your overall health. The trainers create personalized training programs tailored to your individual needs and goals.
+-This is a website that offers a variety of fitness programs to help you achieve your health and fitness goals. Whether you're looking to lose weight, build muscle, or simply improve your overall health. The trainers create personalized training programs tailored to your individual needs and goals.
 - The user can access a personalized workout plan from anywhere with an internet connection, at any time that suits the schedule.
-- Include a picture of site that shows it in responsive states and links to deployed code: https://ui.dev/amiresponsive
-
 ## Live Site 
 
 - https://workout-prescription.herokuapp.com/
@@ -43,7 +41,7 @@ Generate after readme is complete by copying and pasting your readme from this p
 
 ### Typography
 
--  typography has intuitive layout contribute to a clarity and ease of use throughout the website.
+-  The typography has intuitive layout contribute to a clarity and ease of use throughout the website.
 Montserrat-  Its clear letterforms and excellent readability make it suitable for important information and instructions related to workout plans. 
 Roboto Condensed-  It is a condensed sans-serif font that offers a balance between professionalism and legibility. 
 
@@ -51,7 +49,7 @@ Roboto Condensed-  It is a condensed sans-serif font that offers a balance betwe
 
 ### Images
 
-The reason for the cover photo to be dumbbells is mainly because dumbbells are a iconic symbol of strength training and fitness, which is the website's focus. The photo of dumbbells creates an immediate visual association with exercise, motivating and inspiring users to engage in their prescribed workouts and pursue a healthier lifestyle.
+The reason for the cover photo to be dumbbells is mainly because dumbbells are an iconic symbol of strength training and fitness, which is the website's focus. The photo of dumbbells creates an immediate visual association with exercise, motivating and inspiring users to engage in their prescribed workouts and pursue a healthier lifestyle.
 
 ### Design Elements
 
@@ -70,7 +68,7 @@ The reason for the cover photo to be dumbbells is mainly because dumbbells are a
 
 ### Frameworks
 
-- Bootstrap: Firtly I opted to utilize Bootstrap for my website due to the desigh elements that they support, they also give a design that adapts to various devices. The ready-made templates and components provided invaluable time-saving advantages.
+- Bootstrap: I opted to utilize Bootstrap for my website due to the design elements that it supports. It also has a design that adapts to various devices. The ready-made templates and components provided invaluable time-saving advantages.
 
 ### Custom Styles
 
@@ -431,15 +429,15 @@ Acceptance Criteria
 
 ![500](https://github.com/naragurgel/workout_prescription/assets/112726044/b5baf41b-0131-4aed-9185-2b6ad9a98e0b)
 
-## unauthenticated
+## Unauthenticated user
 
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/82b7e0a0-7087-4e06-8dcf-27180adb56f9)
 
-###  general authenticated user
+### General authenticated user
 
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/73aa2d43-5dd3-4f6e-95c9-00e585e8cb10)
 
-### superuser authenticated -  The admin/superuser have full access to CRUD functionality.
+### Superuser authenticated -  The admin/superuser have full access to CRUD functionality.
 
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/d4aa1a61-06cf-47bf-aaec-d1f6f3e3ae50)
 
@@ -601,35 +599,29 @@ User is logged in as staff
   2. Can delete any ite from the list
   3. Can click on it and see the details like, sets, reps and instructions
 
-## 404
-
-## 500
-
 ## Compatibility and Responsive Testing
-🚨**Required** 
 
->To save time, you can create this type of table in [markdown table generator](https://www.tablesgenerator.com/markdown_tables)
->
->As of Feb 14, 2022 CI students can take advantage of the Student Developer Pack where you have access to great things like [browserstack](https://education.github.com/pack/offers/#browserstack) You should have received an email about how to activate your student Developer Pack, here's a [slack](https://code-institute-room.slack.com/archives/C0L316Z96/p1644946870567999) with details if you can't find it in the associated thread.
-
-
-Minimally you should use dev tools and emulators to try to test you site on various screen sizes and browsers and note it in a table:
-
-I ensured my site was worked well, and looked nice on a variety of devices & browsers as noted in the table below:
-
-| TOOL / Device                 | BROWSER     | OS         | SCREEN WIDTH  |
-|-------------------------------|-------------|------------|---------------|
-| real phone: motog6            | chrome 78   | android 8  | XS 360 x 640  |
-| browser stack: iPhone5s       | safari  13  | iOs        | XS 320 x 568  |
-| dev tools emulator: pixel 2   | firefox  69 | android 8  | SM 411 x 731  |
-| browserstack: iPhone 10x      | Chrome 78   | iOs 11     | SM 375 x 812  |
-| browserstack: nexus 7 - vert  | Chrome 78   | android 7  | M 600 x 960   |
-| real tablet: ipad mini - vert | safari  13  | iOs 6      | M 768 x 1024  |
-| browserstack: nexus 7 - horiz | firefox 69  | android 7  | LG 960 x 600  |
-| chrome emulator: ipad - horiz | safari 13   | iOs        | LG 1024 x 768 |
-| browserstack windows PC       | Chrome 78   | windows 10 | XL 1920 x 946 |
-| real computer: mac book pro   | safari 12.1 | Mohave     | XL 1400 x 766 |
-| browserstack windows pc       | IE Edge 88  | windows 10 | XL 1920 x 964 |
++----------------+---------+-------------+----------------+
+| Tool/Device    | Browser | OS          | Viewport       |
++----------------+---------+-------------+----------------+
+| Iphone 13      | Safari  | V16.3       |  390 x 664 px  |
++----------------+---------+-------------+----------------+
+| Iphone 12      | Safari  | V14.1       |  390 x 664 px  |
++----------------+---------+-------------+----------------+
+| OnePlus        | Chrome  | v9.0        |   412 x 757 px |
++----------------+---------+-------------+----------------+
+| Samsung Galaxy | Firefox | v12.0       |   384 x 702 px |
++----------------+---------+-------------+----------------+
+| Google Pixel   | Chrome  | v13.0       |   412 x 796 px |
++----------------+---------+-------------+----------------+
+| Ipad Pro       | Safari  | v16.2       | 1024 x 1292 px |
++----------------+---------+-------------+----------------+
+| Windows PC     | Edge    | Windowns 11 | 1336 x 667 px  |
++----------------+---------+-------------+----------------+
+| Mac PC         | Safari  | Safari 15.6 | 1336 x 667 px  |
++----------------+---------+-------------+----------------+
+| Windows PC     | Chrome  | Chrome      | 1336 x 667 px  |
++----------------+---------+-------------+----------------+
 
 
 🚀 **merit & beyond**
