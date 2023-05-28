@@ -52,6 +52,13 @@ INSTALLED_APPS = [
 
 SITE_ID = 1
 
+LOGIN_REDIRECT_URL = '/'
+LOGIN_URL = '/login/'
+LOGOUT_URL = '/logout/'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+ACCOUNT_EMAIL_VERIFICATION = "none"
+
 CLOUDINARY_URL = os.environ.get("CLOUDINARY_URL")
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
@@ -149,6 +156,3 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'  # no
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-LOGIN_REDIRECT_URL = '/'
-LOGIN_URL = '/login/'
-LOGOUT_URL = '/logout/'
