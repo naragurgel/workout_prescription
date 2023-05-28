@@ -337,37 +337,55 @@ Acceptance Criteria
 
 ## Home Page (Visitor)
 
+- On the homepage of the Workout Prescription website, you will be able to visualize the welcome message and the hero image. You will also see the buttons to login or sign up. 
+
 ![Screenshare - 2023-05-24 4_44_14 PM](https://github.com/naragurgel/workout_prescription/assets/112726044/7e46eb8e-48e3-4fcc-ba50-d6583e4c25ea)
 
 ## Workout Page (Visitor)
+
+- There is a section for Workout but to actually see the workouts, you must be registered.
 
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/647a80c3-8bff-45ff-b2a4-9103cdac5e8c)
 
 ## Logged (Staff member)
 
+- If you log in as a staff member, you will be able to see sections like 'Exercises List", "Add Exercise", "Workout Item List", "Add Item" and "Workout List". There is a button to logout.
+
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/acb2ca41-5515-41e1-b7f6-93e75ab81855)
 
 ## Exercise List (Staff member)
+
+- Where you can find the list of exercises added, which you can delete and update.
 
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/e910667b-2942-4046-83c5-5c155f6475a2)
 
 ## Add Exercise (Staff member)
 
+- Where you can add an item to the list of exercices. 
+
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/68b57d85-2beb-4275-8e0b-bb55aab092d9)
 
 ## Workout Item List (Staff member)
+
+- Where you can find the list of exercises added, with details like how many reps and sets, you also can delete and update.
 
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/6edd3b39-80bd-43dc-a668-9766c77c6604)
 
 ## Add Item (Staff member)
 
+- Where you can add details to the exercices added before. 
+
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/6203f17b-4d99-4a39-b181-6700b0db3acf)
 
 ## Workout List (Staff member)
 
+- You will be able to see the list of workout sheets, with names and owners; if you click on it, you will be redirected to the details of the workout (it's the same page as the workout registered user below)
+
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/c534c11d-51b1-459d-b8fe-1aaa3070c3a2)
 
 ## Workout (Registered user)
+
+- The user can access the workout sheet if the user is registered. Clicking on the workout name they will be redirected to the workout details. 
 
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/18aec634-f8c7-462d-bd9e-e9a52a379436)
 
@@ -375,13 +393,19 @@ Acceptance Criteria
 
 ## Sign in
 
+- Where the user can be authenticated and have access to their account.
+
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/d8a643f9-e9e6-4cc1-89b5-f8d4ba755798)
 
 ## Sign out
 
+- Sign out of the account.
+
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/dde9697a-93c0-453a-8d53-9b83fb127166)
 
 ## Sign up
+
+-Where the visitor could sign up to get prescriptions.
 
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/7fce0c50-eb3c-407a-98a0-f1766150c868)
 
