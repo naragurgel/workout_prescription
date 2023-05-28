@@ -290,21 +290,8 @@ For administrators:
 - As a trainer, I want to delete a workout, so I can remove it from my list of saved workouts if it's no longer relevant.
 
 ## Feasibility vs Importance
-🚀 **merit & beyond**
 
-To scope the project for a MVP (minimally viable product) a feasibility analysis was done.
-
-The features in the table below have been taken from the user stories above. Generic features found in most websites
-will also be implemented such as nav-bar, footer, obvious website purpose etc.
-
-| Opportunity/Feature | Feasibility/Viability (score out of 5) | PurposeLevel of Importance (score out of 5) | In Or Out |
-|---------------------|----------------------------------------|---------------------------------------------|-----------|
-|                     |                                        |                                             |           |
-|                     |                                        |                                             |           |
-|                     |                                        |                                             |           |
-|                     |                                        |                                             |           |
-
-> You should discuss the outcome of what you will be dropping based on the outcome. Making a scatter plot of the scores and coloring the dot 
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/c841b5fb-03da-4fe0-80ea-8b494ce11346)
 
 ## Scope
 
