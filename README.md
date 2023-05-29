@@ -696,26 +696,8 @@ User is logged in as staff
 
 ![manage py](https://github.com/naragurgel/workout_prescription/assets/112726044/95a43622-e7cc-4c8a-95d5-a7864c60efb9)
 
-## Automated Testing
-🚀 **merit & beyond**
-
-If you managed to write jasmine tests or some django tests, note those files out here and how to run them. I only did this in my last project as I didn't have the time or energy to learn how to write tests. https://github.com/maliahavlicek/ms4_challenger/blob/master/documentation/TESTING.md is my write-up about those and how I ran them, but a simple test I'd recommend is authentication and any views you limit to superusers or logged-in users:
-
-https://github.com/maliahavlicek/ms4_challenger/blob/master/challenges/tests/test_views.py
-
 ## Defects
-🚨**Required** 
 
-At this point you need to be using GITHUB's Issues to track these as it helps you with the AGILE process requirement and it's really easy to copy/paste screenshots in and then write up how you closed them.
-
-[Here's a brief overview](https://docs.google.com/document/d/1nDS5tZeMO77Dfq85IZGMSV6C41XaPm9FwcpR3k-UTVc/edit#heading=h.542xzc8ufx4x) I put together on how to do this.
-
-This what my custom bug template looks like in the UX
-![image](https://user-images.githubusercontent.com/23039742/165650359-a352d64e-b128-473d-ab60-7df0568a44df.png)
-
-- provide a link to the issues link in GitHub
-- if you made a custom template include a screenshot
-- if you made a custom template include a link to the template
 
 ## Defects of Note
 🚀 **merit & beyond**
