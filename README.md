@@ -623,49 +623,85 @@ User is logged in as staff
 
 **[Home page](https://github.com/naragurgel/workout_prescription/blob/main/templates/index.html)**
 
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/fe321ffd-d2a8-437a-8e9e-c43e3d171a4a)
 
 **[Workout page](https://github.com/naragurgel/workout_prescription/blob/main/prescriptions/templates/workout/list.html)**
 
+![workout sheet](https://github.com/naragurgel/workout_prescription/assets/112726044/aba7bd52-8838-49ec-b275-b73197eae038)
+
 **[Confirm delete](https://github.com/naragurgel/workout_prescription/blob/main/prescriptions/templates/workout/confirm_delete.html)**
+
+![confirm delete](https://github.com/naragurgel/workout_prescription/assets/112726044/2bc7e15a-d619-476c-a708-20f3663ce731)
 
 **[Exercices](https://github.com/naragurgel/workout_prescription/tree/main/prescriptions/templates/exercise)**
 
+![exerci list](https://github.com/naragurgel/workout_prescription/assets/112726044/aa1edf63-47e9-4d25-891c-f14ebd0e1d8d)
+
 **[Workout Item](https://github.com/naragurgel/workout_prescription/tree/main/prescriptions/templates/workout_item)**
+
+![workoutitemlist](https://github.com/naragurgel/workout_prescription/assets/112726044/43d6af9a-e92d-4cc6-a44e-3b20dcc9a295)
 
 **[Workout admin](https://github.com/naragurgel/workout_prescription/tree/main/prescriptions/templates/workout)**
 
+![workout sheet](https://github.com/naragurgel/workout_prescription/assets/112726044/0603434f-89a0-48e2-9e41-1540c187dbf5)
+
 ### JavaScript Validation
-🚨**Required** 
 
 **[Home page](https://github.com/naragurgel/workout_prescription/blob/main/templates/base.html)**
 
+![JS](https://github.com/naragurgel/workout_prescription/assets/112726044/7d64769a-fe03-4884-b365-63b2aabecd8c)
+
 ### Python Validation
-🚨**Required** 
 
-**[CI's pep8 tool](https://pep8ci.herokuapp.com/)** was used to validate each .py file created.
+**[Exercise](https://github.com/naragurgel/workout_prescription/blob/main/prescriptions/views/exercise.py)**
 
-> for each .py file you created, copy the source code and paste it into this site, and have a test case for it linked to from here.
-> include a screenshot of results in the test case showing NO ERRORS. (you should do this for all .py files in your repo
+![models exerc](https://github.com/naragurgel/workout_prescription/assets/112726044/dca4f5ac-d5e7-4a0a-9bcc-ee7fe448da92)
 
-**run.py**
+**[Homepage](https://github.com/naragurgel/workout_prescription/blob/main/prescriptions/views/homepage.py)**
 
-![image](https://user-images.githubusercontent.com/23039742/212106175-36b2f18a-7c75-458d-94dd-9886e81c71f3.png)
+![models homepage](https://github.com/naragurgel/workout_prescription/assets/112726044/179524cc-7ec4-410d-97d4-cecf858b7398)
 
-Ideally you would have no errors remaining outside of line too long which you can fix by 
+**[Workout Item](https://github.com/naragurgel/workout_prescription/blob/main/prescriptions/views/workout_item.py)**
 
-adding
-```$python 
-# noqa
-```
-There is a space before the # and after it to skip the quality assurance for that line.
+![models workout item](https://github.com/naragurgel/workout_prescription/assets/112726044/b2f220e3-4e5f-4a7b-ac3b-d5e0afd83f33)
 
-Note any errors or warnings you are ignoring and why.
+**[Workout](https://github.com/naragurgel/workout_prescription/blob/main/prescriptions/views/workout.py)**
 
-### JSON Validation
-🤷‍ **Required if you made some files** 
-The **[JSONLINT validatior](https://jsonlint.com/)** was used to validate JSON files.
+![models workout](https://github.com/naragurgel/workout_prescription/assets/112726044/00a4b5f8-1b01-4d75-9545-2d8b946c2b3d)
 
-> for each .json file, you should copy the code and paste it into this site, and have a test case for it linked to from here.
+**[Admin](https://github.com/naragurgel/workout_prescription/blob/main/prescriptions/admin.py)**
+
+![admin py](https://github.com/naragurgel/workout_prescription/assets/112726044/16cb1dc3-2d88-4aab-bc58-32190ef8c532)
+
+**[Apps](https://github.com/naragurgel/workout_prescription/blob/main/prescriptions/apps.py)**
+
+![apps py](https://github.com/naragurgel/workout_prescription/assets/112726044/a26bde14-6b81-4488-9d3d-b0af40ac79f8)
+
+**[Forms](https://github.com/naragurgel/workout_prescription/blob/main/prescriptions/forms.py)**
+
+![forms py](https://github.com/naragurgel/workout_prescription/assets/112726044/49c3d096-7597-4020-8696-407d49015417)
+
+**[Models](https://github.com/naragurgel/workout_prescription/blob/main/prescriptions/models.py)**
+
+![models py](https://github.com/naragurgel/workout_prescription/assets/112726044/2ee8ce68-62c8-4aac-98b2-66e8232a3b79)
+
+**[URL][(https://github.com/naragurgel/workout_prescription/blob/main/prescriptions/urls.py)**
+
+![url py](https://github.com/naragurgel/workout_prescription/assets/112726044/eb976e82-4674-4400-8247-cef5ab3cecfe)
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/eeec32e5-ce68-445b-981a-004a49203366)
+
+**[Settings](https://github.com/naragurgel/workout_prescription/blob/main/workout_prescription/settings.py)**
+
+![settings py](https://github.com/naragurgel/workout_prescription/assets/112726044/61ddf30c-5f3b-4bf9-9e1e-b328a58dbda8)
+
+**[wsgi](https://github.com/naragurgel/workout_prescription/blob/main/workout_prescription/wsgi.py)**
+
+![wsgi py](https://github.com/naragurgel/workout_prescription/assets/112726044/3bd77af3-f84a-49aa-a6ff-aff33ad3f558)
+
+**[Manage](https://github.com/naragurgel/workout_prescription/blob/main/manage.py)**
+
+![manage py](https://github.com/naragurgel/workout_prescription/assets/112726044/95a43622-e7cc-4c8a-95d5-a7864c60efb9)
 
 ## Automated Testing
 🚀 **merit & beyond**
