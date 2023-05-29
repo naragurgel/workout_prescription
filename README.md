@@ -426,11 +426,11 @@ Mobile:
 
 ### 404 error page
 
-![image](https://github.com/naragurgel/workout_prescription/assets/112726044/14db5343-be0d-42de-b1d8-69ff50a297ca)
+![404](https://github.com/naragurgel/workout_prescription/assets/112726044/2c08f2d2-d55e-4701-bd85-3f71f4576cfa)
 
 ### 500 error page
 
-![image](https://github.com/naragurgel/workout_prescription/assets/112726044/5132e888-10ee-4a12-bd14-14bf28539d2f)
+![500](https://github.com/naragurgel/workout_prescription/assets/112726044/b1126c5c-20bc-449a-be7f-af83bdf2e63a)
 
 ### 403 error page
 
