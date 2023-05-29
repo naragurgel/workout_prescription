@@ -620,20 +620,24 @@ User is logged in as staff
 ### CSS Validation
 
 ### HTML Validation
-🚨**Required** 
 
-The **[W3 HTML Validator](https://validator.w3.org/)** was used to validate HTML by coping the page source as a direct input.
+**[Home page](https://github.com/naragurgel/workout_prescription/blob/main/templates/index.html)**
 
-> For each view you wrote, you should validate the HTML and have a test case for it linked to from here
-> NOTE: You may need to right-click to view the source of each page and paste that into the validator if you need to go through authentication to get to the page.
+
+**[Workout page](https://github.com/naragurgel/workout_prescription/blob/main/prescriptions/templates/workout/list.html)**
+
+**[Confirm delete](https://github.com/naragurgel/workout_prescription/blob/main/prescriptions/templates/workout/confirm_delete.html)**
+
+**[Exercices](https://github.com/naragurgel/workout_prescription/tree/main/prescriptions/templates/exercise)**
+
+**[Workout Item](https://github.com/naragurgel/workout_prescription/tree/main/prescriptions/templates/workout_item)**
+
+**[Workout admin](https://github.com/naragurgel/workout_prescription/tree/main/prescriptions/templates/workout)**
 
 ### JavaScript Validation
 🚨**Required** 
 
-The **[Jshint validator](https://jshint.com)** was used to validate each JS file.
-
-> for each .js file, copy the code and paste it into this site, and have a test case for it linked to from here. You can have warnings, but no errors.
-> if using ES6, add this before pasting in your file: `/*jshint esversion: 6 */ `, similarly you can update it to 7 if you see warnings about ES7 syntax `/*jshint esversion: 7 */ `
+**[Home page](https://github.com/naragurgel/workout_prescription/blob/main/templates/base.html)**
 
 ### Python Validation
 🚨**Required** 
