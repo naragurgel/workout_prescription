@@ -4,6 +4,7 @@
 
 -This is a website that offers a variety of fitness programs to help you achieve your health and fitness goals. Whether you're looking to lose weight, build muscle, or simply improve your overall health. The trainers create personalized training programs tailored to your individual needs and goals.
 - The user can access a personalized workout plan from anywhere with an internet connection, at any time that suits the schedule.
+
 ## Live Site 
 
 - https://workout-prescription.herokuapp.com/
@@ -65,6 +66,7 @@ The reason for the cover photo to be dumbbells is mainly because dumbbells are a
 > - images
 > - icons
 > - tables
+> - Dropdown
 
 ### Frameworks
 
@@ -72,11 +74,11 @@ The reason for the cover photo to be dumbbells is mainly because dumbbells are a
 
 ### Custom Styles
 
-- I made some changes to the fonts, font sizes and colors of the fonts and background. It's all in the folder prescriptions/static/css/wp_styles.css
+- I made some changes to the fonts, font sizes and colors of the fonts and background. It's all in the folder **[CSS](prescriptions/static/css/wp_styles.css)**
 
 ### Custom Javascript
 
-- I made time duration of the alert message using JavaScript. It's in the folder prescriptions/templates/base.html
+- I made time duration of the alert message using JavaScript. It's in the folder **[Base](prescriptions/templates/base.html)**
 
 ## Wireframes
 
@@ -110,7 +112,6 @@ Workout prescription uses Django All Auth for user and roles management and has 
 - Exercise
 - WorkoutItem
 - Workout
-
 
 ## Entity Relationship Diagram
 
@@ -337,7 +338,6 @@ Acceptance Criteria
 
 - On the homepage of the Workout Prescription website, you will be able to visualize the welcome message and the hero image. You will also see the buttons to login or sign up. 
 
-![Screenshare - 2023-05-24 4_44_14 PM](https://github.com/naragurgel/workout_prescription/assets/112726044/7e46eb8e-48e3-4fcc-ba50-d6583e4c25ea)
 
 ## Workout Page (Visitor)
 
@@ -685,7 +685,7 @@ User is logged in as staff
 
 ![models py](https://github.com/naragurgel/workout_prescription/assets/112726044/2ee8ce68-62c8-4aac-98b2-66e8232a3b79)
 
-**[URL][(https://github.com/naragurgel/workout_prescription/blob/main/prescriptions/urls.py)**
+**[URL's](https://github.com/naragurgel/workout_prescription/blob/main/prescriptions/urls.py)**
 
 ![url py](https://github.com/naragurgel/workout_prescription/assets/112726044/eb976e82-4674-4400-8247-cef5ab3cecfe)
 
