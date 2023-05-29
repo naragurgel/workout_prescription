@@ -5,11 +5,11 @@
 
 ## Live Site 
 
-- https://workout-prescription.herokuapp.com/
+- [Heroku](https://workout-prescriptions.herokuapp.com/)
 
 ## Repository
 
-- https://github.com/naragurgel/workout_prescription
+- [Github](https://github.com/naragurgel/workout_prescription)
 
 ## Author
 
