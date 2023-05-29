@@ -18,7 +18,7 @@ class WorkoutItem(models.Model):
     sets = models.PositiveIntegerField()
 
     def __str__(self):
-        return f"{self.exercise}: sets - {self.sets} reps - {self.sets}"
+        return f"{self.exercise}: sets - {self.sets} reps - {self.reps}"
 
 
 class Workout(models.Model):

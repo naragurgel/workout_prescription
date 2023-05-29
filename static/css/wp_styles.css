@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto+Condensed:wght@300&display=swap');
 
-.container-fluid {
+.bg-weight {
     background-image: url(https://res.cloudinary.com/dgmiz0yih/image/upload/v1680812518/pexels-erik-zepeda-10448088_kz0vy5.jpg);
     background-size: cover;
     background-position: center;
@@ -9,12 +9,8 @@
     padding: 10%;
 }
 
-html {
-    padding: 10px;
-}
-
 .main-bg {
-    background-color: black;
+    background-color: #212529;
 }
 
 .lead {
