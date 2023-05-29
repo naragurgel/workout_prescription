@@ -5,7 +5,7 @@ from .models import Exercise, Workout, WorkoutItem
 class ExerciseForm(forms.ModelForm):
     class Meta:
         model = Exercise
-        fields = ['name']  
+        fields = ['name']
 
 
 class WorkoutItemForm(forms.ModelForm):

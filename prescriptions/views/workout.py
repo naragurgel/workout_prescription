@@ -26,6 +26,7 @@ def delete(request, pk):
         return redirect('workout_list')
     return render(request, 'workout/confirm_delete.html', {'workout': workout})   # noqa
 
+
 @staff_member_required()
 def update(request, pk):
     workout = get_object_or_404(Workout, pk=pk)

@@ -118,3 +118,8 @@ tr{
 .social-icons {
     padding-right: 2rem;
 }
+
+.card {
+    background-color: transparent;
+    border: none;
+}

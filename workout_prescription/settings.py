@@ -155,4 +155,3 @@ MEDIA_URL = '/media/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'  # noqa
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
-
