@@ -36,7 +36,7 @@ Generate after readme is complete by copying and pasting your readme from this p
 
 - Color scheme predominantly consisting of tons of black, green and white. The use of black provides a sense of professionalism, green refreshing and energetic touch, symbolizing growth and vitality, aligning with the health and wellness focus of the website. White is promoting a visually calming experience. 
 
-![image](https://github.com/naragurgel/workout_prescription/assets/112726044/43bf6ce1-ceed-48e4-a9b7-37d44b2303f7)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/112e6367-cb1a-4b05-ae5c-b7704753d51c)
 
 ### Typography
 
@@ -702,31 +702,48 @@ User is logged in as staff
 ![manage py](https://github.com/naragurgel/workout_prescription/assets/112726044/95a43622-e7cc-4c8a-95d5-a7864c60efb9)
 
 ## Defects
-
+I've made **[miletones](https://github.com/naragurgel/workout_prescription/milestones)** to group all the defects and make them easier to been finded.
 
 ## Defects of Note
-🚀 **merit & beyond**
 
-Some defects are more pesky than others. Highlight 3-5 of the bugs that drove you the most nuts and link to them directly here. The accessors really like to know the struggle is real and that by doing this you picked up more skills.
+You can find the defects I had and the full description on the link below:
+
+- **[Footer:](https://github.com/naragurgel/workout_prescription/issues/29)**
+The footer was moving up and down accordingly with the page content.
+
+- **[Style:](https://github.com/naragurgel/workout_prescription/issues/30)**
+The Heroku was not deploying the CSS file.
+
+- **[Sign up:](https://github.com/naragurgel/workout_prescription/issues/31)**
+When a new user was tying the email and submitting the page was showing a error
 
 ## Outstanding Defects
-🚨**Required** 
-
-It's ok to not resolve all the defects you found as long as:
-- it does not impact a user from completing a vital function on the website
-- it only affects a very small subset of users
-- is an extreme edge case that very few users would try
-- there is an open issue against a framework, browser or technology used
-
-If you know of something that isn't quite right, create an issue and link to it here and explain why you chose not to resolve it. 
-
-Sometimes it's as simple, word wrapping issue that makes the site look odd at a certain screensize that you just didn't have time to fix due to the impending deadline it's best to mention it but note why you allowed it to go live: "Yes it looks odd, but it doesn't impact core functionality of the site." than to let the accessors think you didn't notice it. 
 
 
 # Technologies Used
-🚀 **merit & beyond**
 
-This section just summarizers tools and programming languages you used.
+| JavaScript               | JavaScript played a vital role in providing dynamic interactivity to the messages.                                                                                          |
+|--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Python                   | Python is a versatile programming language that was extensively utilized to write all the code in the application.                                                          |
+| Django                   | Django is a powerful Python web framework used for efficient development, handling database interactions, and implementing secure authentication in the project.            |
+| PostgreSQL               | PostgreSQL was utilized to store and manage the project's data efficiently.                                                                                                 |
+| Bootstrap                | Bootstrap was employed to ensure a responsive design, making the website adapt seamlessly to different screen sizes and devices.                                            |
+| Font Awesome             | Font Awesome was utilized to enhance the overall design of the website by providing a collection of icons that could be easily integrated.                                  |
+| GitHub                   | GitHub served as the primary development environment, facilitating code management and effective tracking of changes made to the project.                                   |
+| Heroku                   | Heroku was utilized as the deployment platform for the website, making it accessible to users over the internet.                                                            |
+| Google Developer Tools   | Google Developer Tools, specifically DevTools, played a crucial role in bug detection, testing the website's responsiveness, and resolving issues across different devices. |
+| Jigsaw                   | Jigsaw was utilized to validate CSS code, ensuring its compliance with the specified standards and best practices.                                                          |
+| CI's pep8                | CI's pep8 tool was used to validate all Python code, ensuring adherence to coding standards and maintaining consistency throughout the project.                             |
+| Coloors                  | Coloors was utilized as a tool to generate a color palette for the website design.                                                                                          |
+| W3 HTML                  | W3 HTML to validate the HTML code, ensuring its correctness and compliance with web standards.                                                                              |
+| Jshint                   | Jshint was used to validate JavaScript code, ensuring its quality, identifying potential errors, and promoting best practices.                                              |
+| Cloudinary               | Cloudinary was utilized as a cloud-based storage service to store and manage all static files and images used in the project.                                               |
+| Mermaid                  | Mermaid was used to create diagrams, providing a visual representation of various aspects of the project's architecture and workflow.                                       |
+| Gitpod                   | Gitpod provided an online development environment.                                                                                                                          |
+| Markdown Table Generator | Markdown Table Generator was utilized as a tool to create tables in Markdown format, simplifying the process of generating well-formatted tables.                           |
+| AmIResponsive            | AmIResponsive was used to generate screenshots of the website in various device sizes, providing a quick visual assessment of its responsiveness and compatibility.         |
+| Balsamiq                 | Balsamiq served as a wireframing tool, enabling the creation of visual representations of the website layout and structure, aiding in the design process.                   |
+| Lighthouse               | Lighthouse, a web performance testing tool, was used to assess the accessibility and performance of the website.                                                            |
 
 ## Languages
 
@@ -745,13 +762,62 @@ This section just summarizers tools and programming languages you used.
 - table of contents creator
 - markdown table generator
 
-
-
 # Deployment
-🚨**Required** 
+### Prerequisites
+To run this project, you need a CLOUDINARY_URL:
+1. **Cloudinary Account:**
+- Create an account on [Cloudinary](https://cloudinary.com/users/register_by_email) if you don't have one.
+- Access the Cloudinary dashboard.
+2. **Obtain API Key and Secret URL:**
+- In the Cloudinary dashboard, navigate to your account settings.
+- Look for the section related to API credentials or environments variable.
+- Locate the API Key and Secret URL.
+- Copy the API Key and Secret URL, as you will need them to configure the application.
+3. **Set Environmental Variables:**
+- Once you have obtained the API Key and Secret URL, you need to set them as environmental variables in your development environment.
+- Depending on your operating system and development environment, the steps to set environmental variable may vary.
 
-## Prerequisits
-🚀 **merit & beyond**
+### Forking the Github Repository
+
+To make a copy or ‘fork’ the repository:
+
+1. Login to your own GitHub account
+2. Navigate to [my repository](https://github.com/Giov3ss/iHealthy](https://github.com/naragurgel/workout_prescription)
+3. In the top right corner of the page, click 'fork' option to create and copy of the original
+
+### Making a Local Clone
+
+1. Under the repository name, click on the ‘code’ tab
+2. In the clone box, HTTPS tab, click on the clipboard icon 
+3. In your IED open GitBash
+4. Changed the current working directory to the location you want the cloned directory to be made
+5. Type ‘git clone’ and then paste the URL copied from GitHub
+6. Press enter and the local clone will be created 
+
+### Production Deployment
+
+To get started with local development in GitPod or your preferred IDE, follow these steps:
+
+1. Install the GitPod Chrome extension from the Chrome Web Store.
+- [GitPod Chrome Extension](https://chrome.google.com/webstore/detail/gitpod-always-ready-to-co/dodmmooeoklaejobgleioelladacbeki)
+
+2. Once the extension is installed, navigate to your forked repository on GitHub.
+3. Click on the green "GitPod" button to open the repository in GitPod.
+4. After the workspace is created, you can start the development process.
+5. Install the Python packages by running the following command in the terminal:
+- **pip3 install -r requirements.txt**
+6. Create an **'env.py** file in the project's root directory to store your environment variables.
+7. In the **'env.py** file, add the following variables, but make sure not to disclose real values:
+- **SECRET_KEY=<YOUR_VALUE>**
+- **CLOUDINARY_URL=<YOUR_VALUE>**
+- **DATABASE_URL=<YOUR_VALUE>**
+8. Apply databse migrations to set up the database by running the following command:
+- **python3 manage.py migrate**
+9. Create a superuser account that allows you add and inspect data via Django admin by running the following command:
+- **python3 manage.py createsuperuser**
+10. Start the server by running the following command:
+- **python3 manage.py runserver**
+11. Now you can access the application by opening the provided URL in your browser.
 
 If the user is required to have certain keys and credentials you should include this section with directions on how to get the necessary information. ex)
 
@@ -766,7 +832,7 @@ If the user is required to have certain keys and credentials you should include 
     <img width="1230" alt="image" src="https://user-images.githubusercontent.com/23039742/213839829-b4f349b3-419d-4ea2-bbca-90cf3c663bba.png">     
  
 ## Fork and Clone the Repository
-🚀 **merit & beyond**
+
 To keep the main reposotory for this project clean, please fork the repostiory into your own account. GitHub has [forking directions](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) but here's what you might do:
 1. login to your own gitHub account
 2. navigate to [my repository](URL OF YOUR LIVE REPOSITORY)
@@ -784,58 +850,6 @@ To keep the main reposotory for this project clean, please fork the repostiory i
 
 9. To get files to your local environment, you need to clone it: click the code button
 10. Copy the url as needed (here's gitHub instructions)[https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository}
-
-
-
-## Development Deployment 
-🚨**Required** 
-
-This section should describe the process someone would have to go through to get the local working in GitPod, or your preferred IDE. Start from installing the chrome extension then clicking the green gitpod button in THEIR FORKED repository, the enumerate the steps to walk them through the process as if they were brand new to this proccess. **Include screenshots** where applicable.
-
-**Key points to cover** 
-- Install required python packages: `pip3 install -r requirements.txt`
-- Create env.py
-- What to put in the env.py, don’t disclose real values
->  - EMAIL_HOST_PASSWORD=<YOUR_VALUE>
->  - DEFAULT_FROM_EMAIL=<YOUR_VALUE>
->  - EMAIL_USERNAME=<YOUR_VALUE>
->  - SECRET_KEY=<YOUR_VALUE>
->  - CLOUDINARY_URL=<YOUR_VALUE>
->  - DEV=True
-- Apply Database Migrations so the database starts up `python3 manage.py migrate`
-- Create a super user so you can add and inspect things via django admin  `python3 manage.py createsuperuser`
-- Preload data: Sometimes you might want to include steps to create data in the admin or preload a data dump [coderwall blog](https://coderwall.com/p/mvsoyg/django-dumpdata-and-loaddata) has examples on how to dump data and load it which saves a bunch of time when deploying the application from a local database to a hosted database but you don’t  have to do this step
-- Start the server `python3 manage.py runserver`
-
-
-## Production Deployment
-🚨**Required** 
-
-This section should describe the process you went through to deploy the project to a server where anyone can access the url without your machine running. This is typically Heroku. **Include screenshots** if you think they would make the process easier. Start with getting an heroku account and then setting up databases and other packages.
-
-If you have project settings required for Heroku, provide a table of the keys and values. Do not share your personal
-keys but either cut them out of the screenshot or say <YOUR_VALUE> and include links on how the user would obtain such
-values.
-
-**Key points to cover** 
-- cerating new app
-- setting app name
-- setting region
-- entering dreaded billing info
-- subscribing to a plan
-- setting up db
-- adding environmental values- have a list or table so user has less chance of typos
->  - EMAIL_HOST_PASSWORD
->  - DEFAULT_FROM_EMAIL
->  - EMAIL_USERNAME
->  - SECRET_KEY
->  - CLOUDINARY_URL
->  - COLLECT_STATIC
-- adding build packages
-- deploy
-- gitHub connection
-- auto vs manul deploy
-- monotior logs
 
 # Credits
 
