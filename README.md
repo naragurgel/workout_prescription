@@ -426,11 +426,15 @@ Mobile:
 
 ### 404 error page
 
-![404](https://github.com/naragurgel/workout_prescription/assets/112726044/9fb151df-2ff6-4091-a0a4-71fcfb66a497)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/14db5343-be0d-42de-b1d8-69ff50a297ca)
 
 ### 500 error page
 
-![500](https://github.com/naragurgel/workout_prescription/assets/112726044/b5baf41b-0131-4aed-9185-2b6ad9a98e0b)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/5132e888-10ee-4a12-bd14-14bf28539d2f)
+
+### 403 error page
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/0ab310b5-4f4d-425b-8144-2e3eaa9d9400)
 
 ## Unauthenticated user
 
@@ -876,5 +880,5 @@ A special thanks to the mentors, tutors and fellow learners at Code Institute fo
 - Code Institute walkthrough project 'I think Therefore I blog', which was where I had the initial ideas of how to start my project.
 - Mentor: Malia - Since the first project, always supporting me in the best way, helping with doubts and showing the best ways to develop the project
 - Team of tutors that helped me with the bug that was not deploying to my site on heroku, they were super helpful and dedicated until we managed to find a solution.
-- My friend Gustavo Chahm, who is already a senior software developer, often stopped what he was doing to show me the best way to develop my website, always explaining everything with clarity and patience
+- My friend Gustavo Chahm, who is already a senior software developer,he answered many doubts that I had, he showed me the best ways to develop the site, always explaining everything with clarity and patience
 
