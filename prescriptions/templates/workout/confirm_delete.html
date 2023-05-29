@@ -1,10 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h1>Delete Workout</h1>
-  <p>Are you sure you want to delete "{{ workout.name }}"?</p>
-  <form method="post">
-    {% csrf_token %}
-    <input type="submit" value="Yes, delete">
-  </form>
+<div class="d-flex aligns-items-center justify-content-center">
+  <div class="card" style="width: 18rem;">
+    <h1 class="title">Delete Workout</h1>
+    <p>Are you sure you want to delete "{{ workout.name }}"?</p>
+    <form method="post">
+      {% csrf_token %}
+      <input type="submit" value="Yes, delete">
+    </form>
+  </div>
+</div>
 {% endblock %}
