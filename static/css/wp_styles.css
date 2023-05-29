@@ -11,6 +11,7 @@
 
 .main-bg {
     background-color: #212529;
+    min-height: calc(100vh - 196px);
 }
 
 .lead {
