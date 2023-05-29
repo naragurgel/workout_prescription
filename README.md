@@ -17,8 +17,6 @@ Nara Gurgel
 
 # Table of Contents
 
-# Table of contents
-
 - [UX](#ux)
   - [Target Audience](#target-audience)
   - [Design Choices](#design-choices)
@@ -102,7 +100,7 @@ Nara Gurgel
 ### Typography
 
 -  The typography has intuitive layout contribute to a clarity and ease of use throughout the website.
-Montserrat-  Its clear letterforms and excellent readability make it suitable for important information and instructions related to workout plans. 
+Montserrat-  Its clear letter forms and excellent readability make it suitable for important information and instructions related to workout plans. 
 Roboto Condensed-  It is a condensed sans-serif font that offers a balance between professionalism and legibility. 
 
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/77e4bf28-36bb-4745-b160-f34d25200877)
@@ -239,11 +237,11 @@ ordering: It specifies that the list of workouts should be ordered by the owner 
 CRUD Operations:
 Create: Create a exercise or a workout list to each user.
 
-Read: The workout sheet is visible on the workout list page and the user can have acess to his own workout by acessing the website.
+Read: The workout sheet is visible on the workout list page and the user can have access to his own workout by accessing the website.
 
-Update: The workout can be updated when the staff menber wants to change anything on the prescription.
+Update: The workout can be updated when the staff member wants to change anything on the prescription.
 
-Delete: The workout or exercice can be deleted if a staff menber wants to change the workout prescriptions.
+Delete: The workout or exercice can be deleted if a staff member wants to change the workout prescriptions.
 
 ## CRUD Diagrams
 
@@ -355,7 +353,7 @@ Mobile:
 
 ## Add Exercise (Staff member)
 
-- Where you can add an item to the list of exercices. 
+- Where you can add an item to the list of exercises. 
 
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/60a8be4d-dff3-4f03-8be3-86d71ee62756)
 
@@ -367,7 +365,7 @@ Mobile:
 
 ## Add Item (Staff member)
 
-- Where you can add details to the exercices added before. 
+- Where you can add details to the exercises added before. 
 
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/332d436f-bfd8-4c58-bb4b-b3a3a10b5ce7)
 
@@ -467,8 +465,8 @@ Mobile:
 
 ## Future Features
 
-- Some options ready for workout sheet prescriptions 
-- Videos for the user watch, theaching how to do the exercise corretly
+- Some options ready for workout sheet prescriptions.
+- Videos for the user watch, teaching how to do the exercise correctly.
 
 ## Testing
 
@@ -831,7 +829,7 @@ If the user is required to have certain keys and credentials you should include 
  
 ## Fork and Clone the Repository
 
-To keep the main reposotory for this project clean, please fork the repostiory into your own account. GitHub has [forking directions](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) but here's what you might do:
+To keep the main repository for this project clean, please fork the repository into your own account. GitHub has [forking directions](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) but here's what you might do:
 1. login to your own gitHub account
 2. navigate to [my repository](https://github.com/naragurgel/workout_prescription)
 3. In the top right corner of the page, click fork 
@@ -841,8 +839,8 @@ To keep the main reposotory for this project clean, please fork the repostiory i
 4. set yourself as the owner
 5. change the name of the repo if you want
 6. add a description if you want
-7. choose what to copy, typicall the main branch only
-8. click the snazy green button
+7. choose what to copy, typically the main branch only
+8. click the snazzy green button
 
 ![image](https://user-images.githubusercontent.com/23039742/213840549-5bef12ae-198e-412b-84b6-0cc718b6fa1d.png)
 
