@@ -613,115 +613,11 @@ User is logged in as staff
 | Mac PC         | Safari  | Safari 15.6 | 1336 x 667 px  |
 | Windows PC     | Chrome  | Chrome      | 1336 x 667 px  |
 
-
-🚀 **merit & beyond**
-Document why you chose the devices:
-
-1. Visit https://gs.statcounter.com/browser-market-share to figure out the most popular browsers & operating system combos seen across the web for the geographic region, and platform(s) and screen sizes you expect your users to belong to. 
-
-2. Include a sentence about why you chose the combinations you did.
-
-3. Create a table that lists out what devices, browsers, and operating system you tested your application on and a brief description of why you chose the mixture you did. The point is to prove that you looked at the site across various browsers, operating systems, and viewport breakpoints.
-
-4. if you can't find the browser/device/OS combinations you want on Browserstack with your GitHub student webpack (or you didn't activate that in time), note what you'd ideally test on then what you ended up testing on as a compromise. 
-
-5. Build a table to summarize the choices you made [markdown table generator](https://www.tablesgenerator.com/markdown_tables)
-
-The combinations above were chosen because of the following information I gathered  from [ga.statcounter.com]( https://gs.statcounter.com/browser-market-share) for the US from Aug-Oct 2021:
-**browser Version Market Share**:
-  - safari iphone: 26.32%
-  - chrome for android: 21.32%
-  - Chrome 105.0: 15.77%
-  - Chrome 104.0: 6.28%
-  - Edge 105: 4.99%
-  - Safari 15.6 3.76%
-**browser Market Share**
-  - chrome: 50.28%
-  - Safari: 34.65%
-  - Edge: 6.37%
-  - Firefox: 3.52%
-  - Samsung Internet: 2.04%
-  - Opera: 0.89%
-**platform breakdown**
-  - mobile: 51.26%
-  - desktop: 45.73%
-  - tablet: 2.97%
-  - console: 0.03%
-
 ## Accessibility Testing
-🚨**Required** 
-
-Accessibility testing is aimed to make sure that those with visual or physical disabilities can still browse your website. Some users have had strokes or accidents that make it difficult to use a mouse, so they use keyboard keys to tab through sites. Others use screen readers that rely on HTML tags to help the user navigate quickly through the site to find information they want, others have color blindness or contrast issues. It's the law to provide services 
-Here's a [site](https://www.w3.org/WAI/fundamentals/accessibility-intro/#:~:text=Accessibility%20is%20Important%20for%20Individuals%2C%20Businesses%2C%20Society,-The%20Web%20is&text=That%20is%2C%20the%20accessibility%20barriers,older%20people) where you can learn more about accessibility and the internet.
-
 ### Accessibility Audits
-🚨**Required** 
-
-Accessibility audits run through the HTML and determine if the parts of the WCAG (web content accessibility guidelines ) that are implemented through HTML tags and attributes are present. They can do some checking for low vision/contrast stuff too.
-
-You should run your deployed website pages through  at least on auditing tool. lighthouse's audit to check performance, accessibility, best practices and SEO scores. You should aim to get 85 or higher score on accessibility. 
-
-**You should fix issues associated with:**
-- contrast 
-- aria labels
-- alt text
-- large images
-- skewed images
-
-**Lighthouse**
-https://web.dev/measure/  If you have lower scores, read the report and follow the links to address the flagged issues. You can run this tool from Chrome Dev Tools too against your local machine, but chrome extensions can sometimes give you missing alt text on things like the grammarly plug in tracking pixel.
-
-You want a score in the green for accessibility and should look at ways to get it to 100.
-
-
-**[WAVE chrome](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?hl=en-US) extension**
-Wave is developed by webaim.org and does a bit better at contrast issues and uses 2.1 guidelines
-
-**Contrast Checkers**
-- https://webaim.org/resources/contrastchecker/
-- https://color.a11y.com/
-
-### Keyboard Navigation
-🚀 **merit & beyond**
-
-Another way to accessibility test your site is to try to click on the browser URL and see what happens if you use the tab, arrow and enter keys. Does it work well or does the user get stuck? Check this in a couple browsers as the focus & active outlines are typically styled by the browser
-
-The expected results for various keyboard entries and field types can be found [here](https://webaim.org/techniques/keyboard/#testing)
-
-You can take a video of this testing if you want and convert it to a gif and paste that into your readme. Record something to yourself in a Slack direct message, then download it. Then you can use https://cloudconvert.com/mp4-to-gif to convert the mp4 to a gif and just paste it into the readme via GiHu, and it'll resolve itself.
-
-### Chrome Vox Reader
-🚀 **merit & beyond**
-
-If you are really ambitious, you can use the [VoxReader](https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en) extension in chrome to see what your site sounds like on a screen reader. It really drives home the need for good aria-labels & semantic HTML.
-
-## Core Web Vitals
-🚀 **merit & beyond**
-
-SEO is greatly impacted by your core web vitals. The readout from https://web.dev/measure/ which is essentially a lighthouse audit gives your site scores in 4 categories. Ideally you want your site to be in the green for all 4 scores. web.dev has dedicated servers to test deployed sites without extensions that skew the results, so it's best to get results from this site.
- You should talk about the results for each section pay attention to 
 
 ## Validation Testing
-🚨**Required** 
-
-In this section you should write up any websites you used to validate your code and include screenshots.
-
-**Validation issues are an automatic failure** You should run these about 3 times:
-- when you first deploy your site
-- just when you think you are done testing
-- right before you submit because 😼, ⚽, 🐶 & 👼 can eliminate a closing tag or curly bracket without you noticing.
-
 ### CSS Validation
-🚨**Required** 
-
-The [Jigsaw validator](https://jigsaw.w3.org/css-validator/) was used to validate CSS.
-
-> If you only have one CSS file, you can just run the validator through one deployed page URL, if you have custom CSS for different pages, make sure you hit those different URLS, or do direct input on each file.
-
-Include a screenshot for each CSS file which includes the Green no ERRORS bar, two check marks:
-
-**styles.css**
-![img.png](documentation/images/css-validation.png)
 
 ### HTML Validation
 🚨**Required** 
