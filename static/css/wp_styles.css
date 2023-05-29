@@ -24,7 +24,6 @@
     margin-top: 2rem !important;
     font-family: Montserrat, sans-serif;
     font-weight: bold;
-    height: 2 rem;
 }
 
 .row {
@@ -114,4 +113,8 @@ th,
 thead,
 tr{
     color: aliceblue;
+}
+
+.social-icons {
+    padding-right: 2rem;
 }
