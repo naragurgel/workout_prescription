@@ -233,81 +233,13 @@ WorkoutAdmin: This admin configuration is registered for the Workout model so th
 list_display: It specifies that the admin interface should display the owner and name fields in the list view.
 search_fields: It specifies that the name and owner fields should be searchable in the admin interface.
 ordering: It specifies that the list of workouts should be ordered by the owner field.
-## Entity Relationship Diagram
-
-- User:
-
-![image](https://github.com/naragurgel/workout_prescription/assets/112726044/190690d0-4ce3-4f85-a13c-46e74989b0f6)
-
-- Admin:
-
-![image](https://github.com/naragurgel/workout_prescription/assets/112726044/cd528559-4122-4c39-a9cf-6a6e8b476eba)
-
-## Database Choice
-
-Postgres because of the hosting capabilities of Heroku enables effortless deployment and expandability, and PostgreSQL stands out as one of the endorsed and suggested databases on the Heroku platform.
-
-## Data Models
-
-- Exercise Model
-
-Fields:
-
-name: CharField to store the name of the exercise.
-Validation:
-
-name is required and should be unique.
-CRUD Operations:
-
-Create: Admin can create a new exercise by providing a unique name.
-Read: Admin can view the list of exercises.
-Update: Admin can update the name of an existing exercise.
-Delete: Admin can delete an exercise.
-
-- Workout Model:
-
-Fields:
-
-owner: ForeignKey to link the workout to the admin user who owns it.
-name: CharField to store the name of the workout.
-Validation:
-
-owner is required and linked to a valid admin user.
-name is required and should be unique.
-
-CRUD Operations:
-
-Create: Admin can create a new workout by providing an owner and a unique name.
-Read: Admin can view the list of workouts.
-Update: Admin can update the owner or name of an existing workout.
-Delete: Admin can delete a workout.
-
-- Workout Item Model:
-
-Fields:
-
-workout: ForeignKey to link the workout item to the parent workout.
-exercise: ForeignKey to link the workout item to the exercise.
-reps: PositiveIntegerField to store the number of repetitions.
-sets: PositiveIntegerField to store the number of sets.
-Validation:
-
-workout is required and linked to a valid workout.
-exercise is required and linked to a valid exercise.
-reps and sets should be positive integers.
-CRUD Operations:
-
-Create: Admin can create a new workout item by providing a workout, exercise, reps, and sets.
-Read: Admin can view the list of workout items.
-Update: Admin can update the workout, exercise, reps, or sets of an existing workout item.
-Delete: Admin can delete a workout item.
 
  **Activities Model**
 
 CRUD Operations:
 Create: Create a exercise or a workout list to each user.
 
-Read: The workout sheet is visibl on the workout list page and the user can have acess to his own workout by acessing the website.
+Read: The workout sheet is visible on the workout list page and the user can have acess to his own workout by acessing the website.
 
 Update: The workout can be updated when the staff menber wants to change anything on the prescription.
 
@@ -672,6 +604,7 @@ User is logged in as staff
 | Windows PC     | Chrome  | Chrome      | 1336 x 667 px  |
 
 ## Accessibility Testing
+
 ### Accessibility Audits
 
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/28a8614e-11e6-4a5a-b254-5eb562c077a9)
