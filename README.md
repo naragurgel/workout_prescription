@@ -609,8 +609,13 @@ User is logged in as staff
 ## Accessibility Testing
 ### Accessibility Audits
 
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/28a8614e-11e6-4a5a-b254-5eb562c077a9)
+
 ## Validation Testing
 ### CSS Validation
+[**Style.css](https://github.com/naragurgel/workout_prescription/blob/main/static/css/wp_styles.css)**
+
+![CSS](https://github.com/naragurgel/workout_prescription/assets/112726044/ea788cc7-7d9c-488d-bdbd-32ab1c42a394)
 
 ### HTML Validation
 
