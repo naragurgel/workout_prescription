@@ -1,7 +1,5 @@
 # Workout_Prescription
 
-![image (2)](https://github.com/naragurgel/workout_prescription/assets/112726044/f5a219a5-506f-4dc0-a184-bfff7b83799e)
-
 -This is a website that offers a variety of fitness programs to help you achieve your health and fitness goals. Whether you're looking to lose weight, build muscle, or simply improve your overall health. The trainers create personalized training programs tailored to your individual needs and goals.
 - The user can access a personalized workout plan from anywhere with an internet connection, at any time that suits the schedule.
 
@@ -338,88 +336,93 @@ Acceptance Criteria
 
 - On the homepage of the Workout Prescription website, you will be able to visualize the welcome message and the hero image. You will also see the buttons to login or sign up. 
 
+![ezgif com-crop](https://github.com/naragurgel/workout_prescription/assets/112726044/b29efdb8-b525-4c78-afe0-eeff96d3bc97)
 
 ## Workout Page (Visitor)
 
 - There is a section for Workout but to actually see the workouts, you must be registered.
 
-![image](https://github.com/naragurgel/workout_prescription/assets/112726044/647a80c3-8bff-45ff-b2a4-9103cdac5e8c)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/c9510c32-2572-452d-8f9f-a90798537fbe)
 
 ## Logged (Staff member)
 
 - If you log in as a staff member, you will be able to see sections like 'Exercises List", "Add Exercise", "Workout Item List", "Add Item" and "Workout List". There is a button to logout.
 
-![image](https://github.com/naragurgel/workout_prescription/assets/112726044/acb2ca41-5515-41e1-b7f6-93e75ab81855)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/4165f3c3-f110-4cea-b6d5-612138231334)
 
 ## Exercise List (Staff member)
 
 - Where you can find the list of exercises added, which you can delete and update.
 
+Desktop:
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/e910667b-2942-4046-83c5-5c155f6475a2)
+
+Mobile:
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/989cd904-7bf6-4d13-b55f-148f9be413d3)
 
 ## Add Exercise (Staff member)
 
 - Where you can add an item to the list of exercices. 
 
-![image](https://github.com/naragurgel/workout_prescription/assets/112726044/68b57d85-2beb-4275-8e0b-bb55aab092d9)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/60a8be4d-dff3-4f03-8be3-86d71ee62756)
 
 ## Workout Item List (Staff member)
 
 - Where you can find the list of exercises added, with details like how many reps and sets, you also can delete and update.
 
-![image](https://github.com/naragurgel/workout_prescription/assets/112726044/6edd3b39-80bd-43dc-a668-9766c77c6604)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/1ace676d-cce3-4445-9f75-97f8622ded25)
 
 ## Add Item (Staff member)
 
 - Where you can add details to the exercices added before. 
 
-![image](https://github.com/naragurgel/workout_prescription/assets/112726044/6203f17b-4d99-4a39-b181-6700b0db3acf)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/332d436f-bfd8-4c58-bb4b-b3a3a10b5ce7)
 
 ## Workout List (Staff member)
 
 - You will be able to see the list of workout sheets, with names and owners; if you click on it, you will be redirected to the details of the workout (it's the same page as the workout registered user below)
 
-![image](https://github.com/naragurgel/workout_prescription/assets/112726044/c534c11d-51b1-459d-b8fe-1aaa3070c3a2)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/3c79217e-fd60-488a-bc6d-f5869d3a903b)
 
 ## Workout (Registered user)
 
 - The user can access the workout sheet if the user is registered. Clicking on the workout name they will be redirected to the workout details. 
 
-![image](https://github.com/naragurgel/workout_prescription/assets/112726044/18aec634-f8c7-462d-bd9e-e9a52a379436)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/3a7c59a2-12d8-4d25-a391-92ea2a4bd327)
 
-![image](https://github.com/naragurgel/workout_prescription/assets/112726044/92bd717a-c2f4-4fb2-9884-7be4751be75b)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/d1685a30-23ef-4760-983e-885ae86c9390)
 
 ## Sign in
 
 - Where the user can be authenticated and have access to their account.
 
-![image](https://github.com/naragurgel/workout_prescription/assets/112726044/d8a643f9-e9e6-4cc1-89b5-f8d4ba755798)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/684628a3-23e2-4fc2-90d3-210f8923da37)
 
 ## Sign out
 
 - Sign out of the account.
 
-![image](https://github.com/naragurgel/workout_prescription/assets/112726044/dde9697a-93c0-453a-8d53-9b83fb127166)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/fca6f33f-7d05-440f-8c89-5b237c405d24)
 
 ## Sign up
 
 -Where the visitor could sign up to get prescriptions.
 
-![image](https://github.com/naragurgel/workout_prescription/assets/112726044/7fce0c50-eb3c-407a-98a0-f1766150c868)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/46882d83-4e5f-4e5f-a59e-14486eeb9cb5)
 
 ## Implemented Features
 
 ### Header
 
-![image](https://github.com/naragurgel/workout_prescription/assets/112726044/7dbd466c-cbd3-4607-8677-615a7f1219f7)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/0a9aa61a-500e-4b50-89d4-3e791a051771)
 
 ### Footer
 
-![image](https://github.com/naragurgel/workout_prescription/assets/112726044/9116e6ee-11da-4728-87d1-b9f6bfc238e3)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/f9a16891-1b6c-423a-99b8-5e8a8041091d)
 
 ### Main
 
-![image](https://github.com/naragurgel/workout_prescription/assets/112726044/fb7ff41a-86ba-4f2f-9e8c-430cdd20fce3)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/4028cbf0-55e0-4a81-8935-2f8979095a6a)
 
 ### 404 error page
 
@@ -431,21 +434,11 @@ Acceptance Criteria
 
 ## Unauthenticated user
 
-![image](https://github.com/naragurgel/workout_prescription/assets/112726044/82b7e0a0-7087-4e06-8dcf-27180adb56f9)
-
-### General authenticated user
-
-![image](https://github.com/naragurgel/workout_prescription/assets/112726044/73aa2d43-5dd3-4f6e-95c9-00e585e8cb10)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/77cc25ed-026c-489f-87a3-36961a8cfa9d)
 
 ### Superuser authenticated -  The admin/superuser have full access to CRUD functionality.
 
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/d4aa1a61-06cf-47bf-aaec-d1f6f3e3ae50)
-
-### not allowing users to create, read, update and delete information they shouldn't
-
-There is no option to change the workout prescription for a regular user:
-
-![image](https://github.com/naragurgel/workout_prescription/assets/112726044/776329a1-b91f-44b0-9bb1-20e2b3f35097)
 
 ## Messages Display
 
