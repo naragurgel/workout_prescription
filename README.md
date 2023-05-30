@@ -520,8 +520,42 @@ I have carried out the manual testing in order to guarantee the effectiveness an
 ## Accessibility Testing
 
 ### Accessibility Audits
+
 ### Homepage 
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/28a8614e-11e6-4a5a-b254-5eb562c077a9)
+
+### Workout (user unauthenticated)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/8a5df041-f80f-4bdb-abf6-6c3646d4624f)
+
+### Login
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/594aaf2c-e4fd-4314-a872-371a4864ab59)
+
+### Register
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/65ada32a-1043-4885-a0e5-4fff6a3a416a)
+
+### User authenticated 
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/cef1400b-fef3-434f-a6b4-78c944de7795)
+
+- Details:
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/863448c6-0172-49f1-afe6-86e199dc9514)
+
+### Log out
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/ed3ae300-31c6-492f-8372-ac3b4f455a6d)
+
+### Exercice List- Staff member/ Admin
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/fb5979ba-9715-4a33-8efd-4eb9c6f93da5)
+
+### Add Exercice - Staff member/ Admin
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/b0a9f78b-3ffb-41bd-b920-04e10ce6aa60)
+
+### Workout Items List - Staff member/ Admin
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/ce9d22c6-d0d4-4509-8cab-20e30b4903eb)
+
+### Add Item - Staff member/ Admin
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/56c7aa5a-60a7-46b6-b6e3-8c4e84ebdf16)
+
+### Workout List - Staff member/ Admin
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/a14e042a-a958-48de-a87b-2318b52a6b67)
 
 ## Validation Testing
 ### CSS Validation
