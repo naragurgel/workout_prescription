@@ -1,5 +1,7 @@
 # Workout_Prescription
 
+![image (3)](https://github.com/naragurgel/workout_prescription/assets/112726044/534d817b-e942-4d8e-9b18-0ce8160cf963)
+
 - This is a website that offers a variety of fitness programs to help you achieve your health and fitness goals. Whether you're looking to lose weight, build muscle, or simply improve your overall health. The trainers create personalized training programs tailored to your individual needs and goals.
 - The user can access a personalized workout plan from anywhere with an internet connection, at any time that suits the schedule.
 
