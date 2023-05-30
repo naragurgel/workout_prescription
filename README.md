@@ -480,119 +480,29 @@ I have carried out the manual testing in order to guarantee the effectiveness an
 
 ## Manual Testing
 
-**Manual Testing**
+**[Unauthenticated User](https://github.com/naragurgel/workout_prescription/issues/32)**
 
-## Unauthenticated User
-  1. Does not see staff options in navigation
-  2. Does not see Logout options in navigation
-  3. Cannot use a bookmark to add exercise
-  4. Can not use a bookmark to update exercise
-  5. Can not use a bookmark to delete exercise
-  6. Can not use a bookmark to add WorkoutItem
-  7. Can not use a bookmark to update WorkoutItem
-  8. Can not use a bookmark to delete WorkoutItem
-  9. Can not use a bookmark to see Workout List
-  10. Can not use a bookmark to see a Workout Detail
-  11. Can not use a bookmark for anything in Django Admin
-  12. When not logged in, clicking on workout gives buttons to login/register
-  13. Using a bookmark to logout page does nothing
-  14. Click login takes user to login page
-  15. Click signup takes user to registration page
+**[Footer](https://github.com/naragurgel/workout_prescription/issues/33)**
 
-## Footer 
-  1. Footer link Twitter opens new tab
-  2. Footer link Instagram opens new tab
-  3. Footer link Facebok opnes new tab
+**[Sign Up](https://github.com/naragurgel/workout_prescription/issues/19)**
 
-## Sign Up
-  1. All blanks & submit: user sees error to fill out username
-  2. Fill out user name, rest blank & submit: user sees error to fill out password
-  3. Valid form, username in system & submit: user sees error that the username is already registered
-  4. Valid form, email in system & submit: user sees error that the email is already registered
-  5. Valid form, passwords don't match: user sees error that passwords need to match
-  6. Valid form, 'test' for password & submit: user sees error that password is too short
-  7. Valid form, 'testtest' for password & submit: user sees error that password is too common
-  8. Success full registration: user is taken to homepage, sees success message about logging in for about 3 seconds
+**[Regular User Logged In](https://github.com/naragurgel/workout_prescription/issues/20)**
 
-## Login
-  1. All blanks & submit: user sees error to fill out username
-  2. Fill out user name, rest blank & submit: user sees error to fill out password
-  3. Valid form, username not in system & submit: user sees error that the username is not registered
-  4. Valid form, email not system & submit: user sees error that the email is not registered
-  5. Valid form, passwords incorrect: user sees error that passwords is incorrect
-  6. Success authentication: user is taken to homepage, sees success message about logging in for about 3 seconds
+**[Staff User Logged In](https://github.com/naragurgel/workout_prescription/issues/22)**
 
-## Regular User Logged In
-  1. Can not use a bookmark to add exercise
-  2. Can not use a bookmark to update exercise
-  3. Can not use a bookmark to delete exercise
-  4. Can not use a bookmark to add WorkoutItem
-  5. Can not use a bookmark to update WorkoutItem
-  6. Can not use a bookmark to delete WorkoutItem
-  7. Can not use a bookmark to see Workout List
-  8. Can not use a bookmark to see a Workout Detail they don't own
-  9. Can not use a bookmark to access django admin
-  10. Does not see Sign Up in navigation
-  11. Does not see Login in navigation
-  12. Workout page shows special message to contact trainer if no workouts
-  13. Workout page shows list of workouts for them if they have 1 or more
-  14. Workout page with workouts links to workout details page
-  15. Workout page doesn't have update and delete options
-  16. Can use a bookmark to see a workout they own
+**[Sign out](https://github.com/naragurgel/workout_prescription/issues/28)**
 
-## Staff User Logged In
-  1. Can use a bookmark to add exercise
-  2. Can use a bookmark to update exercise
-  3. Can use a bookmark to delete exercise
-  4. Can use a bookmark to add WorkoutItem
-  5. Can use a bookmark to update WorkoutItem
-  6. Can use a bookmark to delete WorkoutItem
-  7. Can use a bookmark to see Workout List
-  8. Can use a bookmark to see a Workout Detail they don't own
-  9. Can use a bookmark to access django admin
-  10. Sees Exercise List nav option
-  11. Sees Add Exercise nav option
-  12. Sees workout items list nav option
-  13. Sees add item nav option
-  14. Sees workout list option
-  15. Sees logout option
-  16. Upon logging in, sees message that they signed in and is on home page
+**[Exercise list Page](https://github.com/naragurgel/workout_prescription/issues/23)**
 
-## Sign out
-  1. Clicking signout button on signout page logs user out & shows green message
-  2. Menu options change to logged out state
+**[Add Exercise](https://github.com/naragurgel/workout_prescription/issues/24)**
 
-## Exercise list Page
-User is logged in as staff
-  1. User sees list of exercises with delete and update options
-  2. Click delete, deletes appropriate exercise
-  3. Click update, takes user to appropriate update
+**[Workout Item list](https://github.com/naragurgel/workout_prescription/issues/25)**
 
-## Add Exercise
-User is logged in as staff
-  1. Can use a bookmark to add exercise
-  2. All blanks & submit: user sees error to fill out the input
-  3. Submit a duplicate name: user sees error, the name must be unique 
+**[Add Exercise](https://github.com/naragurgel/workout_prescription/issues/26)**
 
-## Workout Item list
-User is logged in as staff
-  1. User sees list of Workout Item with delete and update options
-  2. User sees how many repetions and sets for each exercise 
-  2. Click delete, deletes appropriate exercise
-  3. Click update, takes user to appropriate update
+**[Workout List- admin](https://github.com/naragurgel/workout_prescription/issues/27)**
 
-## Add Exercise
-User is logged in as staff
-  1. Can use a bookmark to add details like sets and reps do the workout items
-  2. User can see a dropdown with the exercises options added
-  3. All blanks & submit: user sees error to fill out the input
-
-## Workout List
-User is logged in as staff
-  1. User can sees the list of workout prescriptions and the owners 
-  2. Can delete any ite from the list
-  3. Can click on it and see the details like, sets, reps and instructions
-
+**[Workout List- regulas user](https://github.com/naragurgel/workout_prescription/issues/21)**
 ## Compatibility and Responsive Testing
 
 | Tool/Device    | Browser | OS          | Viewport       |
@@ -610,7 +520,7 @@ User is logged in as staff
 ## Accessibility Testing
 
 ### Accessibility Audits
-
+### Homepage 
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/28a8614e-11e6-4a5a-b254-5eb562c077a9)
 
 ## Validation Testing
