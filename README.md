@@ -343,6 +343,9 @@ Acceptance Criteria
 
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/4165f3c3-f110-4cea-b6d5-612138231334)
 
+Mobile:
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/989cd904-7bf6-4d13-b55f-148f9be413d3)
+
 ## Exercise List (Staff member)
 
 - Where you can find the list of exercises added, which you can delete and update.
@@ -350,8 +353,6 @@ Acceptance Criteria
 Desktop:
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/e910667b-2942-4046-83c5-5c155f6475a2)
 
-Mobile:
-![image](https://github.com/naragurgel/workout_prescription/assets/112726044/989cd904-7bf6-4d13-b55f-148f9be413d3)
 
 ## Add Exercise (Staff member)
 
@@ -614,7 +615,7 @@ User is logged in as staff
 
 ## Validation Testing
 ### CSS Validation
-[**Style.css](https://github.com/naragurgel/workout_prescription/blob/main/static/css/wp_styles.css)**
+**[Style.css](https://github.com/naragurgel/workout_prescription/blob/main/static/css/wp_styles.css)**
 
 ![CSS](https://github.com/naragurgel/workout_prescription/assets/112726044/ea788cc7-7d9c-488d-bdbd-32ab1c42a394)
 
