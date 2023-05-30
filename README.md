@@ -465,8 +465,11 @@ Mobile:
 
 ## Future Features
 
-- Some options ready for workout sheet prescriptions.
-- Videos for the user watch, teaching how to do the exercise correctly.
+- Ability to update and create users within program vs django admin
+- Ability for staff users to sort and filter workouts by exercises or clients
+- Quick way to clone workouts so they are quicker to create
+- Ability to sort and filter exercices
+- Ability to sort and filter workout items
 
 ## Testing
 
