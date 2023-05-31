@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 
 
 class Exercise(models.Model):
-     """
+    """
     Model representing an exercise.
 
     Fields:
