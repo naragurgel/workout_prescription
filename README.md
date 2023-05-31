@@ -503,6 +503,7 @@ I have carried out the manual testing in order to guarantee the effectiveness an
 **[Workout List- admin](https://github.com/naragurgel/workout_prescription/issues/27)**
 
 **[Workout List- regulas user](https://github.com/naragurgel/workout_prescription/issues/21)**
+
 ## Compatibility and Responsive Testing
 
 | Tool/Device    | Browser | OS          | Viewport       |
@@ -567,27 +568,67 @@ I have carried out the manual testing in order to guarantee the effectiveness an
 
 **[Home page](https://github.com/naragurgel/workout_prescription/blob/main/templates/index.html)**
 
-![image](https://github.com/naragurgel/workout_prescription/assets/112726044/fe321ffd-d2a8-437a-8e9e-c43e3d171a4a)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/425928ba-eee1-4524-8a5c-505514f14f02)
 
-**[Workout page](https://github.com/naragurgel/workout_prescription/blob/main/prescriptions/templates/workout/list.html)**
+**[Workout page - Visitor](https://github.com/naragurgel/workout_prescription/blob/main/prescriptions/templates/workout/list.html)**
 
-![workout sheet](https://github.com/naragurgel/workout_prescription/assets/112726044/aba7bd52-8838-49ec-b275-b73197eae038)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/b6750928-9b4c-49ec-9e0f-14277dffb954)
 
-**[Confirm delete](https://github.com/naragurgel/workout_prescription/blob/main/prescriptions/templates/workout/confirm_delete.html)**
+**[Login](https://github.com/naragurgel/workout_prescription/blob/main/templates/account/login.html)**
 
-![confirm delete](https://github.com/naragurgel/workout_prescription/assets/112726044/2bc7e15a-d619-476c-a708-20f3663ce731)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/a092df03-8771-4c3c-9586-c6cc9c49db79)
 
-**[Exercices](https://github.com/naragurgel/workout_prescription/tree/main/prescriptions/templates/exercise)**
+**[Register](https://github.com/naragurgel/workout_prescription/blob/main/templates/account/signup.html)**
 
-![exerci list](https://github.com/naragurgel/workout_prescription/assets/112726044/aa1edf63-47e9-4d25-891c-f14ebd0e1d8d)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/dfa440c7-ffde-4609-893c-94d289800bb5)
 
-**[Workout Item](https://github.com/naragurgel/workout_prescription/tree/main/prescriptions/templates/workout_item)**
+**[Confirm delete- admin/staff user](https://github.com/naragurgel/workout_prescription/blob/main/prescriptions/templates/workout/confirm_delete.html)**
 
-![workoutitemlist](https://github.com/naragurgel/workout_prescription/assets/112726044/43d6af9a-e92d-4cc6-a44e-3b20dcc9a295)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/31a4c5bb-3c21-4ccc-92d5-06d40c3f99ee)
 
-**[Workout admin](https://github.com/naragurgel/workout_prescription/tree/main/prescriptions/templates/workout)**
+**[Exercises- admin/staff user](https://github.com/naragurgel/workout_prescription/tree/main/prescriptions/templates/exercise)**
 
-![workout sheet](https://github.com/naragurgel/workout_prescription/assets/112726044/0603434f-89a0-48e2-9e41-1540c187dbf5)
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/4efcdfb2-d232-4cef-8a43-c39548882ec3)
+
+**[Add Exercise- admin/staff user](https://github.com/naragurgel/workout_prescription/blob/main/prescriptions/templates/form.html)**
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/5b645b72-1142-41a4-a42c-336721d279db)
+
+**[Workout Item- admin/staff user](https://github.com/naragurgel/workout_prescription/tree/main/prescriptions/templates/workout_item)**
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/5d54afa4-ff1f-463f-a836-d02dc8c295d3)
+
+**[Add Item- admin/staff user](https://github.com/naragurgel/workout_prescription/blob/main/prescriptions/templates/form.html)**
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/35c0edea-0459-4d41-9050-dc2e4ed5ee67)
+
+**[Workout List- admin/staff user](https://github.com/naragurgel/workout_prescription/tree/main/prescriptions/templates/workout)**
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/2864b064-c1ca-4cec-a00b-ea570db401a5)
+
+**[Workout Details](https://github.com/naragurgel/workout_prescription/blob/main/prescriptions/templates/workout/detail.html)**
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/199a66a3-5a16-4082-8768-f2b80091c66b)
+
+**[Sign out](https://github.com/naragurgel/workout_prescription/blob/main/templates/account/logout.html)
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/cd82b563-0daf-4935-bb20-1dccf8939f3b)
+
+**[Workout -user authenticated logged]((https://github.com/naragurgel/workout_prescription/tree/main/prescriptions/templates/workout)**
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/b4697325-1cca-4f43-b4ed-4aecf47e35fd)
+
+**[404](https://github.com/naragurgel/workout_prescription/blob/main/templates/404.html)**
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/83c904c8-2cbb-4968-a3f4-70fd737b0e77)
+
+**[403](https://github.com/naragurgel/workout_prescription/blob/main/templates/403.html)**
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/8274e057-51c4-47d8-809e-ce9a928171d1)
+
+**[500](https://github.com/naragurgel/workout_prescription/blob/main/templates/500.html)**
+
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/bb55b371-4ae6-497f-b018-097dae700565)
 
 ### JavaScript Validation
 
