@@ -78,9 +78,9 @@ Nara Gurgel
 
  - The website will prioritize intuitive navigation and clear communication of workout instructions. The simplicity of the design ensures a user-friendly interface, allowing users to easily navigate and engage with their workout plans without distractions.
 
-### Colors
+### Colours
 
-- Color scheme predominantly consisting of tons of black, green and white. The use of black provides a sense of professionalism, green refreshing and energetic touch, symbolizing growth and vitality, aligning with the health and wellness focus of the website. White is promoting a visually calming experience. 
+- Colour scheme predominantly consisting of tons of black, green and white. The use of black provides a sense of professionalism, green refreshing and energetic touch, symbolizing growth and vitality, aligning with the health and wellness focus of the website. White is promoting a visually calming experience. 
 
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/112e6367-cb1a-4b05-ae5c-b7704753d51c)
 
@@ -118,7 +118,7 @@ The reason for the cover photo to be dumbbells is mainly because dumbbells are a
 
 ### Custom Styles
 
-- I made some changes to the fonts, font sizes and colors of the fonts and background. It's all in the folder **[CSS](prescriptions/static/css/wp_styles.css)**
+- I made some changes to the fonts, font sizes and colours of the fonts and background. It's all in the folder **[CSS](prescriptions/static/css/wp_styles.css)**
 
 ### Custom Javascript
 
@@ -130,11 +130,11 @@ The reason for the cover photo to be dumbbells is mainly because dumbbells are a
 
 ![Desktop Unau](https://github.com/naragurgel/workout_prescription/assets/112726044/4e2a7e32-75cf-4fe8-8f2e-24a4bf6c1d30)
 
-- Destop view authenticated user 
+- Desktop view authenticated user
 
 ![Desk aut](https://github.com/naragurgel/workout_prescription/assets/112726044/c054c9ed-72be-48ff-a39d-5a1e9c8d6c53)
 
-- Destop staff member logged 
+- Desktop staff member logged 
 
 ![staff desk](https://github.com/naragurgel/workout_prescription/assets/112726044/f57eda13-b96c-4b8b-8133-5e6e3e375f9f)
 
@@ -228,7 +228,7 @@ Read: The workout sheet is visible on the workout list page and the user can hav
 
 Update: The workout can be updated when the staff member wants to change anything on the prescription.
 
-Delete: The workout or exercice can be deleted if a staff member wants to change the workout prescriptions.
+Delete: The workout or exercise can be deleted if a staff member wants to change the workout prescriptions.
 
 ## CRUD Diagrams
 
@@ -259,9 +259,9 @@ For administrators:
 - As an trainer, I want to be able to create and manage the available workouts in the system.
 - As a trainer, I want to be able to assign workout prescriptions to my clients so that I can help them reach their fitness goals.
 - As a user, I want to check sets, reps, rest time for each exercise in my workout prescription.
-- As a user, I want to visit the website to receive personalized exercise plans and guidance, so that I can achieve my fitness goals effectively
+- As a user, I want to visit the website to receive personalized exercise plans and guidance, so that I can achieve my fitness goals effectively.
 - As a user, I want to log in to my account so that I can securely access my workout prescription personalized information.
-- As a user, I want to have a user-friendly interface that guides me through the website to register and to acess my workout.
+- As a user, I want to have a user-friendly interface that guides me through the website to register and to access my workout.
 - As a trainer, I want to delete a workout, so I can remove it from my list of saved workouts if it's no longer relevant.
 
 ## Feasibility vs Importance
@@ -270,7 +270,7 @@ For administrators:
 
 ## Scope
 
-In order to define a prioritized list of user stories for an minimal viable product based on the project goals, some scope reduction was performed to focus on the essential features within the available skill set. The main objective was to deliver a basic but functional version of the workout website. The prioritized user stories include functionalities such as viewing a list of exercises and workouts, creating new workouts, and searching for workouts by name. Additionally, the ability to create exercises and search for exercises by name were included. These core features were deemed essential to provide users with a basic experience of browsing on the workouts, while allowing the admin to manage exercises list. 
+In order to define a prioritized list of user stories for a minimal viable product based on the project goals, some scope reduction was performed to focus on the essential features within the available skill set. The main objective was to deliver a basic but functional version of the workout website. The prioritized user stories include functionalities such as viewing a list of exercises and workouts, creating new workouts, and searching for workouts by name. Additionally, the ability to create exercises and search for exercises by name were included. These core features were deemed essential to provide users with a basic experience of browsing on the workouts, while allowing the admin to manage exercises list. 
 
 ## Agile Tool
 
@@ -317,7 +317,7 @@ Acceptance Criteria
 
 ## Workout Page (Visitor)
 
-- There is a section for Workout but to actually see the workouts, you must be registered.
+- There is a section for Workout but to see the workouts, you must be registered.
 
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/c9510c32-2572-452d-8f9f-a90798537fbe)
 
@@ -456,7 +456,7 @@ Desktop:
 - Ability to update and create users within program vs django admin
 - Ability for staff users to sort and filter workouts by exercises or clients
 - Quick way to clone workouts so they are quicker to create
-- Ability to sort and filter exercices
+- Ability to sort and filter exercises
 - Ability to sort and filter workout items
 
 ## Testing
@@ -487,7 +487,7 @@ I have carried out the manual testing in order to guarantee the effectiveness an
 
 **[Workout List- admin](https://github.com/naragurgel/workout_prescription/issues/27)**
 
-**[Workout List- regulas user](https://github.com/naragurgel/workout_prescription/issues/21)**
+**[Workout List- regular user](https://github.com/naragurgel/workout_prescription/issues/21)**
 
 ## Compatibility and Responsive Testing
 
@@ -528,10 +528,10 @@ I have carried out the manual testing in order to guarantee the effectiveness an
 ### Log out
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/ed3ae300-31c6-492f-8372-ac3b4f455a6d)
 
-### Exercice List- Staff member/ Admin
+### Exercise List- Staff member/ Admin
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/fb5979ba-9715-4a33-8efd-4eb9c6f93da5)
 
-### Add Exercice - Staff member/ Admin
+### Add Exercise - Staff member/ Admin
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/b0a9f78b-3ffb-41bd-b920-04e10ce6aa60)
 
 ### Workout Items List - Staff member/ Admin
@@ -676,7 +676,7 @@ I have carried out the manual testing in order to guarantee the effectiveness an
 
 ## Defects
 
-I've made **[miletones](https://github.com/naragurgel/workout_prescription/milestones)** to group all the defects and make them easier to been finded.
+I've made **[miletones](https://github.com/naragurgel/workout_prescription/milestones)** to group all the defects and make them easier to been found.
 
 ## Defects of Note
 
@@ -689,7 +689,7 @@ The footer was moving up and down accordingly with the page content.
 The Heroku was not deploying the CSS file.
 
 - **[Sign up:](https://github.com/naragurgel/workout_prescription/issues/31)**
-When a new user was tying the email and submitting the page was showing a error
+When a new user was tying the email and submitting the page was showing an error
 
 ## Outstanding Defects
 
@@ -709,7 +709,7 @@ When a new user was tying the email and submitting the page was showing a error
 | Google Developer Tools   | Google Developer Tools, specifically DevTools, played a crucial role in bug detection, testing the website's responsiveness, and resolving issues across different devices. |
 | Jigsaw                   | Jigsaw was utilized to validate CSS code, ensuring its compliance with the specified standards and best practices.                                                          |
 | CI's pep8                | CI's pep8 tool was used to validate all Python code, ensuring adherence to coding standards and maintaining consistency throughout the project.                             |
-| Coloors                  | Coloors was utilized as a tool to generate a color palette for the website design.                                                                                          |
+| Coloors                  | Coloors was utilized as a tool to generate a colour palette for the website design.                                                                                          |
 | W3 HTML                  | W3 HTML to validate the HTML code, ensuring its correctness and compliance with web standards.                                                                              |
 | Jshint                   | Jshint was used to validate JavaScript code, ensuring its quality, identifying potential errors, and promoting best practices.                                              |
 | Cloudinary               | Cloudinary was utilized as a cloud-based storage service to store and manage all static files and images used in the project.                                               |
@@ -844,5 +844,5 @@ A special thanks to the mentors, tutors and fellow learners at Code Institute fo
 - Code Institute walkthrough project 'I think Therefore I blog', which was where I had the initial ideas of how to start my project.
 - Mentor: Malia - Since the first project, always supporting me in the best way, helping with doubts and showing the best ways to develop the project
 - Team of tutors that helped me with the bug that was not deploying to my site on Heroku, they were super helpful and dedicated until we managed to find a solution.
-- My friend Gustavo Chahm, who is already a senior software developer,he answered many doubts that I had, he showed me the best ways to develop the site, always explaining everything with clarity and patience
+- My friend Gustavo Chahm, who is already a senior software developer, he answered many doubts that I had, he showed me the best ways to develop the site, always explaining everything with clarity and patience
 
