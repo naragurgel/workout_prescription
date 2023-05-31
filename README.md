@@ -322,7 +322,6 @@ Acceptance Criteria
 - EPIC TEMPLATE screenshot
 - link to EPIC TEMPLATE
 
-
 # Features
 
 ## Home Page (Visitor)
@@ -344,6 +343,7 @@ Acceptance Criteria
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/4165f3c3-f110-4cea-b6d5-612138231334)
 
 Mobile:
+
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/989cd904-7bf6-4d13-b55f-148f9be413d3)
 
 ## Exercise List (Staff member)
@@ -400,7 +400,7 @@ Desktop:
 
 ## Sign up
 
--Where the visitor could sign up to get prescriptions.
+- Where the visitor could sign up to get prescriptions.
 
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/46882d83-4e5f-4e5f-a59e-14486eeb9cb5)
 
@@ -559,6 +559,7 @@ I have carried out the manual testing in order to guarantee the effectiveness an
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/a14e042a-a958-48de-a87b-2318b52a6b67)
 
 ## Validation Testing
+
 ### CSS Validation
 **[Style.css](https://github.com/naragurgel/workout_prescription/blob/main/static/css/wp_styles.css)**
 
@@ -610,11 +611,11 @@ I have carried out the manual testing in order to guarantee the effectiveness an
 
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/199a66a3-5a16-4082-8768-f2b80091c66b)
 
-**[Sign out](https://github.com/naragurgel/workout_prescription/blob/main/templates/account/logout.html)
+**[Sign out](https://github.com/naragurgel/workout_prescription/blob/main/templates/account/logout.html)**
 
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/cd82b563-0daf-4935-bb20-1dccf8939f3b)
 
-**[Workout -user authenticated logged]((https://github.com/naragurgel/workout_prescription/tree/main/prescriptions/templates/workout)**
+**[Workout -user authenticated logged](https://github.com/naragurgel/workout_prescription/tree/main/prescriptions/templates/workout)**
 
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/b4697325-1cca-4f43-b4ed-4aecf47e35fd)
 
@@ -689,6 +690,7 @@ I have carried out the manual testing in order to guarantee the effectiveness an
 ![manage py](https://github.com/naragurgel/workout_prescription/assets/112726044/95a43622-e7cc-4c8a-95d5-a7864c60efb9)
 
 ## Defects
+
 I've made **[miletones](https://github.com/naragurgel/workout_prescription/milestones)** to group all the defects and make them easier to been finded.
 
 ## Defects of Note
@@ -706,6 +708,7 @@ When a new user was tying the email and submitting the page was showing a error
 
 ## Outstanding Defects
 
+- There are no known functional or visual outstanding defects at this time.
 
 # Technologies Used
 
@@ -750,7 +753,9 @@ When a new user was tying the email and submitting the page was showing a error
 - markdown table generator
 
 # Deployment
+
 ### Prerequisites
+
 To run this project, you need a CLOUDINARY_URL:
 1. **Cloudinary Account:**
 - Create an account on [Cloudinary](https://cloudinary.com/users/register_by_email) if you don't have one.
@@ -760,26 +765,49 @@ To run this project, you need a CLOUDINARY_URL:
 - Look for the section related to API credentials or environments variable.
 - Locate the API Key and Secret URL.
 - Copy the API Key and Secret URL, as you will need them to configure the application.
+<img width="1230" alt="image" src="https://user-images.githubusercontent.com/23039742/213839829-b4f349b3-419d-4ea2-bbca-90cf3c663bba.png"> 
 3. **Set Environmental Variables:**
 - Once you have obtained the API Key and Secret URL, you need to set them as environmental variables in your development environment.
 - Depending on your operating system and development environment, the steps to set environmental variable may vary.
 
-### Forking the Github Repository
+You will alsoo need to obtain the DATABASE_URL, to do that follow these steps:
+1. **Visit the ElephantSQL website:**
+- Go to https://www.elephantsql.com/ in your web browser.
+- Sign up or log in: If you don't have an account, sign up for a new account. Otherwise, log in to your existing account.
 
-To make a copy or ‘fork’ the repository:
+2. **Create a new instance: After logging in, click on the "Create new instance" button.**
+- Select a plan: Choose a plan that suits your needs. ElephantSQL offers both free and paid plans, so select the one that fits your requirements.
+- Configure your instance: Provide a name for your instance and select the desired region. You can also customize additional settings like the PostgreSQL version and the maximum number of connections.
+- Create the instance: Click on the "Create" button to create the instance.
+- Access your instance details: Once the instance is created, you will be redirected to the instance details page. Here, you can find important information, including the DATABASE_URL.
 
-1. Login to your own GitHub account
-2. Navigate to [my repository](https://github.com/naragurgel/workout_prescription)
-3. In the top right corner of the page, click 'fork' option to create and copy of the original
+3. **Obtain the DATABASE_URL**
+- On the instance details page, locate the "Connection" section.
+- You will see the DATABASE_URL listed there. It typically follows the format: postgres://username:password@host:port/database. Copy the entire DATABASE_URL.
 
-### Making a Local Clone
+4. **Set Environmental Variables:**
+- Once you have obtained the DATABASE_URL, you need to set them as environmental variables in your development environment.
+- Depending on your operating system and development environment, the steps to set environmental variable may vary.
 
-1. Under the repository name, click on the ‘code’ tab
-2. In the clone box, HTTPS tab, click on the clipboard icon 
-3. In your IED open GitBash
-4. Changed the current working directory to the location you want the cloned directory to be made
-5. Type ‘git clone’ and then paste the URL copied from GitHub
-6. Press enter and the local clone will be created 
+## Fork and Clone the Repository
+
+To keep the main repository for this project clean, please fork the repository into your own account. GitHub has [forking directions](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) but here's what you might do:
+1. login to your own gitHub account
+2. navigate to [my repository](https://github.com/naragurgel/workout_prescription)
+3. In the top right corner of the page, click fork 
+
+![image](https://user-images.githubusercontent.com/23039742/213840378-e785eaa0-712b-468c-bcda-64fde56eae44.png)
+
+4. set yourself as the owner
+5. change the name of the repo if you want
+6. add a description if you want
+7. choose what to copy, typically the main branch only
+8. click the snazzy green button
+
+![image](https://user-images.githubusercontent.com/23039742/213840549-5bef12ae-198e-412b-84b6-0cc718b6fa1d.png)
+
+9. To get files to your local environment, you need to clone it: click the code button
+10. Copy the url as needed (here's gitHub instructions)[https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository}
 
 ### Production Deployment
 
@@ -806,38 +834,6 @@ To get started with local development in GitPod or your preferred IDE, follow th
 - **python3 manage.py runserver**
 11. Now you can access the application by opening the provided URL in your browser.
 
-If the user is required to have certain keys and credentials you should include this section with directions on how to get the necessary information. ex)
-
-1. **Gmail Account:** In order to have verification and forgot password emails sent to registered users you need a
-   google account. 
-  - [create a gmail accoount](https://accounts.google.com/signup) 
-  - [downgrade to less secure](https://myaccount.google.com/lesssecureapps?pli=1) after you are signed into the gmail account, downgrade to less secure
-2. **Couldinary URL**
-  - [create an account](https://cloudinary.com/)
-  - go to the dashboard and copy your API environmental variable
-   
-    <img width="1230" alt="image" src="https://user-images.githubusercontent.com/23039742/213839829-b4f349b3-419d-4ea2-bbca-90cf3c663bba.png">     
- 
-## Fork and Clone the Repository
-
-To keep the main repository for this project clean, please fork the repository into your own account. GitHub has [forking directions](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) but here's what you might do:
-1. login to your own gitHub account
-2. navigate to [my repository](https://github.com/naragurgel/workout_prescription)
-3. In the top right corner of the page, click fork 
-
-![image](https://user-images.githubusercontent.com/23039742/213840378-e785eaa0-712b-468c-bcda-64fde56eae44.png)
-
-4. set yourself as the owner
-5. change the name of the repo if you want
-6. add a description if you want
-7. choose what to copy, typically the main branch only
-8. click the snazzy green button
-
-![image](https://user-images.githubusercontent.com/23039742/213840549-5bef12ae-198e-412b-84b6-0cc718b6fa1d.png)
-
-9. To get files to your local environment, you need to clone it: click the code button
-10. Copy the url as needed (here's gitHub instructions)[https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository}
-
 # Credits
 
 This workout prescription project was created with help, support, and resources from the following:
@@ -862,6 +858,6 @@ A special thanks to the mentors, tutors and fellow learners at Code Institute fo
 
 - Code Institute walkthrough project 'I think Therefore I blog', which was where I had the initial ideas of how to start my project.
 - Mentor: Malia - Since the first project, always supporting me in the best way, helping with doubts and showing the best ways to develop the project
-- Team of tutors that helped me with the bug that was not deploying to my site on heroku, they were super helpful and dedicated until we managed to find a solution.
+- Team of tutors that helped me with the bug that was not deploying to my site on Heroku, they were super helpful and dedicated until we managed to find a solution.
 - My friend Gustavo Chahm, who is already a senior software developer,he answered many doubts that I had, he showed me the best ways to develop the site, always explaining everything with clarity and patience
 
