@@ -17,16 +17,13 @@
 
 Nara Gurgel
 
-# Table of Contents
+# Table of contents
 
 - [UX](#ux)
   - [Target Audience](#target-audience)
   - [Design Choices](#design-choices)
   - [Wireframes](#wireframes)
 - [Information Architecture](#information-architecture)
-  - [Entity Relationship Diagram](#entity-relationship-diagram)
-  - [Database Choice](#database-choice)
-  - [Data Models](#data-models)
   - [Entity Relationship Diagram](#entity-relationship-diagram)
   - [Database Choice](#database-choice)
   - [Data Models](#data-models)
@@ -56,18 +53,6 @@ Nara Gurgel
   - [Future Features](#future-features)
   - [Testing](#testing)
   - [Manual Testing](#manual-testing)
-  - [Unauthenticated User](#unauthenticated-user)
-  - [Footer](#footer)
-  - [Sign Up](#sign-up)
-  - [Login](#login)
-  - [Regular User Logged In](#regular-user-logged-in)
-  - [Staff User Logged In](#staff-user-logged-in)
-  - [Sign out](#sign-out)
-  - [Exercise list Page](#exercise-list-page)
-  - [Add Exercise](#add-exercise)
-  - [Workout Item list](#workout-item-list)
-  - [Add Exercise](#add-exercise)
-  - [Workout List](#workout-list)
   - [Compatibility and Responsive Testing](#compatibility-and-responsive-testing)
   - [Accessibility Testing](#accessibility-testing)
   - [Validation Testing](#validation-testing)
