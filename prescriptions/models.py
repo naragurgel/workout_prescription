@@ -27,9 +27,12 @@ class WorkoutItem(models.Model):
     Model representing a workout item.
 
     Fields:
-    - exercise: ForeignKey field representing the exercise associated with the workout item.
-    - reps: PositiveIntegerField representing the number of repetitions for the workout item.
-    - sets: PositiveIntegerField representing the number of sets for the workout item.
+    - exercise: ForeignKey field representing
+    the exercise associated with the workout item.
+    - reps: PositiveIntegerField representing
+    the number of repetitions for the workout item.
+    - sets: PositiveIntegerField representing
+    the number of sets for the workout item.
 
     Methods:
     - __str__: Returns a string representation of the workout item object.
@@ -57,7 +60,8 @@ class Workout(models.Model):
     - owner: ForeignKey field representing the owner (user) of the workout.
     - name: CharField representing the name of the workout.
     - instructions: TextField representing the instructions for the workout.
-    - exercises: ManyToManyField representing the exercises associated with the workout.
+    - exercises: ManyToManyField representing
+    the exercises associated with the workout.
 
     Methods:
     - __str__: Returns a string representation of the workout object.
