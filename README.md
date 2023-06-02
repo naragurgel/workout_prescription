@@ -279,33 +279,12 @@ In order to define a prioritized list of user stories for a minimal viable produ
 ![image](https://github.com/naragurgel/workout_prescription/assets/112726044/b7f40e9a-aaa2-4b04-9595-adeed4aa97fc)
 
 ### Epic Stories
-🚀 **merit & beyond**
 
-If you want a chance at  **DISTINCTION**, you need to have epic stories to stories with tasks.
+EPIC: User could easily see the workout when they are logged on the website, they can intuitively access the workout page on both, mobile and desktop devices. The workout page gives the instructions to the user when they click on the workout's name. The information is easy to understand and very clear. 
 
-Example:
-EPIC: Navigation As a user, I want to have easy to see navigation on the page, so I can intuitively interact with the site without getting frustrated both on mobile and desktop devices.
+USER STORY: Workout Routines: As a user, I want the website to provide a variety of workout routines and exercises, so that I can keep my workouts interesting.
 
-USER STORY: Navigation: Unauthenticated user: As an unauthenticated user I want to see what the site is about, and easily figure out how access more information. 
-
-Tasks:
-- [ ] Build Template so information in one spot
-- [ ] Rough in Logo
-- [ ] Add in Register/Login/Forgot Password
-- [ ] Add Main List Page
-- [ ] Rough in CSS
-
-Acceptance Criteria
-- [ ] navigation sticks in view as user scrolls
-- [ ] looks good on mobile
-- [ ] looks good on desktop
-- [ ] links work & go where expect
-- [ ] passes accessibility
-
-**What to keep in this section**
-- screenshot of epic story
-- EPIC TEMPLATE screenshot
-- link to EPIC TEMPLATE
+![image](https://github.com/naragurgel/workout_prescription/assets/112726044/a146b6a8-5775-45dd-b3fc-b380242aa432)
 
 # Features
 
